@@ -1,0 +1,8 @@
+{
+  "review_id": "0036e78abcc14f7b86eb3bd47b4c60ec",
+  "annotation_revision": 184,
+  "created_at": "2026-10-25T23:49:06.164792+00:00",
+  "labels_sha256": "df69d5a44aeb164fce068eb52bb2dd48cb14487840e39889d3e6b20202df9947",
+  "model_sha256": "103bc2440aadd35bb1f3f6aac4e261cbff9fc6c52a31ccff471ce9394a3f222d",
+  "note": "Saved dataset snapshot only; no training or model activation performed. Hidden/absent/partial labels are preserved; the current trainer consumes visible labels only."
+}

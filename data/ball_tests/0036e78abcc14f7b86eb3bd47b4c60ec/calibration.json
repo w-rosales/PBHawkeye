@@ -1,0 +1,81 @@
+{
+  "court_corners_pixel": [
+    [
+      913.5248413085938,
+      548.125
+    ],
+    [
+      1187.8773193359375,
+      555.2052001953125
+    ],
+    [
+      1810.9228515625,
+      928.6854858398438
+    ],
+    [
+      357.7398681640625,
+      818.9424438476562
+    ]
+  ],
+  "court_corners_feet": [
+    [
+      0.0,
+      44.0
+    ],
+    [
+      20.0,
+      44.0
+    ],
+    [
+      20.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "corner_order": [
+    "top_left",
+    "top_right",
+    "bottom_right",
+    "bottom_left"
+  ],
+  "court_dimensions_ft": [
+    20.0,
+    44.0
+  ],
+  "image_size": [
+    1920,
+    1080
+  ],
+  "homography_matrix": [
+    [
+      -0.011347428186458381,
+      -0.023287754216519397,
+      23.130757813224747
+    ],
+    [
+      -0.0016684404582867874,
+      0.022092965884510943,
+      -17.495999803717186
+    ],
+    [
+      3.084231063349916e-05,
+      -0.0021623370685410603,
+      1.0
+    ]
+  ],
+  "calibration": {
+    "method": "manual",
+    "confirmed": true,
+    "confidence": null,
+    "detector_version": "manual-v1",
+    "video_signature": {
+      "name": "2025 Louisiana Amateur Pickleball Championships 4.5 Mens Doubles - Lee Chris vs Tyler Luke.mp4",
+      "size_bytes": 223740308,
+      "mtime_ns": 1792967999797960800
+    },
+    "frame_index": 0
+  }
+}

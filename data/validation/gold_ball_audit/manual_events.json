@@ -1,0 +1,50 @@
+{
+  "method": "Visual review of raw neighboring frames; event timing approximate. Bounce uses direction change/ball-shadow proximity; paddle contact may be partially occluded. These are reference intervals, not measured 3D heights.",
+  "events": [
+    {
+      "frame": 174,
+      "uncertainty_frames": 1,
+      "type": "bounce"
+    },
+    {
+      "frame": 185,
+      "uncertainty_frames": 1,
+      "type": "paddle_contact"
+    },
+    {
+      "frame": 216,
+      "uncertainty_frames": 2,
+      "type": "paddle_contact"
+    },
+    {
+      "frame": 242,
+      "uncertainty_frames": 1,
+      "type": "bounce"
+    },
+    {
+      "frame": 244,
+      "uncertainty_frames": 1,
+      "type": "paddle_contact"
+    },
+    {
+      "frame": 281,
+      "uncertainty_frames": 1,
+      "type": "paddle_contact"
+    },
+    {
+      "frame": 288,
+      "uncertainty_frames": 1,
+      "type": "bounce"
+    },
+    {
+      "frame": 296,
+      "uncertainty_frames": 1,
+      "type": "paddle_contact"
+    },
+    {
+      "frame": 323,
+      "uncertainty_frames": 1,
+      "type": "paddle_contact"
+    }
+  ]
+}

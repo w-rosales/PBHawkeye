@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.html text eol=lf
+*.cjs text eol=lf
+*.md text eol=lf
+# Annotation/manifest hashes depend on exact bytes, including line endings.
+*.json -text
+*.pt binary
+*.jpg binary
+*.png binary

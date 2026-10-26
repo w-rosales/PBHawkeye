@@ -1,0 +1,3874 @@
+{
+  "format": "pbhawkeye_temporal_ball_v1",
+  "input_width": 960,
+  "sources": [
+    {
+      "audit": "data\\validation\\gold_ball_audit",
+      "labels_sha256": "e135a5613264b374d182ce73f2254d839b4a4136f84ff26da810c1ab484c3a89",
+      "metadata": {
+        "video": "data\\raw_videos\\Gold_Medal_Match_Punta_Gorda.mp4",
+        "source_size": 2991284663,
+        "source_mtime_ns": 1792874599056087300,
+        "fps": 29.97,
+        "width": 1920,
+        "height": 1080,
+        "frame_start": 150,
+        "frame_end_inclusive": 329,
+        "label_policy": "Manual visual inspection of raw frames; no detector coordinates used as reference labels. Unclear or hidden ball positions must not be invented."
+      }
+    }
+  ],
+  "samples": [
+    {
+      "source": "audit0",
+      "frame": 152,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000150.npy",
+        "cache\\audit0_000151.npy",
+        "cache\\audit0_000152.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000152.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        339.205,
+        93.925
+      ],
+      "target_native": [
+        678.41,
+        187.85
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 153,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000151.npy",
+        "cache\\audit0_000152.npy",
+        "cache\\audit0_000153.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000153.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        337.385,
+        95.775
+      ],
+      "target_native": [
+        674.77,
+        191.55
+      ],
+      "hard_negative": [
+        340.36178861788613,
+        94.17479674796748
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 154,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000152.npy",
+        "cache\\audit0_000153.npy",
+        "cache\\audit0_000154.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000154.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        335.21,
+        97.795
+      ],
+      "target_native": [
+        670.42,
+        195.59
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 155,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000153.npy",
+        "cache\\audit0_000154.npy",
+        "cache\\audit0_000155.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000155.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        333.06,
+        101.255
+      ],
+      "target_native": [
+        666.12,
+        202.51
+      ],
+      "hard_negative": [
+        336.20125786163516,
+        96.64779874213836
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 156,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000154.npy",
+        "cache\\audit0_000155.npy",
+        "cache\\audit0_000156.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000156.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        330.59,
+        105.185
+      ],
+      "target_native": [
+        661.18,
+        210.37
+      ],
+      "hard_negative": [
+        332.8137254901961,
+        99.39215686274508
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 157,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000155.npy",
+        "cache\\audit0_000156.npy",
+        "cache\\audit0_000157.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000157.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        327.96,
+        109.345
+      ],
+      "target_native": [
+        655.92,
+        218.69
+      ],
+      "hard_negative": [
+        332.0416666666667,
+        102.70833333333333
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 158,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000156.npy",
+        "cache\\audit0_000157.npy",
+        "cache\\audit0_000158.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000158.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        325.585,
+        114.0
+      ],
+      "target_native": [
+        651.17,
+        228.0
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 159,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000157.npy",
+        "cache\\audit0_000158.npy",
+        "cache\\audit0_000159.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000159.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        322.11,
+        120.755
+      ],
+      "target_native": [
+        644.22,
+        241.51
+      ],
+      "hard_negative": [
+        360.5,
+        106.0
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 160,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000158.npy",
+        "cache\\audit0_000159.npy",
+        "cache\\audit0_000160.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000160.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        319.055,
+        127.58
+      ],
+      "target_native": [
+        638.11,
+        255.16
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 161,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000159.npy",
+        "cache\\audit0_000160.npy",
+        "cache\\audit0_000161.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000161.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        315.85,
+        136.445
+      ],
+      "target_native": [
+        631.7,
+        272.89
+      ],
+      "hard_negative": [
+        387.15384615384613,
+        99.57692307692308
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 162,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000160.npy",
+        "cache\\audit0_000161.npy",
+        "cache\\audit0_000162.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000162.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        313.255,
+        145.48
+      ],
+      "target_native": [
+        626.51,
+        290.96
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 163,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000161.npy",
+        "cache\\audit0_000162.npy",
+        "cache\\audit0_000163.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000163.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        309.9,
+        156.095
+      ],
+      "target_native": [
+        619.8,
+        312.19
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 164,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000162.npy",
+        "cache\\audit0_000163.npy",
+        "cache\\audit0_000164.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000164.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        305.29,
+        168.125
+      ],
+      "target_native": [
+        610.58,
+        336.25
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 165,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000163.npy",
+        "cache\\audit0_000164.npy",
+        "cache\\audit0_000165.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000165.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        301.6,
+        181.58
+      ],
+      "target_native": [
+        603.2,
+        363.16
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 166,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000164.npy",
+        "cache\\audit0_000165.npy",
+        "cache\\audit0_000166.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000166.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        297.37,
+        195.685
+      ],
+      "target_native": [
+        594.74,
+        391.37
+      ],
+      "hard_negative": [
+        144.45368421052632,
+        295.8491228070175
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 167,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000165.npy",
+        "cache\\audit0_000166.npy",
+        "cache\\audit0_000167.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000167.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        292.83,
+        212.505
+      ],
+      "target_native": [
+        585.66,
+        425.01
+      ],
+      "hard_negative": [
+        129.72222222222223,
+        264.80555555555554
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 168,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000166.npy",
+        "cache\\audit0_000167.npy",
+        "cache\\audit0_000168.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000168.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        288.05,
+        230.89
+      ],
+      "target_native": [
+        576.1,
+        461.78
+      ],
+      "hard_negative": [
+        120.13768115942028,
+        264.2028985507246
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 169,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000167.npy",
+        "cache\\audit0_000168.npy",
+        "cache\\audit0_000169.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000169.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        283.26,
+        251.035
+      ],
+      "target_native": [
+        566.52,
+        502.07
+      ],
+      "hard_negative": [
+        113.54166666666667,
+        265.7916666666667
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 170,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000168.npy",
+        "cache\\audit0_000169.npy",
+        "cache\\audit0_000170.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000170.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        278.41,
+        272.985
+      ],
+      "target_native": [
+        556.82,
+        545.97
+      ],
+      "hard_negative": [
+        108.25,
+        266.75
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 171,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000169.npy",
+        "cache\\audit0_000170.npy",
+        "cache\\audit0_000171.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000171.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        272.96,
+        297.21
+      ],
+      "target_native": [
+        545.92,
+        594.42
+      ],
+      "hard_negative": [
+        117.41804788213628,
+        301.33591160220993
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 172,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000170.npy",
+        "cache\\audit0_000171.npy",
+        "cache\\audit0_000172.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000172.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        267.12,
+        324.005
+      ],
+      "target_native": [
+        534.24,
+        648.01
+      ],
+      "hard_negative": [
+        111.38461538461539,
+        302.91843180973615
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 173,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000171.npy",
+        "cache\\audit0_000172.npy",
+        "cache\\audit0_000173.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000173.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        261.07,
+        352.56
+      ],
+      "target_native": [
+        522.14,
+        705.12
+      ],
+      "hard_negative": [
+        104.92691331157054,
+        305.06347479143994
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 174,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000172.npy",
+        "cache\\audit0_000173.npy",
+        "cache\\audit0_000174.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000174.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        253.545,
+        363.91
+      ],
+      "target_native": [
+        507.09,
+        727.82
+      ],
+      "hard_negative": [
+        98.47569080097936,
+        306.88247639034626
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 175,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000173.npy",
+        "cache\\audit0_000174.npy",
+        "cache\\audit0_000175.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000175.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        244.455,
+        360.6
+      ],
+      "target_native": [
+        488.91,
+        721.2
+      ],
+      "hard_negative": [
+        92.00232867598136,
+        308.33765801729874
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 176,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000174.npy",
+        "cache\\audit0_000175.npy",
+        "cache\\audit0_000176.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000176.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        234.905,
+        358.095
+      ],
+      "target_native": [
+        469.81,
+        716.19
+      ],
+      "hard_negative": [
+        86.03405201916495,
+        309.283196440794
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 177,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000175.npy",
+        "cache\\audit0_000176.npy",
+        "cache\\audit0_000177.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000177.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        225.19,
+        356.795
+      ],
+      "target_native": [
+        450.38,
+        713.59
+      ],
+      "hard_negative": [
+        80.48045602605863,
+        310.0190010857763
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 178,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000176.npy",
+        "cache\\audit0_000177.npy",
+        "cache\\audit0_000178.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000178.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        214.915,
+        356.725
+      ],
+      "target_native": [
+        429.83,
+        713.45
+      ],
+      "hard_negative": [
+        75.38830816879597,
+        310.6037553232675
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 179,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000177.npy",
+        "cache\\audit0_000178.npy",
+        "cache\\audit0_000179.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000179.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        204.42,
+        358.14
+      ],
+      "target_native": [
+        408.84,
+        716.28
+      ],
+      "hard_negative": [
+        70.32489177489177,
+        311.65043290043286
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 180,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000178.npy",
+        "cache\\audit0_000179.npy",
+        "cache\\audit0_000180.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000180.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        193.32,
+        360.895
+      ],
+      "target_native": [
+        386.64,
+        721.79
+      ],
+      "hard_negative": [
+        72.75,
+        305.25
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 181,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000179.npy",
+        "cache\\audit0_000180.npy",
+        "cache\\audit0_000181.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000181.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        182.175,
+        365.2
+      ],
+      "target_native": [
+        364.35,
+        730.4
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 182,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000180.npy",
+        "cache\\audit0_000181.npy",
+        "cache\\audit0_000182.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000182.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        170.27,
+        371.345
+      ],
+      "target_native": [
+        340.54,
+        742.69
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 183,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000181.npy",
+        "cache\\audit0_000182.npy",
+        "cache\\audit0_000183.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000183.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        158.11,
+        379.355
+      ],
+      "target_native": [
+        316.22,
+        758.71
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 184,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000182.npy",
+        "cache\\audit0_000183.npy",
+        "cache\\audit0_000184.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000184.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        145.765,
+        389.155
+      ],
+      "target_native": [
+        291.53,
+        778.31
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 186,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000184.npy",
+        "cache\\audit0_000185.npy",
+        "cache\\audit0_000186.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000186.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        168.05,
+        341.885
+      ],
+      "target_native": [
+        336.1,
+        683.77
+      ],
+      "hard_negative": [
+        701.5701754385964,
+        215.4035087719298
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 187,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000185.npy",
+        "cache\\audit0_000186.npy",
+        "cache\\audit0_000187.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000187.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        195.4,
+        298.165
+      ],
+      "target_native": [
+        390.8,
+        596.33
+      ],
+      "hard_negative": [
+        696.7222222222222,
+        215.3148148148148
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 188,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000186.npy",
+        "cache\\audit0_000187.npy",
+        "cache\\audit0_000188.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000188.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        219.27,
+        260.05
+      ],
+      "target_native": [
+        438.54,
+        520.1
+      ],
+      "hard_negative": [
+        694.3253968253968,
+        218.50793650793648
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 189,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000187.npy",
+        "cache\\audit0_000188.npy",
+        "cache\\audit0_000189.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000189.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        242.105,
+        228.325
+      ],
+      "target_native": [
+        484.21,
+        456.65
+      ],
+      "hard_negative": [
+        689.139344262295,
+        219.6448087431694
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 190,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000188.npy",
+        "cache\\audit0_000189.npy",
+        "cache\\audit0_000190.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000190.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        261.225,
+        201.41
+      ],
+      "target_native": [
+        522.45,
+        402.82
+      ],
+      "hard_negative": [
+        685.1,
+        219.4
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 191,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000189.npy",
+        "cache\\audit0_000190.npy",
+        "cache\\audit0_000191.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000191.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        279.765,
+        178.035
+      ],
+      "target_native": [
+        559.53,
+        356.07
+      ],
+      "hard_negative": [
+        682.3410852713178,
+        213.4612403100775
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 192,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000190.npy",
+        "cache\\audit0_000191.npy",
+        "cache\\audit0_000192.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000192.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        296.055,
+        157.89
+      ],
+      "target_native": [
+        592.11,
+        315.78
+      ],
+      "hard_negative": [
+        692.3850129198966,
+        227.47416020671832
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 193,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000191.npy",
+        "cache\\audit0_000192.npy",
+        "cache\\audit0_000193.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000193.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        311.535,
+        141.51
+      ],
+      "target_native": [
+        623.07,
+        283.02
+      ],
+      "hard_negative": [
+        693.9879454926624,
+        239.7730607966457
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 194,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000192.npy",
+        "cache\\audit0_000193.npy",
+        "cache\\audit0_000194.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000194.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        325.655,
+        128.625
+      ],
+      "target_native": [
+        651.31,
+        257.25
+      ],
+      "hard_negative": [
+        690.9475524475524,
+        237.36072261072258
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 195,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000193.npy",
+        "cache\\audit0_000194.npy",
+        "cache\\audit0_000195.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000195.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        338.915,
+        117.015
+      ],
+      "target_native": [
+        677.83,
+        234.03
+      ],
+      "hard_negative": [
+        689.4382716049382,
+        239.19958847736623
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 196,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000194.npy",
+        "cache\\audit0_000195.npy",
+        "cache\\audit0_000196.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000196.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        351.29,
+        107.67
+      ],
+      "target_native": [
+        702.58,
+        215.34
+      ],
+      "hard_negative": [
+        664.6701388888888,
+        240.09027777777774
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 197,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000195.npy",
+        "cache\\audit0_000196.npy",
+        "cache\\audit0_000197.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000197.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        362.21,
+        100.105
+      ],
+      "target_native": [
+        724.42,
+        200.21
+      ],
+      "hard_negative": [
+        662.478947368421,
+        238.5035087719298
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 198,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000196.npy",
+        "cache\\audit0_000197.npy",
+        "cache\\audit0_000198.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000198.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        373.04,
+        95.075
+      ],
+      "target_native": [
+        746.08,
+        190.15
+      ],
+      "hard_negative": [
+        678.3544600938967,
+        220.95305164319248
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 199,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000197.npy",
+        "cache\\audit0_000198.npy",
+        "cache\\audit0_000199.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000199.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        382.015,
+        90.13
+      ],
+      "target_native": [
+        764.03,
+        180.26
+      ],
+      "hard_negative": [
+        676.25,
+        219.0
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 200,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000198.npy",
+        "cache\\audit0_000199.npy",
+        "cache\\audit0_000200.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000200.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        391.2,
+        88.1
+      ],
+      "target_native": [
+        782.4,
+        176.2
+      ],
+      "hard_negative": [
+        675.6666666666666,
+        219.42248062015503
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 201,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000199.npy",
+        "cache\\audit0_000200.npy",
+        "cache\\audit0_000201.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000201.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        399.295,
+        86.89
+      ],
+      "target_native": [
+        798.59,
+        173.78
+      ],
+      "hard_negative": [
+        655.5,
+        173.5
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 202,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000200.npy",
+        "cache\\audit0_000201.npy",
+        "cache\\audit0_000202.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000202.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        407.71,
+        85.91
+      ],
+      "target_native": [
+        815.42,
+        171.82
+      ],
+      "hard_negative": [
+        656.8557692307693,
+        178.43269230769232
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 203,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000201.npy",
+        "cache\\audit0_000202.npy",
+        "cache\\audit0_000203.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000203.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        414.765,
+        86.66
+      ],
+      "target_native": [
+        829.53,
+        173.32
+      ],
+      "hard_negative": [
+        668.4156171284635,
+        221.78883291351804
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 204,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000202.npy",
+        "cache\\audit0_000203.npy",
+        "cache\\audit0_000204.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000204.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        421.76,
+        87.36
+      ],
+      "target_native": [
+        843.52,
+        174.72
+      ],
+      "hard_negative": [
+        665.5051160960251,
+        222.93663911845726
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 205,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000203.npy",
+        "cache\\audit0_000204.npy",
+        "cache\\audit0_000205.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000205.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        429.39,
+        89.74
+      ],
+      "target_native": [
+        858.78,
+        179.48
+      ],
+      "hard_negative": [
+        660.6389277389277,
+        222.34708624708622
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 206,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000204.npy",
+        "cache\\audit0_000205.npy",
+        "cache\\audit0_000206.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000206.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        434.885,
+        92.78
+      ],
+      "target_native": [
+        869.77,
+        185.56
+      ],
+      "hard_negative": [
+        656.275641025641,
+        221.46646942800785
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 207,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000205.npy",
+        "cache\\audit0_000206.npy",
+        "cache\\audit0_000207.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000207.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        441.365,
+        95.815
+      ],
+      "target_native": [
+        882.73,
+        191.63
+      ],
+      "hard_negative": [
+        642.4971988795518,
+        186.90289449112979
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 208,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000206.npy",
+        "cache\\audit0_000207.npy",
+        "cache\\audit0_000208.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000208.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        445.74,
+        99.76
+      ],
+      "target_native": [
+        891.48,
+        199.52
+      ],
+      "hard_negative": [
+        643.6515151515151,
+        187.65151515151513
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 209,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000207.npy",
+        "cache\\audit0_000208.npy",
+        "cache\\audit0_000209.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000209.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        451.86,
+        103.67
+      ],
+      "target_native": [
+        903.72,
+        207.34
+      ],
+      "hard_negative": [
+        639.1140350877192,
+        185.0175438596491
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 210,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000208.npy",
+        "cache\\audit0_000209.npy",
+        "cache\\audit0_000210.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000210.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        454.97,
+        110.92
+      ],
+      "target_native": [
+        909.94,
+        221.84
+      ],
+      "hard_negative": [
+        637.3717948717948,
+        184.75641025641022
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 211,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000209.npy",
+        "cache\\audit0_000210.npy",
+        "cache\\audit0_000211.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000211.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        460.58,
+        113.995
+      ],
+      "target_native": [
+        921.16,
+        227.99
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 212,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000210.npy",
+        "cache\\audit0_000211.npy",
+        "cache\\audit0_000212.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000212.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        465.64,
+        119.825
+      ],
+      "target_native": [
+        931.28,
+        239.65
+      ],
+      "hard_negative": [
+        630.75,
+        185.25
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 221,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000219.npy",
+        "cache\\audit0_000220.npy",
+        "cache\\audit0_000221.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000221.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        452.905,
+        123.205
+      ],
+      "target_native": [
+        905.81,
+        246.41
+      ],
+      "hard_negative": [
+        123.35282651072124,
+        341.7733918128655
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 222,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000220.npy",
+        "cache\\audit0_000221.npy",
+        "cache\\audit0_000222.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000222.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        448.185,
+        122.29
+      ],
+      "target_native": [
+        896.37,
+        244.58
+      ],
+      "hard_negative": [
+        126.69527078565979,
+        339.7074752097635
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 223,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000221.npy",
+        "cache\\audit0_000222.npy",
+        "cache\\audit0_000223.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000223.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        442.94,
+        122.735
+      ],
+      "target_native": [
+        885.88,
+        245.47
+      ],
+      "hard_negative": [
+        130.86128803963197,
+        338.0435244161359
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 224,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000222.npy",
+        "cache\\audit0_000223.npy",
+        "cache\\audit0_000224.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000224.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        437.765,
+        124.235
+      ],
+      "target_native": [
+        875.53,
+        248.47
+      ],
+      "hard_negative": [
+        132.34484649122805,
+        335.3453947368421
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 225,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000223.npy",
+        "cache\\audit0_000224.npy",
+        "cache\\audit0_000225.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000225.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        432.03,
+        126.14
+      ],
+      "target_native": [
+        864.06,
+        252.28
+      ],
+      "hard_negative": [
+        133.36363636363637,
+        332.5440771349862
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 226,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000224.npy",
+        "cache\\audit0_000225.npy",
+        "cache\\audit0_000226.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000226.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        425.8,
+        130.565
+      ],
+      "target_native": [
+        851.6,
+        261.13
+      ],
+      "hard_negative": [
+        152.75,
+        320.75
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 227,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000225.npy",
+        "cache\\audit0_000226.npy",
+        "cache\\audit0_000227.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000227.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        419.84,
+        135.475
+      ],
+      "target_native": [
+        839.68,
+        270.95
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 228,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000226.npy",
+        "cache\\audit0_000227.npy",
+        "cache\\audit0_000228.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000228.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        413.55,
+        141.91
+      ],
+      "target_native": [
+        827.1,
+        283.82
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 229,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000227.npy",
+        "cache\\audit0_000228.npy",
+        "cache\\audit0_000229.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000229.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        406.77,
+        150.355
+      ],
+      "target_native": [
+        813.54,
+        300.71
+      ],
+      "hard_negative": [
+        110.1687370600414,
+        267.94151138716353
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 230,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000228.npy",
+        "cache\\audit0_000229.npy",
+        "cache\\audit0_000230.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000230.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        399.495,
+        159.395
+      ],
+      "target_native": [
+        798.99,
+        318.79
+      ],
+      "hard_negative": [
+        110.63938789088489,
+        270.55189620758483
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 231,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000229.npy",
+        "cache\\audit0_000230.npy",
+        "cache\\audit0_000231.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000231.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        391.3,
+        170.645
+      ],
+      "target_native": [
+        782.6,
+        341.29
+      ],
+      "hard_negative": [
+        124.82666666666665,
+        261.46
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 232,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000230.npy",
+        "cache\\audit0_000231.npy",
+        "cache\\audit0_000232.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000232.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        384.56,
+        183.39
+      ],
+      "target_native": [
+        769.12,
+        366.78
+      ],
+      "hard_negative": [
+        127.59523809523809,
+        262.5
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 233,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000231.npy",
+        "cache\\audit0_000232.npy",
+        "cache\\audit0_000233.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000233.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        376.51,
+        198.97
+      ],
+      "target_native": [
+        753.02,
+        397.94
+      ],
+      "hard_negative": [
+        134.22222222222223,
+        268.91975308641975
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 234,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000232.npy",
+        "cache\\audit0_000233.npy",
+        "cache\\audit0_000234.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000234.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        368.045,
+        217.265
+      ],
+      "target_native": [
+        736.09,
+        434.53
+      ],
+      "hard_negative": [
+        136.16666666666666,
+        268.0
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 235,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000233.npy",
+        "cache\\audit0_000234.npy",
+        "cache\\audit0_000235.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000235.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        359.52,
+        236.785
+      ],
+      "target_native": [
+        719.04,
+        473.57
+      ],
+      "hard_negative": [
+        142.5569105691057,
+        274.0284552845528
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 236,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000234.npy",
+        "cache\\audit0_000235.npy",
+        "cache\\audit0_000236.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000236.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        350.035,
+        259.91
+      ],
+      "target_native": [
+        700.07,
+        519.82
+      ],
+      "hard_negative": [
+        147.33333333333331,
+        278.4569892473118
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 237,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000235.npy",
+        "cache\\audit0_000236.npy",
+        "cache\\audit0_000237.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000237.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        340.02,
+        286.345
+      ],
+      "target_native": [
+        680.04,
+        572.69
+      ],
+      "hard_negative": [
+        152.22881355932202,
+        283.8163841807909
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 238,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000236.npy",
+        "cache\\audit0_000237.npy",
+        "cache\\audit0_000238.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000238.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        330.09,
+        315.45
+      ],
+      "target_native": [
+        660.18,
+        630.9
+      ],
+      "hard_negative": [
+        157.20289855072463,
+        288.8623188405797
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 239,
+      "split": "train",
+      "inputs": [
+        "cache\\audit0_000237.npy",
+        "cache\\audit0_000238.npy",
+        "cache\\audit0_000239.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000239.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        319.48,
+        348.17
+      ],
+      "target_native": [
+        638.96,
+        696.34
+      ],
+      "hard_negative": [
+        196.30263157894737,
+        282.10526315789474
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 245,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000243.npy",
+        "cache\\audit0_000244.npy",
+        "cache\\audit0_000245.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000245.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        275.45,
+        410.415
+      ],
+      "target_native": [
+        550.9,
+        820.83
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 246,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000244.npy",
+        "cache\\audit0_000245.npy",
+        "cache\\audit0_000246.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000246.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        289.555,
+        357.78
+      ],
+      "target_native": [
+        579.11,
+        715.56
+      ],
+      "hard_negative": [
+        145.75,
+        306.0
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 247,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000245.npy",
+        "cache\\audit0_000246.npy",
+        "cache\\audit0_000247.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000247.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        302.055,
+        310.715
+      ],
+      "target_native": [
+        604.11,
+        621.43
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 248,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000246.npy",
+        "cache\\audit0_000247.npy",
+        "cache\\audit0_000248.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000248.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        313.33,
+        268.93
+      ],
+      "target_native": [
+        626.66,
+        537.86
+      ],
+      "hard_negative": [
+        153.25,
+        328.64166666666665
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 249,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000247.npy",
+        "cache\\audit0_000248.npy",
+        "cache\\audit0_000249.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000249.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        323.75,
+        232.05
+      ],
+      "target_native": [
+        647.5,
+        464.1
+      ],
+      "hard_negative": [
+        152.57971014492753,
+        324.90579710144925
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 250,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000248.npy",
+        "cache\\audit0_000249.npy",
+        "cache\\audit0_000250.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000250.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        333.48,
+        199.765
+      ],
+      "target_native": [
+        666.96,
+        399.53
+      ],
+      "hard_negative": [
+        144.30555555555554,
+        337.27777777777777
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 251,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000249.npy",
+        "cache\\audit0_000250.npy",
+        "cache\\audit0_000251.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000251.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        342.395,
+        171.45
+      ],
+      "target_native": [
+        684.79,
+        342.9
+      ],
+      "hard_negative": [
+        135.83625730994152,
+        337.13391812865495
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 252,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000250.npy",
+        "cache\\audit0_000251.npy",
+        "cache\\audit0_000252.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000252.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        351.9,
+        146.085
+      ],
+      "target_native": [
+        703.8,
+        292.17
+      ],
+      "hard_negative": [
+        129.35530303030302,
+        335.36515151515147
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 253,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000251.npy",
+        "cache\\audit0_000252.npy",
+        "cache\\audit0_000253.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000253.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        358.855,
+        124.335
+      ],
+      "target_native": [
+        717.71,
+        248.67
+      ],
+      "hard_negative": [
+        81.4326710816777,
+        310.70198675496687
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 254,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000252.npy",
+        "cache\\audit0_000253.npy",
+        "cache\\audit0_000254.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000254.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        366.05,
+        105.12
+      ],
+      "target_native": [
+        732.1,
+        210.24
+      ],
+      "hard_negative": [
+        73.5025641025641,
+        314.3538461538462
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 255,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000253.npy",
+        "cache\\audit0_000254.npy",
+        "cache\\audit0_000255.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000255.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        373.07,
+        88.42
+      ],
+      "target_native": [
+        746.14,
+        176.84
+      ],
+      "hard_negative": [
+        66.7,
+        317.48333333333335
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 256,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000254.npy",
+        "cache\\audit0_000255.npy",
+        "cache\\audit0_000256.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000256.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        379.68,
+        74.035
+      ],
+      "target_native": [
+        759.36,
+        148.07
+      ],
+      "hard_negative": [
+        60.67619047619047,
+        320.92857142857144
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 257,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000255.npy",
+        "cache\\audit0_000256.npy",
+        "cache\\audit0_000257.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000257.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        385.515,
+        62.74
+      ],
+      "target_native": [
+        771.03,
+        125.48
+      ],
+      "hard_negative": [
+        57.78086419753087,
+        325.01851851851853
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 258,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000256.npy",
+        "cache\\audit0_000257.npy",
+        "cache\\audit0_000258.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000258.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        390.805,
+        52.78
+      ],
+      "target_native": [
+        781.61,
+        105.56
+      ],
+      "hard_negative": [
+        52.57111692844676,
+        332.1575043630017
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 259,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000257.npy",
+        "cache\\audit0_000258.npy",
+        "cache\\audit0_000259.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000259.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        395.865,
+        43.935
+      ],
+      "target_native": [
+        791.73,
+        87.87
+      ],
+      "hard_negative": [
+        47.06677181913775,
+        340.49369085173504
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 260,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000258.npy",
+        "cache\\audit0_000259.npy",
+        "cache\\audit0_000260.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000260.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        400.485,
+        37.455
+      ],
+      "target_native": [
+        800.97,
+        74.91
+      ],
+      "hard_negative": [
+        41.34475465313029,
+        347.6734348561759
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 261,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000259.npy",
+        "cache\\audit0_000260.npy",
+        "cache\\audit0_000261.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000261.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        405.51,
+        29.585
+      ],
+      "target_native": [
+        811.02,
+        59.17
+      ],
+      "hard_negative": [
+        43.375,
+        349.525
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 262,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000260.npy",
+        "cache\\audit0_000261.npy",
+        "cache\\audit0_000262.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000262.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        410.17,
+        27.27
+      ],
+      "target_native": [
+        820.34,
+        54.54
+      ],
+      "hard_negative": [
+        95.17175572519083,
+        314.0209923664122
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 263,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000261.npy",
+        "cache\\audit0_000262.npy",
+        "cache\\audit0_000263.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000263.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        413.94,
+        25.125
+      ],
+      "target_native": [
+        827.88,
+        50.25
+      ],
+      "hard_negative": [
+        95.78651685393258,
+        300.84082397003743
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 264,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000262.npy",
+        "cache\\audit0_000263.npy",
+        "cache\\audit0_000264.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000264.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        416.84,
+        24.32
+      ],
+      "target_native": [
+        833.68,
+        48.64
+      ],
+      "hard_negative": [
+        93.09375,
+        300.85416666666663
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 265,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000263.npy",
+        "cache\\audit0_000264.npy",
+        "cache\\audit0_000265.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000265.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        420.845,
+        23.955
+      ],
+      "target_native": [
+        841.69,
+        47.91
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 266,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000264.npy",
+        "cache\\audit0_000265.npy",
+        "cache\\audit0_000266.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000266.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        423.98,
+        24.055
+      ],
+      "target_native": [
+        847.96,
+        48.11
+      ],
+      "hard_negative": [
+        84.4047619047619,
+        298.5
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 267,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000265.npy",
+        "cache\\audit0_000266.npy",
+        "cache\\audit0_000267.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000267.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        427.385,
+        25.21
+      ],
+      "target_native": [
+        854.77,
+        50.42
+      ],
+      "hard_negative": [
+        81.81635802469135,
+        298.28472222222223
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 268,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000266.npy",
+        "cache\\audit0_000267.npy",
+        "cache\\audit0_000268.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000268.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        430.435,
+        26.91
+      ],
+      "target_native": [
+        860.87,
+        53.82
+      ],
+      "hard_negative": [
+        80.5,
+        296.0
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 269,
+      "split": "validation",
+      "inputs": [
+        "cache\\audit0_000267.npy",
+        "cache\\audit0_000268.npy",
+        "cache\\audit0_000269.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000269.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        433.385,
+        28.905
+      ],
+      "target_native": [
+        866.77,
+        57.81
+      ],
+      "hard_negative": [
+        75.04924242424242,
+        304.0719696969697
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 275,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000273.npy",
+        "cache\\audit0_000274.npy",
+        "cache\\audit0_000275.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000275.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        446.79,
+        58.75
+      ],
+      "target_native": [
+        893.58,
+        117.5
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 278,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000276.npy",
+        "cache\\audit0_000277.npy",
+        "cache\\audit0_000278.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000278.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        452.2,
+        77.79
+      ],
+      "target_native": [
+        904.4,
+        155.58
+      ],
+      "hard_negative": [
+        178.19114219114218,
+        515.530303030303
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 282,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000280.npy",
+        "cache\\audit0_000281.npy",
+        "cache\\audit0_000282.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000282.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        477.755,
+        121.665
+      ],
+      "target_native": [
+        955.51,
+        243.33
+      ],
+      "hard_negative": [
+        175.8578431372549,
+        501.91053921568624
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 284,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000282.npy",
+        "cache\\audit0_000283.npy",
+        "cache\\audit0_000284.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000284.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        512.625,
+        165.755
+      ],
+      "target_native": [
+        1025.25,
+        331.51
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 285,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000283.npy",
+        "cache\\audit0_000284.npy",
+        "cache\\audit0_000285.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000285.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        532.045,
+        190.78
+      ],
+      "target_native": [
+        1064.09,
+        381.56
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 286,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000284.npy",
+        "cache\\audit0_000285.npy",
+        "cache\\audit0_000286.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000286.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        552.96,
+        219.75
+      ],
+      "target_native": [
+        1105.92,
+        439.5
+      ],
+      "hard_negative": [
+        182.46428571428572,
+        519.2142857142857
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 287,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000285.npy",
+        "cache\\audit0_000286.npy",
+        "cache\\audit0_000287.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000287.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        575.705,
+        252.805
+      ],
+      "target_native": [
+        1151.41,
+        505.61
+      ],
+      "hard_negative": [
+        183.25,
+        519.0
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 288,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000286.npy",
+        "cache\\audit0_000287.npy",
+        "cache\\audit0_000288.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000288.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        597.56,
+        271.22
+      ],
+      "target_native": [
+        1195.12,
+        542.44
+      ],
+      "hard_negative": [
+        185.78125,
+        515.78125
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 289,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000287.npy",
+        "cache\\audit0_000288.npy",
+        "cache\\audit0_000289.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000289.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        618.51,
+        270.305
+      ],
+      "target_native": [
+        1237.02,
+        540.61
+      ],
+      "hard_negative": [
+        175.87765957446808,
+        505.1968085106383
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 290,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000288.npy",
+        "cache\\audit0_000289.npy",
+        "cache\\audit0_000290.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000290.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        641.675,
+        271.23
+      ],
+      "target_native": [
+        1283.35,
+        542.46
+      ],
+      "hard_negative": [
+        173.25,
+        502.25
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 291,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000289.npy",
+        "cache\\audit0_000290.npy",
+        "cache\\audit0_000291.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000291.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        667.34,
+        273.775
+      ],
+      "target_native": [
+        1334.68,
+        547.55
+      ],
+      "hard_negative": null
+    },
+    {
+      "source": "audit0",
+      "frame": 292,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000290.npy",
+        "cache\\audit0_000291.npy",
+        "cache\\audit0_000292.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000292.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        695.67,
+        278.405
+      ],
+      "target_native": [
+        1391.34,
+        556.81
+      ],
+      "hard_negative": [
+        163.22727272727272,
+        498.04545454545456
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 293,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000291.npy",
+        "cache\\audit0_000292.npy",
+        "cache\\audit0_000293.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000293.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        727.5,
+        285.47
+      ],
+      "target_native": [
+        1455.0,
+        570.94
+      ],
+      "hard_negative": [
+        176.5,
+        505.0
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 297,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000295.npy",
+        "cache\\audit0_000296.npy",
+        "cache\\audit0_000297.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000297.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        771.955,
+        259.075
+      ],
+      "target_native": [
+        1543.91,
+        518.15
+      ],
+      "hard_negative": [
+        179.61263736263737,
+        503.73717948717945
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 298,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000296.npy",
+        "cache\\audit0_000297.npy",
+        "cache\\audit0_000298.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000298.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        743.475,
+        228.395
+      ],
+      "target_native": [
+        1486.95,
+        456.79
+      ],
+      "hard_negative": [
+        180.50493096646943,
+        503.06410256410254
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 299,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000297.npy",
+        "cache\\audit0_000298.npy",
+        "cache\\audit0_000299.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000299.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        717.345,
+        201.45
+      ],
+      "target_native": [
+        1434.69,
+        402.9
+      ],
+      "hard_negative": [
+        181.54277286135692,
+        502.5678466076696
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 300,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000298.npy",
+        "cache\\audit0_000299.npy",
+        "cache\\audit0_000300.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000300.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        693.795,
+        178.09
+      ],
+      "target_native": [
+        1387.59,
+        356.18
+      ],
+      "hard_negative": [
+        181.125,
+        501.30232558139534
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 301,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000299.npy",
+        "cache\\audit0_000300.npy",
+        "cache\\audit0_000301.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000301.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        671.775,
+        157.645
+      ],
+      "target_native": [
+        1343.55,
+        315.29
+      ],
+      "hard_negative": [
+        180.42349726775953,
+        498.8606557377049
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 302,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000300.npy",
+        "cache\\audit0_000301.npy",
+        "cache\\audit0_000302.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000302.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        651.8,
+        140.59
+      ],
+      "target_native": [
+        1303.6,
+        281.18
+      ],
+      "hard_negative": [
+        182.3630952380952,
+        500.4107142857143
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 303,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000301.npy",
+        "cache\\audit0_000302.npy",
+        "cache\\audit0_000303.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000303.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        634.015,
+        125.805
+      ],
+      "target_native": [
+        1268.03,
+        251.61
+      ],
+      "hard_negative": [
+        177.82945736434107,
+        494.4728682170542
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 304,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000302.npy",
+        "cache\\audit0_000303.npy",
+        "cache\\audit0_000304.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000304.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        617.36,
+        113.03
+      ],
+      "target_native": [
+        1234.72,
+        226.06
+      ],
+      "hard_negative": [
+        179.78148148148148,
+        494.4407407407407
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 305,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000303.npy",
+        "cache\\audit0_000304.npy",
+        "cache\\audit0_000305.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000305.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        601.95,
+        102.635
+      ],
+      "target_native": [
+        1203.9,
+        205.27
+      ],
+      "hard_negative": [
+        179.94642857142858,
+        493.67559523809524
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 306,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000304.npy",
+        "cache\\audit0_000305.npy",
+        "cache\\audit0_000306.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000306.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        587.55,
+        93.84
+      ],
+      "target_native": [
+        1175.1,
+        187.68
+      ],
+      "hard_negative": [
+        181.1010101010101,
+        492.6969696969697
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 307,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000305.npy",
+        "cache\\audit0_000306.npy",
+        "cache\\audit0_000307.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000307.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        574.065,
+        87.345
+      ],
+      "target_native": [
+        1148.13,
+        174.69
+      ],
+      "hard_negative": [
+        170.3409090909091,
+        490.94507575757575
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 308,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000306.npy",
+        "cache\\audit0_000307.npy",
+        "cache\\audit0_000308.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000308.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        562.235,
+        81.505
+      ],
+      "target_native": [
+        1124.47,
+        163.01
+      ],
+      "hard_negative": [
+        169.38505747126436,
+        489.56321839080454
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 309,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000307.npy",
+        "cache\\audit0_000308.npy",
+        "cache\\audit0_000309.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000309.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        550.685,
+        76.805
+      ],
+      "target_native": [
+        1101.37,
+        153.61
+      ],
+      "hard_negative": [
+        172.02845528455282,
+        488.2642276422764
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 310,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000308.npy",
+        "cache\\audit0_000309.npy",
+        "cache\\audit0_000310.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000310.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        540.68,
+        73.365
+      ],
+      "target_native": [
+        1081.36,
+        146.73
+      ],
+      "hard_negative": [
+        174.87777777777777,
+        485.25555555555553
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 311,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000309.npy",
+        "cache\\audit0_000310.npy",
+        "cache\\audit0_000311.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000311.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        530.345,
+        70.995
+      ],
+      "target_native": [
+        1060.69,
+        141.99
+      ],
+      "hard_negative": [
+        192.80805687203792,
+        495.46583728278034
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 312,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000310.npy",
+        "cache\\audit0_000311.npy",
+        "cache\\audit0_000312.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000312.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        520.95,
+        69.255
+      ],
+      "target_native": [
+        1041.9,
+        138.51
+      ],
+      "hard_negative": [
+        195.36206023791445,
+        495.2337382941027
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 313,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000311.npy",
+        "cache\\audit0_000312.npy",
+        "cache\\audit0_000313.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000313.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        512.725,
+        69.34
+      ],
+      "target_native": [
+        1025.45,
+        138.68
+      ],
+      "hard_negative": [
+        200.30495790458372,
+        497.8308387901465
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 314,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000312.npy",
+        "cache\\audit0_000313.npy",
+        "cache\\audit0_000314.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000314.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        504.695,
+        70.065
+      ],
+      "target_native": [
+        1009.39,
+        140.13
+      ],
+      "hard_negative": [
+        203.0083728278041,
+        501.3772511848341
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 317,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000315.npy",
+        "cache\\audit0_000316.npy",
+        "cache\\audit0_000317.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000317.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        483.26,
+        74.955
+      ],
+      "target_native": [
+        966.52,
+        149.91
+      ],
+      "hard_negative": [
+        185.3552827380952,
+        510.5360863095238
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 318,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000316.npy",
+        "cache\\audit0_000317.npy",
+        "cache\\audit0_000318.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000318.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        477.035,
+        78.095
+      ],
+      "target_native": [
+        954.07,
+        156.19
+      ],
+      "hard_negative": [
+        221.95411134404844,
+        504.29804332634524
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 319,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000317.npy",
+        "cache\\audit0_000318.npy",
+        "cache\\audit0_000319.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000319.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        471.13,
+        81.625
+      ],
+      "target_native": [
+        942.26,
+        163.25
+      ],
+      "hard_negative": [
+        227.50569568755085,
+        502.7533224844046
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 320,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000318.npy",
+        "cache\\audit0_000319.npy",
+        "cache\\audit0_000320.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000320.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        465.78,
+        85.615
+      ],
+      "target_native": [
+        931.56,
+        171.23
+      ],
+      "hard_negative": [
+        232.1060606060606,
+        501.6349431818182
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 321,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000319.npy",
+        "cache\\audit0_000320.npy",
+        "cache\\audit0_000321.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000321.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        460.09,
+        89.78
+      ],
+      "target_native": [
+        920.18,
+        179.56
+      ],
+      "hard_negative": [
+        235.82765868011768,
+        500.11790668348044
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 325,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000323.npy",
+        "cache\\audit0_000324.npy",
+        "cache\\audit0_000325.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000325.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        447.77,
+        115.75
+      ],
+      "target_native": [
+        895.54,
+        231.5
+      ],
+      "hard_negative": [
+        245.52380952380952,
+        491.66931216931215
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 326,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000324.npy",
+        "cache\\audit0_000325.npy",
+        "cache\\audit0_000326.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000326.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        448.63,
+        128.98
+      ],
+      "target_native": [
+        897.26,
+        257.96
+      ],
+      "hard_negative": [
+        246.4468085106383,
+        491.1170212765957
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 327,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000325.npy",
+        "cache\\audit0_000326.npy",
+        "cache\\audit0_000327.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000327.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        449.955,
+        142.76
+      ],
+      "target_native": [
+        899.91,
+        285.52
+      ],
+      "hard_negative": [
+        248.34848484848482,
+        486.15151515151507
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 328,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000326.npy",
+        "cache\\audit0_000327.npy",
+        "cache\\audit0_000328.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000328.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        450.335,
+        158.24
+      ],
+      "target_native": [
+        900.67,
+        316.48
+      ],
+      "hard_negative": [
+        248.30769230769232,
+        493.78205128205127
+      ]
+    },
+    {
+      "source": "audit0",
+      "frame": 329,
+      "split": "test",
+      "inputs": [
+        "cache\\audit0_000327.npy",
+        "cache\\audit0_000328.npy",
+        "cache\\audit0_000329.npy"
+      ],
+      "raw_frame": "data\\validation\\gold_ball_audit\\frames\\000329.png",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "target": [
+        451.79,
+        177.515
+      ],
+      "target_native": [
+        903.58,
+        355.03
+      ],
+      "hard_negative": [
+        250.96228070175437,
+        492.87894736842105
+      ]
+    }
+  ],
+  "split_policy": "Chronological blocks: train through 239, validation 245-269, test 275 onward. Three-frame causal inputs, no shared input frames. External audit never used to train/select thresholds.",
+  "limitation": "Seed annotations are approximate and from one court/short clip. These splits do not demonstrate cross-camera generalization."
+}

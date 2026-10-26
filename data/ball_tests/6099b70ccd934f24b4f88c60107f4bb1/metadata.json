@@ -1,0 +1,36 @@
+{
+  "id": "6099b70ccd934f24b4f88c60107f4bb1",
+  "created_at": "2026-10-26T00:05:37.911812+00:00",
+  "status": "completed",
+  "error": null,
+  "video": "C:\\Users\\willi\\Documents\\PBHawkeye\\data\\raw_videos\\2025 Louisiana Amateur Pickleball Championships 4.5 Mens Doubles - Lee Chris vs Tyler Luke.mp4",
+  "video_name": "2025 Louisiana Amateur Pickleball Championships 4.5 Mens Doubles - Lee Chris vs Tyler Luke.mp4",
+  "video_signature": {
+    "name": "2025 Louisiana Amateur Pickleball Championships 4.5 Mens Doubles - Lee Chris vs Tyler Luke.mp4",
+    "size_bytes": 223740308,
+    "mtime_ns": 1792967999797960800
+  },
+  "fps": 59.94005994005994,
+  "width": 1920,
+  "height": 1080,
+  "frame_start": 0,
+  "frame_end_inclusive": 598,
+  "split": "train",
+  "ball_color": "optic_yellow",
+  "model_version": "ball_v4",
+  "model_sha256": "1114a6c0cd92fcc756ffc0cba126babe91a8df9e6f29b3866ccea083389125cf",
+  "calibration_sha256": "4d2a5a757a1919b70a8b2203021892310f2fa432725dded6a3d85d45c9ba5541",
+  "processed": 599,
+  "total": 599,
+  "reviewed": 599,
+  "classical_warmup_frames": 0,
+  "source_sha256": {
+    "src/detector.py": "ea1100c34259b6a2fa349a66ff2e5ef10c9c78d35b40f9b0c40d9f224f550840",
+    "src/ball_model.py": "27ec2a5f34a40f1c575704a63f7eefd14b5bd70c6e4b2d301e7eb8f9a3fd9a44",
+    "src/court_motion.py": "d5754949542be8de0368ac9eacb2c4e5566a8ec3a213a7d49ed2e4fe5a8eafd2",
+    "src/web/ball_testing.py": "62af323f24cc1437cc3b2c5b5e778e1b57dac6215505b89174a7a4f50bdc2a81"
+  },
+  "elapsed_seconds": 142.78855610010214,
+  "neural_threshold": 0.47325149178504944,
+  "completed_at": "2026-10-26T00:08:00.754724+00:00"
+}

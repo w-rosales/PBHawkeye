@@ -1,0 +1,13 @@
+{
+  "source_video": "data/raw_videos/Test PB Video.MOV",
+  "source_frame_indices": [0],
+  "preparation": "Opening decoded video frame, resized with INTER_AREA to 960x540, JPEG quality 95. A single frame preserves geometry before the recording's later camera zoom.",
+  "source_image_size": [1920, 1080],
+  "image_size": [960, 540],
+  "annotation": "Independent visual measurements and local painted-line fits; approximate line centers. Ordered far-left, far-right, near-right, near-left.",
+  "corners_pixel": [[402.6, 219.5], [562.9, 213.7], [839.7, 478.1], [93.5, 491.7]],
+  "landmarks": [
+    {"name": "near kitchen and service-center intersection", "court_feet": [10.0, 15.0], "pixel": [477.5, 295.5]},
+    {"name": "far baseline and service-center intersection", "court_feet": [10.0, 44.0], "pixel": [480.0, 216.5]}
+  ]
+}

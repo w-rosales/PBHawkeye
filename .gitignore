@@ -1,0 +1,79 @@
+# Python, test output and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+*.log
+*.tmp
+
+# Keep source-control backups small: footage, PNG frame collections, NumPy
+# caches, generated reports and test artifacts stay on the local machine.
+/data/**
+
+# Small trained models and their evaluation/training metadata
+!/data/models/
+!/data/models/*/
+!/data/models/*/*.pt
+!/data/models/*/*.json
+
+# Court calibration and source recording identities
+!/data/calibration/
+!/data/calibration/*.json
+
+# Human review work, prediction records and frozen inference provenance
+!/data/ball_tests/
+!/data/ball_tests/*/
+!/data/ball_tests/*/*.json
+!/data/ball_tests/*/model.pt
+/data/ball_tests/*.tmp/
+
+# Prepared dataset manifests and immutable exported annotation snapshots
+!/data/learning/
+!/data/learning/*/
+!/data/learning/*/manifest.json
+!/data/learning/reviews/*/
+!/data/learning/reviews/*/manual_labels.json
+!/data/learning/reviews/*/metadata.json
+!/data/learning/reviews/*/provenance.json
+/data/learning/reviews/*.tmp/
+
+# Independent reference annotations; raw frame images remain local
+!/data/validation/
+!/data/validation/*/
+!/data/validation/*/manual_labels.json
+!/data/validation/*/metadata.json
+!/data/validation/*/manual_events.json
+
+# Never accidentally commit video recordings anywhere in the project
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.mkv
+*.webm
+
+# Atomic checkpoint/data writes must never become versioned artifacts.
+*.tmp.*

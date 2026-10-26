@@ -1,0 +1,9 @@
+{
+  "video": "data\\raw_videos\\Gold_Medal_Match_Punta_Gorda.mp4",
+  "fps": 29.97,
+  "width": 1920,
+  "height": 1080,
+  "frame_start": 420,
+  "frame_end_inclusive": 449,
+  "purpose": "External temporal-model holdout. Never used for training, checkpoint selection or score-threshold selection."
+}

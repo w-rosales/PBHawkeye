@@ -1,0 +1,422 @@
+{
+  "method": "Raw images inspected individually; hand-selected ball regions with optional local RGB center snapping. No production detector coordinates/predictions used as references. Raw-crop overlay review required. Approximate reference centers are not subpixel ground truth; ambiguous frames excluded from strict scoring.",
+  "labels": [
+    {
+      "frame": 420,
+      "visibility": "visible",
+      "x": 692.89,
+      "y": 257.89,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        692,
+        257
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 421,
+      "visibility": "visible",
+      "x": 712.0,
+      "y": 236.96,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        712,
+        237
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 422,
+      "visibility": "visible",
+      "x": 730.03,
+      "y": 218.75,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        730,
+        218
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 423,
+      "visibility": "visible",
+      "x": 746.93,
+      "y": 205.59,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        748,
+        206
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 424,
+      "visibility": "visible",
+      "x": 763.15,
+      "y": 194.23,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        762,
+        193
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 425,
+      "visibility": "visible",
+      "x": 778.1,
+      "y": 185.18,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        777,
+        184
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 426,
+      "visibility": "visible",
+      "x": 792.6,
+      "y": 177.98,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        792,
+        178
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 427,
+      "visibility": "visible",
+      "x": 805.03,
+      "y": 173.4,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        806,
+        176
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 428,
+      "visibility": "visible",
+      "x": 818.83,
+      "y": 170.97,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        819,
+        170
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 429,
+      "visibility": "visible",
+      "x": 829.57,
+      "y": 170.57,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        829,
+        169
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 430,
+      "visibility": "visible",
+      "x": 840.56,
+      "y": 171.08,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        841,
+        170
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 431,
+      "visibility": "visible",
+      "x": 851.47,
+      "y": 173.38,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        851,
+        173
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 432,
+      "visibility": "visible",
+      "x": 860.27,
+      "y": 177.52,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        861,
+        177
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 433,
+      "visibility": "visible",
+      "x": 869.41,
+      "y": 182.15,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        870,
+        181
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 434,
+      "visibility": "visible",
+      "x": 876.6,
+      "y": 187.89,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        878,
+        188
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 435,
+      "visibility": "visible",
+      "x": 885.78,
+      "y": 195.27,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        886,
+        196
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 436,
+      "visibility": "visible",
+      "x": 893.06,
+      "y": 203.15,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        893,
+        204
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 437,
+      "visibility": "visible",
+      "x": 899.89,
+      "y": 210.9,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        901,
+        212
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 438,
+      "visibility": "visible",
+      "x": 907.96,
+      "y": 221.8,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        907,
+        222
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 439,
+      "visibility": "visible",
+      "x": 913.98,
+      "y": 231.5,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        916,
+        233
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 440,
+      "visibility": "visible",
+      "x": 919.45,
+      "y": 242.65,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        920,
+        242
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 441,
+      "visibility": "visible",
+      "x": 925.08,
+      "y": 252.58,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        925,
+        253
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 442,
+      "visibility": "partial",
+      "x": 930,
+      "y": 267,
+      "uncertainty_px": 8,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        930,
+        267
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 443,
+      "visibility": "partial",
+      "x": 943,
+      "y": 272,
+      "uncertainty_px": 8,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        943,
+        272
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 444,
+      "visibility": "visible",
+      "x": 943.91,
+      "y": 287.73,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        944,
+        288
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 445,
+      "visibility": "visible",
+      "x": 951.95,
+      "y": 299.51,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        953,
+        300
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 446,
+      "visibility": "partial",
+      "x": 962,
+      "y": 314,
+      "uncertainty_px": 8,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        962,
+        314
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 447,
+      "visibility": "partial",
+      "x": 968.5,
+      "y": 323.35,
+      "uncertainty_px": 8,
+      "notes": "Ball partly overlaps leg/court line; excluded from precision scoring.",
+      "manual_click": [
+        965,
+        328
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 448,
+      "visibility": "visible",
+      "x": 979.42,
+      "y": 335.63,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        978,
+        337
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 449,
+      "visibility": "visible",
+      "x": 987.75,
+      "y": 350.32,
+      "uncertainty_px": 3,
+      "notes": "Independent later-clip reference, never used to train or select threshold.",
+      "manual_click": [
+        987,
+        352
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    }
+  ]
+}

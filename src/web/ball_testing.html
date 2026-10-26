@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ball Tracking Test · PickleTrack</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#0b111c;color:#e7edf7}*{box-sizing:border-box}body{margin:0}header{background:#141e2c;padding:18px 26px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #304157}h1{font-size:23px;margin:0}h2{font-size:18px;margin:0 0 14px}h3{font-size:15px;margin:0 0 9px}p{line-height:1.55;color:#bdcadd}a{color:#82dcf1}main{max-width:1500px;margin:auto;padding:22px}.layout{display:grid;grid-template-columns:290px minmax(0,1fr);gap:20px}.card{background:#141e2c;border:1px solid #304157;border-radius:12px;padding:18px;margin-bottom:18px}label{display:block;margin:12px 0 5px;color:#c5d2e4;font-size:14px}input,select,textarea,button{font:inherit;border:1px solid #48617f;border-radius:6px;background:#1d2c40;color:#f0f5ff;padding:9px}select,input,textarea{width:100%}button,a.button{cursor:pointer;display:inline-block}button:hover,a.button:hover{background:#2d435e}button:disabled{opacity:.4;cursor:default}.primary{background:#145e72;border-color:#48c3db;font-weight:650}.row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.row>input{width:100px}.muted{font-size:13px;color:#9eb1ca}.small{font-size:12px}#error{border:1px solid #f19d79;background:#382820;color:#ffd9bc;padding:13px;border-radius:8px;white-space:pre-wrap;margin-bottom:14px}#status{color:#86e9bf;min-height:24px}canvas{display:block;max-width:100%;height:auto;background:#070c13;border:1px solid #40536d;border-radius:6px}#reviewCanvas{cursor:crosshair;width:100%}.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}.compare canvas{width:100%}.bar{margin:14px 0}#frameRange{flex:1;width:150px}#metrics{line-height:1.7}.badge{background:#203952;padding:4px 9px;border-radius:20px;font-size:12px}#magnifier{width:220px;max-width:100%}progress{width:100%;height:15px}textarea{height:65px;resize:vertical}[hidden]{display:none!important}.full{width:100%}#reviewHeading{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}#legend{color:#8aefbb}.purpose{color:#ffd99a}.session-links a{margin-right:12px}.spaced{margin-top:12px}@media(max-width:850px){.layout{grid-template-columns:1fr}.compare{grid-template-columns:1fr}header{padding:14px}main{padding:14px}}@media(min-width:851px){aside{position:sticky;top:15px;align-self:start}}
+#magnifier{width:100%;border:2px solid #82dcf1;image-rendering:pixelated}
+.annotation-workspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,400px);gap:16px;align-items:start}
+.aim-panel{background:#0b1421;border:1px solid #40536d;border-radius:8px;padding:14px;position:sticky;top:16px}
+.aim-panel label{margin-top:10px}.aim-panel select{width:auto}.aim-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+kbd{background:#26364d;border:1px solid #566b86;border-radius:4px;padding:1px 5px;color:#eef6ff}
+@media(max-width:1100px){.annotation-workspace{grid-template-columns:1fr}.aim-panel{position:static;max-width:520px}}
+
+summary{cursor:pointer}summary h2{margin:0}.review-toolbar{background:#0c1522;border:1px solid #40536d;border-radius:8px;padding:10px 12px;margin:12px 0}.review-toolbar .bar{margin:0 0 8px}.review-toolbar label{margin:0}.review-toolbar select{width:auto;max-width:230px}.label-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:12px}.label-grid button{display:flex;justify-content:space-between;gap:6px;text-align:left;font-size:14px}.label-grid button:last-child{grid-column:1 / -1}.quick-navigation{display:flex;gap:6px}.quick-navigation button{flex:1;font-size:12px;padding:8px 5px}.key-help{margin-top:12px}.keypad-guide{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:10px}.keypad-guide span{border:1px solid #40536d;padding:7px 4px;border-radius:5px;font-size:12px}.keypad-guide kbd{display:block;width:max-content;margin-bottom:5px}.focus-view .layout{grid-template-columns:1fr}.focus-view aside{display:none}.focus-view main{max-width:1500px}.focus-view .annotation-workspace{grid-template-columns:minmax(0,1fr) minmax(300px,430px)}.focus-view #description{display:none}.focus-view #reviewHeading h2{font-size:16px}button:focus-visible,canvas:focus-visible{outline:2px solid #82dcf1;outline-offset:3px}@media(max-width:850px){.focus-view .annotation-workspace{grid-template-columns:1fr}}
+</style></head><body>
+<header><div><h1>Ball Tracking Test</h1><span class="muted">Review short clips and save examples for local model training</span></div><a href="/">Match Analysis</a></header>
+<main><div id="error" role="alert" hidden></div><div class="layout"><aside>
+<section class="card"><details id="newClip" open><summary><h2 style="display:inline">New test clip</h2></summary><form id="testForm">
+<label for="video">Recording</label><select id="video" required><option value="">Select a recording</option></select>
+<label for="start">Start time (seconds)</label><input id="start" type="number" min="0" step="0.1" value="30" required>
+<label for="duration">Clip length (seconds)</label><input id="duration" type="number" min="0.2" max="10" step="0.1" value="3" required>
+<label for="split">Use this clip for</label><select id="split"><option value="train">Training — teach the model</option><option value="validation">Validation — choose model/settings</option><option value="test">Final test — measure improvement</option></select>
+<p class="muted">Purpose stays fixed. Overlapping footage cannot be assigned to different purposes. Start with a 3-second clip; both trackers process every frame.</p>
+<label for="color">Ball color</label><select id="color"><option value="optic_yellow">Optic yellow</option><option value="neon_green">Neon green</option><option value="orange">Orange</option><option value="white">White</option></select>
+<button id="create" class="primary full spaced" type="submit">Prepare comparison</button></form>
+<p class="muted">Confirm the recording's court in <a href="/">Match Analysis</a> first. This runs the existing tracker and experimental ball model locally; it may take longer than the clip.</p>
+<button id="stop" class="full" hidden>Stop preparing</button></details></section>
+<section class="card"><h2>Saved reviews</h2><label for="sessions">Reopen a review</label><select id="sessions"><option value="">Select a saved review</option></select><button id="refresh" class="spaced">Refresh list</button><p class="muted">Corrections are saved on this computer. Reopening a review restores them.</p></section>
+<section class="card"><h2>Learning progress</h2><p id="collectionStatus" class="muted">Loading saved review totals...</p><p id="learningStatus" class="muted">Reviewing collects examples. Exporting saves a dataset snapshot. A separate training run is needed to change the model.</p><div id="learningCounts" class="muted"></div><button id="export" class="primary full spaced" disabled>Export reviewed dataset</button><p id="exportStatus" role="status" class="muted"></p><p><a id="download" href="#">Download labels and edit history</a></p><p class="muted">The current trainer uses visible ball centers. Outside-frame examples already test false detections; learning from those examples still needs trainer support. Hidden, partial and unsure labels remain saved.</p></section>
+</aside><div>
+<section class="card"><div id="reviewHeading"><h2 id="title">Choose a short test clip</h2><span id="purpose" class="badge" hidden></span></div><p id="description">Pick a recording and time range, or reopen a saved review. You will review the original frames and can compare both trackers.</p><progress id="progress" value="0" max="1" hidden></progress><div id="status" role="status" aria-live="polite"></div></section>
+<div id="review" hidden>
+<section class="card"><div class="row"><h2>1. Review the original frame</h2><span id="labelStatus" class="badge">Unreviewed</span></div><p class="muted">Click the ball once, then use the arrow keys to center it in the magnified view. Press Enter to save and advance. The next frame opens at the same position; carried positions remain previews until confirmed.</p>
+<div class="review-toolbar"><div class="row bar"><button id="previous">← Previous</button><input id="frameRange" type="range" min="0" max="0" value="0" aria-label="Review frame"><button id="next">Next →</button><button id="unreviewed">Next unreviewed <kbd>Num .</kbd></button></div><div id="frameInfo" class="muted"></div><div class="row"><label for="afterLabel">After labeling</label><select id="afterLabel"><option value="next">Save + next frame</option><option value="unreviewed">Save + next unreviewed</option><option value="stay">Save + stay here</option></select><button id="focusToggle" type="button" aria-pressed="false">Focus view</button></div></div><div class="annotation-workspace"><div><canvas id="reviewCanvas" width="960" height="540" tabindex="0" aria-label="Original video frame. Click the ball center."></canvas><p class="muted">Click once to locate the ball. The red preview position carries into the next frame. Green marks an existing saved reference.</p></div>
+<div class="aim-panel"><h3>Fine position</h3><canvas id="magnifier" width="480" height="360" tabindex="0" aria-label="Magnified ball view with a red center target"></canvas>
+<p id="aimStatus" class="muted" role="status">Click the ball once to start.</p>
+<div id="aiSuggestionBox" style="margin:10px 0;padding:10px;background:#06232e;border:1px solid #00b4d8;border-radius:6px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+    <strong style="color:#00e5ff;font-size:13px">🤖 AI Model Suggestion:</strong>
+    <label style="cursor:pointer;font-size:12px;margin:0;color:#90e0ef"><input id="showAiSuggestion" type="checkbox" checked style="width:auto;vertical-align:middle;margin-right:4px">Show on image</label>
+  </div>
+  <div id="aiSuggestionText" class="small muted" style="color:#caf0f8;margin-bottom:8px">Analyzing frame...</div>
+  <div class="row" style="gap:6px">
+    <button id="btnAcceptSuggestion" type="button" class="primary" style="flex:1;background:#0077b6;border-color:#00e5ff;font-size:12px;padding:7px 5px" title="Accept AI Suggested Ball and Advance (A)">✨ Accept Suggestion <kbd>A</kbd></button>
+    <button id="btnAimSuggestion" type="button" style="font-size:12px;padding:7px 5px" title="Aim at suggestion to adjust with arrows (S)">🎯 Aim & Nudge <kbd>S</kbd></button>
+  </div>
+</div>
+<div class="row"><label for="zoom">Magnification</label><select id="zoom"><option value="3">3&times;</option><option value="5" selected>5&times;</option><option value="8">8&times;</option></select></div>
+<div class="label-grid"><button id="visible" class="primary" title="Numpad 7">Visible <kbd>7</kbd></button><button id="partial" title="Numpad 9">Partly visible <kbd>9</kbd></button><button id="occluded" title="Numpad 1">Hidden <kbd>1</kbd></button><button id="absent" title="Numpad 0">Outside frame <kbd>0</kbd></button><button id="uncertain" title="Numpad 3">Unsure <kbd>3</kbd></button></div>
+<p id="advanceHelp" class="muted">Each label choice saves and advances. No separate Next click is needed.</p>
+<div class="quick-navigation"><button id="quickPrevious" title="Numpad minus">Previous <kbd>-</kbd></button><button id="quickNext" title="Numpad plus">Next <kbd>+</kbd></button><button id="quickUnreviewed" title="Numpad decimal">Unreviewed <kbd>.</kbd></button></div>
+<details class="key-help"><summary>Numpad shortcuts</summary><div class="keypad-guide"><span><kbd>7</kbd> Visible</span><span><kbd>8</kbd> Up</span><span><kbd>9</kbd> Partial</span><span><kbd>4</kbd> Left</span><span><kbd>5</kbd> Reset aim</span><span><kbd>6</kbd> Right</span><span><kbd>1</kbd> Hidden</span><span><kbd>2</kbd> Down</span><span><kbd>3</kbd> Unsure</span></div><p class="muted"><kbd>0</kbd> Outside frame &nbsp; <kbd>.</kbd> Next unreviewed &nbsp; <kbd>Enter</kbd> Visible<br>Arrow keys or numpad 4/6/8/2 adjust 1 pixel; Shift adjusts 5. Hold a direction to move, but press label keys separately for each frame. Works with Num Lock on or off.</p></details></div></div>
+
+
+<p class="muted">Visible/partial requires a positioned center. Hidden means blocked by something; absent means you know the ball is outside this frame. Unsure is excluded from scoring. Use Previous/Next, [ / ], or Page Up / Down to change frames without saving.</p>
+<div class="row"><div style="flex:1;min-width:240px"><label for="notes">Optional note</label><textarea id="notes" maxlength="500" placeholder="Example: ball blends into the player's shirt"></textarea><button id="saveNote">Save note</button><button id="retry" hidden>Retry saving correction</button><button id="discard" hidden>Discard unsaved correction</button></div></div>
+<details class="fast-tools spaced"><summary><strong>⚡ Fast Labeling & Automation Tools</strong></summary>
+<div style="margin-top:10px;padding:12px;background:#0d1624;border-radius:8px;border:1px solid #2e435b">
+  <div style="margin-bottom:14px">
+    <strong>1. Pre-Fill from Tracker (AI Assisted)</strong>
+    <p class="muted small" style="margin:4px 0 8px">Copy tracker detections into unreviewed frames so you only inspect/nudge instead of starting blank.</p>
+    <div class="row">
+      <select id="prefillSource" style="width:auto"><option value="classical">Classical CV Tracker</option><option value="neural">Neural Model</option></select>
+      <input id="prefillConf" type="number" step="0.05" min="0" max="1" value="0.25" style="width:80px" title="Min Confidence">
+      <button id="btnPrefill" type="button">Pre-Fill Unreviewed Frames</button>
+    </div>
+  </div>
+  <div style="margin-bottom:14px">
+    <strong>2. Mark Range as Dead Ball / Absent</strong>
+    <p class="muted small" style="margin:4px 0 8px">Mark a block of dead-ball frames as absent in one click.</p>
+    <div class="row">
+      <label class="small" style="margin:0">From Frame:</label><input id="rangeStart" type="number" style="width:90px">
+      <label class="small" style="margin:0">To Frame:</label><input id="rangeEnd" type="number" style="width:90px">
+      <select id="rangeVis" style="width:auto"><option value="absent">Outside frame (absent)</option><option value="occluded">Hidden / blocked</option></select>
+      <button id="btnRangeLabel" type="button">Mark Range</button>
+      <button id="btnCurrentToEnd" type="button">Mark Current → End</button>
+    </div>
+  </div>
+  <div>
+    <strong>3. Keyframe Trajectory Interpolation</strong>
+    <p class="muted small" style="margin:4px 0 8px">Label the start and end of a smooth flight, then interpolate all frames between them.</p>
+    <div class="row">
+      <label class="small" style="margin:0">Keyframe 1:</label><input id="interpStart" type="number" style="width:90px">
+      <label class="small" style="margin:0">Keyframe 2:</label><input id="interpEnd" type="number" style="width:90px">
+      <button id="btnInterpolate" type="button">Interpolate Between Keyframes</button>
+    </div>
+  </div>
+  <div style="margin-top:14px">
+    <strong>4. Confirmation of Suggestions</strong>
+    <p class="muted small" style="margin:4px 0 8px">Pre-fills and interpolations remain suggestions until confirmed. Confirm individual frames or all suggestions in bulk.</p>
+    <div class="row">
+      <button id="btnConfirmCurrent" type="button" class="primary" title="Confirm current suggested frame (C)">Confirm Current Frame <kbd>C</kbd></button>
+      <button id="btnConfirmAll" type="button">Confirm All Suggestions</button>
+    </div>
+  </div>
+  <div id="fastToolsStatus" class="muted small" style="margin-top:8px;color:#82dcf1"></div>
+</div>
+</details>
+<p id="legend" class="muted">Label buttons and hotkeys follow the After labeling setting. Mouse clicks save a visible center and stay on the frame. Arrow adjustments remain previews until confirmed. Existing references remain green.</p></section>
+<section class="card"><h2>2. Compare the trackers</h2><details id="comparisonDetails"><summary>Show side-by-side predictions</summary><div class="compare"><div><h3>Current tracker</h3><canvas id="classicalCanvas" width="960" height="540"></canvas><p id="classicalInfo" class="muted"></p></div><div><h3>Experimental neural model</h3><canvas id="neuralCanvas" width="960" height="540"></canvas><p id="neuralInfo" class="muted"></p></div></div><p class="muted">These show detector measurements. Withheld neural detections have no marker. A score is not an accuracy percentage. Reviewing the original image first helps avoid copying a tracker's mistake.</p></details></section>
+<section class="card"><details><summary><h2 style="display:inline">Review measurements</h2></summary><div id="metrics"></div><p class="muted">Correct = within 10 source-image pixels of your visible reference. Hidden, partial and unsure frames are excluded from position scoring. Known-outside frames test false detections separately. Export saves your examples; it does not train or activate a model.</p></details></section>
+</div></div></div></main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const state={session:null,data:null,index:0,image:null,generation:0,busy:false,loading:false,draft:null,poll:null,cursor:null,aimDirty:false,aimOrigin:null};
+async function api(url,options={}){const response=await fetch(url,{...options,headers:{'Content-Type':'application/json',...(options.headers||{})}});let data;try{data=await response.json()}catch{throw new Error('Studio returned an unreadable response. Your saved labels remain on disk.')}if(!response.ok)throw new Error(typeof data.detail==='string'?data.detail:'The request could not be completed. Check the clip settings.');return data}
+function error(message){$('error').textContent=message||'';$('error').hidden=!message}
+function controls(){const blocked=state.busy||state.loading||!!state.draft;for(const id of ['previous','next','unreviewed','frameRange'])$(id).disabled=blocked;for(const id of ['visible','partial','occluded','absent','uncertain','saveNote','export','quickPrevious','quickNext','quickUnreviewed','afterLabel'])$(id).disabled=state.busy||state.loading||!!state.draft;$('sessions').disabled=blocked;$('create').disabled=state.busy||!!state.draft||['queued','running'].includes(state.data?.metadata.status);$('export').disabled=state.busy||state.loading||!!state.draft||state.data?.metadata.status!=='completed'||!state.data?.annotations.labels.length;$('retry').hidden=!state.draft||state.busy;$('discard').hidden=!state.draft||state.busy}
+function record(){return state.data?.records[state.index]}
+function label(){return state.data?.annotations.labels.find(item=>item.frame===record()?.frame)}
+function isConfirmed(item){
+  if(!item)return false;
+  if(item.confirmed===false)return false;
+  if(item.confirmed===true)return true;
+  const origin=item.origin||'';
+  if(origin==='prefilled'||origin==='interpolated')return false;
+  const notes=item.notes||'';
+  if(notes.startsWith('prefill:')||notes.startsWith('interpolated:')||notes.startsWith('suggestion:'))return false;
+  return item.reviewed!==false;
+}
+function visibilityName(value){return {visible:'Visible',partial:'Partly visible',occluded:'Hidden / blocked',absent:'Outside frame',uncertain:'Unsure'}[value]||value}
+function marker(ctx,point,color,width){if(!point)return;const radius=Math.max(10,width*.008);ctx.strokeStyle=color;ctx.lineWidth=Math.max(2,width/650);ctx.beginPath();ctx.arc(point[0],point[1],radius,0,Math.PI*2);ctx.stroke();ctx.beginPath();ctx.moveTo(point[0]-radius,point[1]);ctx.lineTo(point[0]+radius,point[1]);ctx.moveTo(point[0],point[1]-radius);ctx.lineTo(point[0],point[1]+radius);ctx.stroke()}
+function clampPoint(point){
+  return {x:Math.max(0,Math.min(state.image.naturalWidth-1,point.x)),y:Math.max(0,Math.min(state.image.naturalHeight-1,point.y))};
+}
+function samePoint(a,b){return a?.x!=null&&a?.y!=null&&b?.x!=null&&b?.y!=null&&Math.abs(a.x-b.x)<1e-6&&Math.abs(a.y-b.y)<1e-6}
+function seedCursor(carried){
+  const saved=label();
+  if(saved?.x!=null){state.cursor=clampPoint(saved);state.aimOrigin='saved'}
+  else if(carried){state.cursor=clampPoint(carried);state.aimOrigin='carried'}
+  else{
+    const previous=state.data.annotations.labels.filter(item=>item.frame<record().frame&&item.x!=null).sort((a,b)=>b.frame-a.frame)[0];
+    state.cursor=previous?clampPoint(previous):null;state.aimOrigin=previous?'carried':null;
+  }
+  state.aimDirty=false;
+}
+
+function drawSuggestionMarker(ctx,point,score,width,modelName){
+  if(!point)return;
+  const radius=Math.max(14,width*0.012);
+  ctx.save();
+  ctx.strokeStyle='#00e5ff';
+  ctx.lineWidth=Math.max(2,width/600);
+  ctx.setLineDash([5,4]);
+  ctx.beginPath();
+  ctx.arc(point[0],point[1],radius,0,Math.PI*2);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  const tick=radius*0.35;
+  ctx.beginPath();
+  ctx.moveTo(point[0]-radius-3,point[1]);ctx.lineTo(point[0]-radius-3-tick,point[1]);
+  ctx.moveTo(point[0]+radius+3,point[1]);ctx.lineTo(point[0]+radius+3+tick,point[1]);
+  ctx.moveTo(point[0],point[1]-radius-3);ctx.lineTo(point[0],point[1]-radius-3-tick);
+  ctx.moveTo(point[0],point[1]+radius+3);ctx.lineTo(point[0],point[1]+radius+3+tick);
+  ctx.stroke();
+  const confText=score!=null?`${Math.round(score*100)}%`:'';
+  const tagText=`${modelName||'AI'} ${confText}`.trim();
+  const fontSize=Math.max(12,Math.round(width*0.009));
+  ctx.font=`bold ${fontSize}px system-ui, sans-serif`;
+  const textWidth=ctx.measureText(tagText).width;
+  const tagX=point[0]+radius+5,tagY=point[1]-4;
+  ctx.fillStyle='rgba(6,25,38,0.85)';
+  ctx.strokeStyle='#00e5ff';
+  ctx.lineWidth=1;
+  ctx.fillRect(tagX-3,tagY-fontSize,textWidth+6,fontSize+5);
+  ctx.strokeRect(tagX-3,tagY-fontSize,textWidth+6,fontSize+5);
+  ctx.fillStyle='#00e5ff';
+  ctx.fillText(tagText,tagX,tagY);
+  ctx.restore();
+}
+
+function draw(){
+  if(!state.image)return;
+  const item=record(),reference=state.draft||label(),confirmed=isConfirmed(reference);
+  for(const id of ['reviewCanvas','classicalCanvas','neuralCanvas']){
+    const canvas=$(id);canvas.width=state.image.naturalWidth;canvas.height=state.image.naturalHeight;
+    const ctx=canvas.getContext('2d');ctx.drawImage(state.image,0,0);
+    if(reference?.x!=null)marker(ctx,[reference.x,reference.y],(!confirmed&&!state.draft)?'#ffe066':'#72ffc0',canvas.width);
+    if(id==='reviewCanvas'&&item?.neural&&$('showAiSuggestion')?.checked!==false){
+      drawSuggestionMarker(ctx,item.neural,item.neural_score,canvas.width,state.data?.metadata?.model_version||'ball_v2');
+    }
+    
+    if(id==='reviewCanvas'&&state.cursor&&!samePoint(state.cursor,reference))marker(ctx,[state.cursor.x,state.cursor.y],'#ff6969',canvas.width);
+    if(id!=='reviewCanvas')marker(ctx,item[id==='classicalCanvas'?'classical':'neural'],id==='classicalCanvas'?'#ffc568':'#f38dff',canvas.width);
+  }
+  $('labelStatus').textContent=reference?(state.draft?'Unsaved: ':(!confirmed?'Suggested: ':'Saved: '))+visibilityName(reference.visibility)+(!state.draft&&!confirmed?' (unconfirmed)':'') : 'Unreviewed';
+  $('frameInfo').textContent=`Frame ${item.frame} · ${(item.frame/state.data.metadata.fps).toFixed(3)} seconds · ${state.index+1}/${state.data.records.length} · Court ${item.court_ok?'tracked':'unavailable'}`;
+  for(const detector of ['classical','neural']){
+    const point=item[detector];
+    $(detector+'Info').textContent=(point?`Position ${point[0].toFixed(1)}, ${point[1].toFixed(1)}`:'No accepted detection')+` · score ${item[detector+'_score'].toFixed(3)}`;
+  }
+  $('frameRange').value=state.index;
+  const savedPosition=!state.aimDirty&&samePoint(state.cursor,label());
+  $('aimStatus').textContent=state.cursor?`${savedPosition?'Saved position':'Preview only'}: ${state.cursor.x.toFixed(1)}, ${state.cursor.y.toFixed(1)}. ${savedPosition?'Enter advances; arrows adjust.':'Center the ball, then Enter to save visible or P to save partial.'}`:'Click the ball once to start. Its position will carry into following frames.';
+  drawMagnifier();
+}
+function drawMagnifier(){
+  if(!state.image)return;
+  const canvas=$('magnifier'),ctx=canvas.getContext('2d'),zoom=Number($('zoom').value)||5;
+  const center=state.cursor||{x:state.image.naturalWidth/2,y:state.image.naturalHeight/2};
+  const sx=center.x-canvas.width/(2*zoom),sy=center.y-canvas.height/(2*zoom);
+  const left=Math.max(0,sx),top=Math.max(0,sy),right=Math.min(state.image.naturalWidth,sx+canvas.width/zoom),bottom=Math.min(state.image.naturalHeight,sy+canvas.height/zoom);
+  ctx.fillStyle='#070c13';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.imageSmoothingEnabled=false;
+  if(right>left&&bottom>top)ctx.drawImage(state.image,left,top,right-left,bottom-top,(left-sx)*zoom,(top-sy)*zoom,(right-left)*zoom,(bottom-top)*zoom);
+  const item=record();
+  if(item?.neural&&$('showAiSuggestion')?.checked!==false){
+    const nx=(item.neural[0]-sx)*zoom,ny=(item.neural[1]-sy)*zoom;
+    if(nx>=-25&&nx<=canvas.width+25&&ny>=-25&&ny<=canvas.height+25){
+      ctx.save();ctx.strokeStyle='#00e5ff';ctx.lineWidth=1.5;ctx.setLineDash([4,3]);
+      ctx.beginPath();ctx.arc(nx,ny,14,0,Math.PI*2);ctx.stroke();ctx.restore();
+    }
+  }
+
+  // Padding at image edges keeps the selected source pixel exactly under the dot.
+  const cx=canvas.width/2,cy=canvas.height/2;
+  ctx.strokeStyle='#ff6262';ctx.lineWidth=1;ctx.beginPath();
+  ctx.moveTo(cx-15,cy);ctx.lineTo(cx-5,cy);ctx.moveTo(cx+5,cy);ctx.lineTo(cx+15,cy);
+  ctx.moveTo(cx,cy-15);ctx.lineTo(cx,cy-5);ctx.moveTo(cx,cy+5);ctx.lineTo(cx,cy+15);ctx.stroke();
+  ctx.beginPath();ctx.arc(cx,cy,2.2,0,Math.PI*2);ctx.fillStyle='#ff3030';ctx.fill();ctx.strokeStyle='#fff';ctx.lineWidth=.8;ctx.stroke();
+}
+function nudge(dx,dy){
+  if(state.busy||state.loading||state.draft||!state.image)return;
+  if(!state.cursor){error('Click the ball once to set the magnified view, then use the arrow keys.');return}
+  state.cursor=clampPoint({x:state.cursor.x+dx,y:state.cursor.y+dy});state.aimDirty=true;state.aimOrigin='adjusted';error('');draw();
+}
+
+async function loadFrame(index){
+  if(state.busy||state.draft||!state.data?.records.length)return;
+  const carried=state.cursor?{...state.cursor}:null;
+  state.index=Math.max(0,Math.min(state.data.records.length-1,index));state.loading=true;state.image=null;controls();
+  const generation=++state.generation,image=new Image();
+  image.onload=()=>{
+    if(generation!==state.generation)return;
+    state.image=image;state.loading=false;seedCursor(carried);$('notes').value=label()?.notes||'';draw();controls();
+  };
+  image.onerror=()=>{if(generation!==state.generation)return;state.loading=false;error('Could not load this saved frame. Reopen the review to retry.');controls()};
+  image.src=`/api/ball-tests/${state.session}/frames/${record().frame}`;
+}
+
+function showMetrics(){const allLabels=state.data.annotations.labels||[];const confirmedLabels=allLabels.filter(isConfirmed);const unconfirmedCount=allLabels.length-confirmedLabels.length;const stats={classical:{visible:0,correct:0,wrong:0,missing:0,absent_reviewed:0,absent_false_detections:0},neural:{visible:0,correct:0,wrong:0,missing:0,absent_reviewed:0,absent_false_detections:0}};const references=new Map(confirmedLabels.map(item=>[item.frame,item]));for(const item of state.data.records){const ref=references.get(item.frame);if(!ref)continue;for(const detector of ['classical','neural']){const value=stats[detector],point=item[detector];if(ref.visibility==='visible'){value.visible++;if(!point)value.missing++;else if(Math.hypot(point[0]-ref.x,point[1]-ref.y)<=10)value.correct++;else value.wrong++}else if(ref.visibility==='absent'){value.absent_reviewed++;if(point)value.absent_false_detections++}}}$('metrics').replaceChildren();for(const detector of ['classical','neural']){const value=stats[detector],line=document.createElement('div');line.textContent=`${detector==='classical'?'Current':'Neural'}: ${value.correct} correct, ${value.wrong} wrong, ${value.missing} missing of ${value.visible} visible references. Absent frames: ${value.absent_false_detections} false detections / ${value.absent_reviewed} reviewed.`;$('metrics').appendChild(line)}$('progress').hidden=false;$('progress').max=state.data.records.length||1;$('progress').value=confirmedLabels.length;showLearningProgress();const pending=unconfirmedCount>0?` (${unconfirmedCount} unconfirmed suggestion${unconfirmedCount===1?'':'s'})`:'';$('status').textContent=`${confirmedLabels.length}/${state.data.records.length} frames reviewed · Revision ${state.data.annotations.revision} · Saved on this computer${pending}`}
+function showLearningProgress(){
+  const allLabels=state.data.annotations.labels||[];
+  const confirmed=allLabels.filter(isConfirmed);
+  const counts={visible:0,partial:0,occluded:0,absent:0,uncertain:0};
+  for(const item of confirmed)counts[item.visibility]++;
+  const unconfirmedCount=allLabels.length-confirmed.length;
+  const pending=unconfirmedCount?` (${unconfirmedCount} suggestions awaiting confirmation)`:'';
+  $('learningCounts').textContent=`This review: ${counts.visible} visible centers, ${counts.partial} partial, ${counts.occluded} hidden, ${counts.absent} outside frame, ${counts.uncertain} unsure.${pending}`;
+  const purpose=state.data.metadata.split;
+  $('learningStatus').textContent=purpose==='train'?`${counts.visible} visible centers confirmed for a future training run. This review has not changed the model. Export a snapshot when ready.`:`Reserved for ${purpose==='test'?'final testing':'validation'}. These labels must stay separate from training examples.`;
+}
+async function saveAnnotation(annotation){
+  if(state.busy||state.loading||!state.image)return false;
+  state.draft={...annotation};state.busy=true;if(annotation.x!=null)state.cursor=clampPoint(annotation);
+  controls();draw();error('');$('status').textContent='Saving correction...';
+  try{
+    const current=label();
+    const payload={
+      ...annotation,
+      expected_revision:state.data.annotations.revision,
+      origin:annotation.origin||current?.origin||'manual',
+      confirmed:annotation.confirmed!==undefined?annotation.confirmed:true
+    };
+    const saved=await api(`/api/ball-tests/${state.session}/labels`,{method:'POST',body:JSON.stringify(payload)});
+    state.data.annotations.revision=saved.revision;
+    state.data.annotations.labels=state.data.annotations.labels.filter(item=>item.frame!==saved.label.frame).concat(saved.label);
+    state.draft=null;state.aimDirty=false;state.aimOrigin='saved';$('exportStatus').textContent='';draw();showMetrics();return true;
+  }catch(exc){
+    error(exc.message+' This correction is still unsaved; retry or discard it before moving on.');$('status').textContent='Correction not saved';return false;
+  }finally{state.busy=false;controls()}
+}
+async function saveAndNext(value='visible',destination='next'){
+  if(state.busy||state.loading||state.draft||!state.image)return;
+  const located=value==='visible'||value==='partial',point=state.cursor;
+  if(located&&!point){error('Click the ball once to set its position first.');return}
+  const current=label(),notes=$('notes').value;
+  const unchanged=current&&current.visibility===value&&current.notes===notes&&(!located||samePoint(current,point));
+  const saved=unchanged||await saveAnnotation({frame:record().frame,visibility:value,x:located?point.x:null,y:located?point.y:null,notes});
+  if(!saved)return;
+  state.aimDirty=false;
+  if(destination==='unreviewed')await nextUnreviewed();
+  else if(state.index<state.data.records.length-1)await loadFrame(state.index+1);
+  else{$('status').textContent+=' - Last frame saved.';draw()}
+}
+
+function coordinate(event){const box=$('reviewCanvas').getBoundingClientRect();return {x:Math.max(0,Math.min(state.image.naturalWidth-1,(event.clientX-box.left)*state.image.naturalWidth/box.width)),y:Math.max(0,Math.min(state.image.naturalHeight-1,(event.clientY-box.top)*state.image.naturalHeight/box.height))}}
+function visibility(value){
+  if(state.busy||state.loading||state.draft||!state.image)return;
+  const point=state.cursor||label(),located=value==='visible'||value==='partial';
+  if(located&&point?.x==null){error('Click the ball center once, then position it with the arrow keys.');return}
+  return saveAnnotation({frame:record().frame,visibility:value,x:located?point.x:null,y:located?point.y:null,notes:$('notes').value});
+}
+
+function purposeName(value){return {train:'Training examples',validation:'Validation footage',test:'Final test footage'}[value]||value}
+async function refreshSessions(){const result=await api('/api/ball-tests');const current=state.session;const reviewed=result.sessions.filter(item=>item.reviewed>0);$('collectionStatus').textContent=`${reviewed.reduce((sum,item)=>sum+item.reviewed,0)} saved labels across ${reviewed.length} reviews. Review used model ${state.data?.metadata.model_version||'ball_v1'}.`;$('sessions').replaceChildren();const placeholder=document.createElement('option');placeholder.value='';placeholder.textContent='Select a saved review';$('sessions').appendChild(placeholder);for(const item of result.sessions){const option=document.createElement('option');option.value=item.id;option.textContent=`${item.video_name} · ${(item.frame_start/item.fps).toFixed(1)}s · ${item.split} · ${item.status}`;$('sessions').appendChild(option)}$('sessions').value=current||''}
+async function openSession(id){if(state.busy||state.draft)return;clearTimeout(state.poll);if(state.session!==id){state.cursor=null;state.aimDirty=false;state.aimOrigin=null}state.session=id;$('sessions').value=id;state.image=null;state.loading=true;controls();error('');try{const data=await api('/api/ball-tests/'+id);if(state.session!==id)return;state.data=data;const meta=data.metadata;$('title').textContent=meta.video_name;$('purpose').hidden=false;$('purpose').textContent=purposeName(meta.split);$('description').textContent=`${(meta.frame_start/meta.fps).toFixed(2)}–${((meta.frame_end_inclusive+1)/meta.fps).toFixed(2)} seconds · Model ${meta.model_version} · Purpose is fixed for this review.`;$('download').href=`/api/ball-tests/${id}/annotations`;const preparing=['queued','running'].includes(meta.status);$('review').hidden=meta.status!=='completed';$('progress').hidden=!preparing;$('progress').max=meta.total;$('progress').value=meta.processed;$('stop').hidden=!preparing;$('create').disabled=preparing;$('status').textContent=preparing?`Preparing both trackers: ${meta.processed}/${meta.total} frames. This continues if you leave this page.`:meta.status;history.replaceState(null,'',`?session=${id}`);if(preparing){state.poll=setTimeout(()=>openSession(id).catch(exc=>error(exc.message)),2000)}else if(meta.status==='completed'){await refreshSessions();state.loading=false;const completed=new Set(data.annotations.labels.filter(isConfirmed).map(item=>item.frame));const resume=data.records.findIndex(item=>!completed.has(item.frame));state.index=resume<0?0:resume;$('newClip').open=false;showAdvanceMode();$('frameRange').max=Math.max(0,data.records.length-1);showMetrics();await loadFrame(Math.max(0,state.index))}else if(meta.error){error(meta.error)}}catch(exc){error(exc.message)}finally{if(state.data?.metadata.status!=='completed')state.loading=false;controls()}}
+$('testForm').onsubmit=async event=>{event.preventDefault();if(state.busy||state.draft)return;state.busy=true;controls();error('');try{const created=await api('/api/ball-tests',{method:'POST',body:JSON.stringify({video_name:$('video').value,start_seconds:Number($('start').value),duration_seconds:Number($('duration').value),split:$('split').value,ball_color:$('color').value})});state.busy=false;state.index=0;await refreshSessions();await openSession(created.id)}catch(exc){error(exc.message)}finally{state.busy=false;controls()}};
+$('sessions').onchange=()=>{if($('sessions').value){state.index=0;openSession($('sessions').value)}};$('refresh').onclick=()=>refreshSessions().catch(exc=>error(exc.message));
+$('reviewCanvas').onclick=event=>{
+  if(!state.image||state.busy||state.loading||state.draft)return;
+  const point=coordinate(event);state.cursor=point;state.aimDirty=true;$('reviewCanvas').focus?.({preventScroll:true});
+  return saveAnnotation({frame:record().frame,visibility:'visible',...point,notes:$('notes').value});
+};
+$('zoom').onchange=()=>drawMagnifier();
+function labelChoice(value){
+  const destination=$('afterLabel').value||'next';
+  return destination==='stay'?visibility(value):saveAndNext(value,destination);
+}
+async function nextUnreviewed(){
+  if(state.busy||state.loading||state.draft||!state.image)return;
+  const reviewed=new Set(state.data.annotations.labels.filter(isConfirmed).map(item=>item.frame));
+  for(let offset=1;offset<=state.data.records.length;offset++){
+    const index=(state.index+offset)%state.data.records.length;
+    if(!reviewed.has(state.data.records[index].frame)){await loadFrame(index);return}
+  }
+  $('status').textContent='Every frame in this clip has been reviewed and saved.';
+}
+function showAdvanceMode(){
+  const mode=$('afterLabel').value||'next';
+  $('advanceHelp').textContent=mode==='stay'?'Label choices save and stay on this frame. Use + for next or . for next unreviewed.':mode==='unreviewed'?'Label choices save and jump to the next unreviewed frame.':'Label choices save and advance automatically. No separate Next click is needed.';
+}
+$('afterLabel').onchange=()=>{showAdvanceMode();$('magnifier').focus?.({preventScroll:true})};
+$('focusToggle').onclick=()=>{
+  const focused=document.body.classList.toggle('focus-view');
+  $('focusToggle').textContent=focused?'Show setup & learning':'Focus view';
+  $('focusToggle').setAttribute('aria-pressed',String(focused));
+};
+$('quickPrevious').onclick=()=>loadFrame(state.index-1);
+$('quickNext').onclick=()=>loadFrame(state.index+1);
+$('quickUnreviewed').onclick=nextUnreviewed;
+
+for(const value of ['visible','partial','occluded','absent','uncertain'])$(value).onclick=()=>labelChoice(value);
+$('previous').onclick=()=>loadFrame(state.index-1);$('next').onclick=()=>loadFrame(state.index+1);$('frameRange').onchange=()=>loadFrame(Number($('frameRange').value));$('unreviewed').onclick=nextUnreviewed;
+$('saveNote').onclick=()=>{const current=label();if(!current){error('Label this frame before saving a note.');return}return saveAnnotation({frame:current.frame,visibility:current.visibility,x:current.x,y:current.y,notes:$('notes').value})};$('retry').onclick=()=>{const draft=state.draft;if(draft)return saveAnnotation(draft)};$('discard').onclick=()=>{state.draft=null;seedCursor(null);error('');$('notes').value=label()?.notes||'';draw();showMetrics();controls()};
+$('export').onclick=async()=>{if(state.busy||state.draft)return;state.busy=true;controls();error('');try{const result=await api(`/api/ball-tests/${state.session}/export`,{method:'POST'});$('exportStatus').textContent=`Saved ${result.labels} labels (${result.trainable_visible_frames} usable visible centers) to ${result.dataset}. Purpose: ${result.split}. No model training has run.`}catch(exc){error(exc.message)}finally{state.busy=false;controls()}};
+$('stop').onclick=async()=>{try{await api(`/api/ball-tests/${state.session}/stop`,{method:'POST'});$('status').textContent='Stopping after the current frame…'}catch(exc){error(exc.message)}};
+async function reviewKey(event){
+  if(['INPUT','SELECT','TEXTAREA'].includes(event.target.tagName)||event.target.isContentEditable||event.ctrlKey||event.metaKey||event.altKey||state.busy||state.loading||state.draft||!state.image)return;
+  // Physical codes stay consistent with Num Lock off, when key may be Home/Insert/etc.
+  const padDirections={Numpad4:[-1,0],Numpad6:[1,0],Numpad8:[0,-1],Numpad2:[0,1]};
+  const padLabels={Numpad7:'visible',Numpad9:'partial',Numpad1:'occluded',Numpad0:'absent',Numpad3:'uncertain',NumpadEnter:'visible'};
+  const code=event.code||'';
+  if(code.startsWith('Numpad')){
+    const navigation=['NumpadAdd','NumpadSubtract','NumpadDecimal','NumpadMultiply','Numpad5'];
+    if(!padDirections[code]&&!padLabels[code]&&!navigation.includes(code))return;
+    event.preventDefault();
+    if(padDirections[code]){const [dx,dy]=padDirections[code],step=event.shiftKey?5:1;nudge(dx*step,dy*step);return}
+    if(event.repeat)return;
+    if(padLabels[code])await labelChoice(padLabels[code]);
+    else if(code==='NumpadAdd')await loadFrame(state.index+1);
+    else if(code==='NumpadSubtract')await loadFrame(state.index-1);
+    else if(code==='Numpad5'){seedCursor(null);error('');draw()}
+    else await nextUnreviewed();
+    return;
+  }
+  const directions={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]};
+  if(directions[event.key]){event.preventDefault();const [dx,dy]=directions[event.key],step=event.shiftKey?5:1;nudge(dx*step,dy*step);return}
+  const key=event.key.toLowerCase();
+  if(['enter','a','s','c','p','h','u','[',']','pageup','pagedown','escape'].includes(key))event.preventDefault();else return;
+  if(event.repeat)return;
+  if(key==='a')await $('btnAcceptSuggestion').click();
+  else if(key==='s')$('btnAimSuggestion').click();
+  else if(key==='c')await confirmCurrentFrame();
+  else if(key==='enter')await labelChoice('visible');
+  else if(key==='p')await labelChoice('partial');
+  else if(key==='h')await labelChoice('occluded');
+  else if(key==='u')await labelChoice('uncertain');
+  else if(key===']'||key==='pagedown')await loadFrame(state.index+1);
+  else if(key==='['||key==='pageup')await loadFrame(state.index-1);
+  else if(key==='escape'){seedCursor(null);error('');draw()}
+}
+
+async function confirmCurrentFrame(){
+  if(state.busy||state.loading||state.draft)return;
+  const current=label();
+  if(!current){error('No label or suggestion on this frame to confirm.');return}
+  if(isConfirmed(current)){$('fastToolsStatus').textContent=`Frame ${current.frame} is already confirmed.`;return}
+  state.busy=true;controls();error('');
+  $('fastToolsStatus').textContent='Confirming frame...';
+  try{
+    const result=await api(`/api/ball-tests/${state.session}/labels/confirm`,{
+      method:'POST',
+      body:JSON.stringify({frames:[current.frame],confirm_all:false,expected_revision:state.data.annotations.revision})
+    });
+    state.data.annotations.revision=result.revision;
+    current.confirmed=true;current.reviewed=true;
+    $('fastToolsStatus').textContent=`Confirmed frame ${current.frame}.`;
+    draw();showMetrics();
+  }catch(exc){error(exc.message)}
+  finally{state.busy=false;controls()}
+}
+
+async function confirmAllSuggestions(){
+  if(state.busy||state.loading||state.draft)return;
+  const unconfirmed=state.data.annotations.labels.filter(i=>!isConfirmed(i));
+  if(!unconfirmed.length){$('fastToolsStatus').textContent='No unconfirmed suggestions found.';return}
+  state.busy=true;controls();error('');
+  $('fastToolsStatus').textContent=`Confirming ${unconfirmed.length} suggestions...`;
+  try{
+    const result=await api(`/api/ball-tests/${state.session}/labels/confirm`,{
+      method:'POST',
+      body:JSON.stringify({frames:[],confirm_all:true,expected_revision:state.data.annotations.revision})
+    });
+    state.data.annotations.revision=result.revision;
+    for(const l of state.data.annotations.labels){l.confirmed=true;l.reviewed=true}
+    $('fastToolsStatus').textContent=`Successfully confirmed ${unconfirmed.length} suggestions.`;
+    draw();showMetrics();
+  }catch(exc){error(exc.message)}
+  finally{state.busy=false;controls()}
+}
+
+$('btnConfirmCurrent').onclick=confirmCurrentFrame;
+$('btnConfirmAll').onclick=confirmAllSuggestions;
+
+$('btnPrefill').onclick=async()=>{
+  if(state.busy||state.draft)return;
+  state.busy=true;controls();error('');
+  $('fastToolsStatus').textContent='Pre-filling predictions...';
+  try{
+    const result=await api(`/api/ball-tests/${state.session}/labels/prefill`,{
+      method:'POST',
+      body:JSON.stringify({
+        source:$('prefillSource').value,
+        min_confidence:Number($('prefillConf').value)||0.25,
+        only_unreviewed:true,
+        expected_revision:state.data.annotations.revision
+      })
+    });
+    const updated=await api(`/api/ball-tests/${state.session}`);
+    state.data.annotations=updated.annotations;
+    $('fastToolsStatus').textContent=`Pre-filled ${result.prefilled_count} unreviewed frames as suggestions. Confirm when reviewed.`;
+    draw();showMetrics();
+  }catch(exc){error(exc.message)}
+  finally{state.busy=false;controls()}
+};
+
+$('btnRangeLabel').onclick=async()=>{
+  if(state.busy||state.draft)return;
+  const start=Number($('rangeStart').value),end=Number($('rangeEnd').value);
+  if(isNaN(start)||isNaN(end)){error('Enter start and end frames');return}
+  state.busy=true;controls();error('');
+  try{
+    const result=await api(`/api/ball-tests/${state.session}/labels/range`,{
+      method:'POST',
+      body:JSON.stringify({
+        start_frame:start,
+        end_frame:end,
+        visibility:$('rangeVis').value,
+        notes:$('notes').value,
+        expected_revision:state.data.annotations.revision
+      })
+    });
+    const updated=await api(`/api/ball-tests/${state.session}`);
+    state.data.annotations=updated.annotations;
+    $('fastToolsStatus').textContent=`Marked frames ${start} to ${end} as ${$('rangeVis').value}.`;
+    draw();showMetrics();
+  }catch(exc){error(exc.message)}
+  finally{state.busy=false;controls()}
+};
+
+$('btnCurrentToEnd').onclick=()=>{
+  $('rangeStart').value=record()?.frame||0;
+  $('rangeEnd').value=state.data?.metadata?.frame_end_inclusive||record()?.frame||0;
+  $('btnRangeLabel').click();
+};
+
+$('btnInterpolate').onclick=async()=>{
+  if(state.busy||state.draft)return;
+  const start=Number($('interpStart').value),end=Number($('interpEnd').value);
+  if(isNaN(start)||isNaN(end)){error('Enter start and end keyframes');return}
+  state.busy=true;controls();error('');
+  try{
+    const result=await api(`/api/ball-tests/${state.session}/labels/interpolate`,{
+      method:'POST',
+      body:JSON.stringify({
+        start_frame:start,
+        end_frame:end,
+        expected_revision:state.data.annotations.revision
+      })
+    });
+    const updated=await api(`/api/ball-tests/${state.session}`);
+    state.data.annotations=updated.annotations;
+    $('fastToolsStatus').textContent=`Interpolated ${result.interpolated_frames} frames as suggestions.`;
+    draw();showMetrics();
+  }catch(exc){error(exc.message)}
+  finally{state.busy=false;controls()}
+};
+
+document.addEventListener('keydown',reviewKey);
+
+window.addEventListener('beforeunload',event=>{if(state.draft||state.busy||state.aimDirty){event.preventDefault();event.returnValue=''}});
+async function init(){try{const result=await api('/api/videos');for(const video of result.videos){const option=document.createElement('option');option.value=video.name;option.textContent=video.name;$('video').appendChild(option)}await refreshSessions();const id=new URLSearchParams(location.search).get('session');if(id)await openSession(id)}catch(exc){error(exc.message)}}
+
+$('btnAcceptSuggestion').onclick=async ()=>{
+  const item=record();
+  if(!item?.neural||state.busy||state.loading||state.draft)return;
+  state.cursor=clampPoint({x:item.neural[0],y:item.neural[1]});
+  state.aimDirty=true;
+  state.aimOrigin='suggested';
+  $('reviewCanvas').focus?.({preventScroll:true});
+  draw();
+  const destination=$('afterLabel').value||'next';
+  return destination==='stay'?visibility('visible'):saveAndNext('visible',destination);
+};
+
+$('btnAimSuggestion').onclick=()=>{
+  const item=record();
+  if(!item?.neural||state.busy||state.loading||state.draft)return;
+  state.cursor=clampPoint({x:item.neural[0],y:item.neural[1]});
+  state.aimDirty=true;
+  state.aimOrigin='suggested';
+  $('reviewCanvas').focus?.({preventScroll:true});
+  draw();
+};
+
+$('showAiSuggestion').onchange=()=>draw();
+
+init();
+</script></body></html>

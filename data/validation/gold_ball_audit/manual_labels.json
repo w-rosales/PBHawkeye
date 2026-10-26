@@ -1,0 +1,2478 @@
+{
+  "method": "Raw images inspected individually; hand-selected ball regions with optional local RGB center snapping. No production detector coordinates/predictions used as references. Raw-crop overlay review required. Approximate reference centers are not subpixel ground truth; ambiguous frames excluded from strict scoring.",
+  "labels": [
+    {
+      "frame": 150,
+      "visibility": "visible",
+      "x": 683.87,
+      "y": 185.33,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        684,
+        186
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 151,
+      "visibility": "visible",
+      "x": 681.41,
+      "y": 186.73,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        682,
+        187
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 152,
+      "visibility": "visible",
+      "x": 678.41,
+      "y": 187.85,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        678,
+        189
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 153,
+      "visibility": "visible",
+      "x": 674.77,
+      "y": 191.55,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        674,
+        192
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 154,
+      "visibility": "visible",
+      "x": 670.42,
+      "y": 195.59,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        671,
+        196
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 155,
+      "visibility": "visible",
+      "x": 666.12,
+      "y": 202.51,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        666,
+        202
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 156,
+      "visibility": "visible",
+      "x": 661.18,
+      "y": 210.37,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        662,
+        210
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 157,
+      "visibility": "visible",
+      "x": 655.92,
+      "y": 218.69,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        656,
+        218
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 158,
+      "visibility": "visible",
+      "x": 651.17,
+      "y": 228.0,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        650,
+        229
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 159,
+      "visibility": "visible",
+      "x": 644.22,
+      "y": 241.51,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        644,
+        242
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 160,
+      "visibility": "visible",
+      "x": 638.11,
+      "y": 255.16,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        638,
+        257
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 161,
+      "visibility": "visible",
+      "x": 631.7,
+      "y": 272.89,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        632,
+        273
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 162,
+      "visibility": "visible",
+      "x": 626.51,
+      "y": 290.96,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        625,
+        290
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 163,
+      "visibility": "visible",
+      "x": 619.8,
+      "y": 312.19,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        618,
+        311
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 164,
+      "visibility": "visible",
+      "x": 610.58,
+      "y": 336.25,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        611,
+        337
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 165,
+      "visibility": "visible",
+      "x": 603.2,
+      "y": 363.16,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        601,
+        363
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 166,
+      "visibility": "visible",
+      "x": 594.74,
+      "y": 391.37,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        594,
+        392
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 167,
+      "visibility": "visible",
+      "x": 585.66,
+      "y": 425.01,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        586,
+        424
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 168,
+      "visibility": "visible",
+      "x": 576.1,
+      "y": 461.78,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        576,
+        461
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 169,
+      "visibility": "visible",
+      "x": 566.52,
+      "y": 502.07,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        567,
+        502
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 170,
+      "visibility": "visible",
+      "x": 556.82,
+      "y": 545.97,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        556,
+        545
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 171,
+      "visibility": "visible",
+      "x": 545.92,
+      "y": 594.42,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        545,
+        593
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 172,
+      "visibility": "visible",
+      "x": 534.24,
+      "y": 648.01,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        533,
+        646
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 173,
+      "visibility": "visible",
+      "x": 522.14,
+      "y": 705.12,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        522,
+        705
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 174,
+      "visibility": "visible",
+      "x": 507.09,
+      "y": 727.82,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        507,
+        727
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 175,
+      "visibility": "visible",
+      "x": 488.91,
+      "y": 721.2,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        488,
+        721
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 176,
+      "visibility": "visible",
+      "x": 469.81,
+      "y": 716.19,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        469,
+        716
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 177,
+      "visibility": "visible",
+      "x": 450.38,
+      "y": 713.59,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        450,
+        714
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 178,
+      "visibility": "visible",
+      "x": 429.83,
+      "y": 713.45,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        430,
+        714
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 179,
+      "visibility": "visible",
+      "x": 408.84,
+      "y": 716.28,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        408,
+        716
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 180,
+      "visibility": "visible",
+      "x": 386.64,
+      "y": 721.79,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        386,
+        721
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 181,
+      "visibility": "visible",
+      "x": 364.35,
+      "y": 730.4,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        364,
+        730
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 182,
+      "visibility": "visible",
+      "x": 340.54,
+      "y": 742.69,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        340,
+        742
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 183,
+      "visibility": "visible",
+      "x": 316.22,
+      "y": 758.71,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        316,
+        758
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 184,
+      "visibility": "visible",
+      "x": 291.53,
+      "y": 778.31,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        292,
+        777
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 185,
+      "visibility": "partial",
+      "x": 277,
+      "y": 787,
+      "uncertainty_px": 8,
+      "notes": "Ball partially hidden by paddle at contact; center less certain.",
+      "manual_click": [
+        277,
+        787
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 186,
+      "visibility": "visible",
+      "x": 336.1,
+      "y": 683.77,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        335,
+        683
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 187,
+      "visibility": "visible",
+      "x": 390.8,
+      "y": 596.33,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        390,
+        595
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 188,
+      "visibility": "visible",
+      "x": 438.54,
+      "y": 520.1,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        437,
+        519
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 189,
+      "visibility": "visible",
+      "x": 484.21,
+      "y": 456.65,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        482,
+        456
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 190,
+      "visibility": "visible",
+      "x": 522.45,
+      "y": 402.82,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        522,
+        400
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 191,
+      "visibility": "visible",
+      "x": 559.53,
+      "y": 356.07,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        559,
+        354
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 192,
+      "visibility": "visible",
+      "x": 592.11,
+      "y": 315.78,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        592,
+        316
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 193,
+      "visibility": "visible",
+      "x": 623.07,
+      "y": 283.02,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        623,
+        284
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 194,
+      "visibility": "visible",
+      "x": 651.31,
+      "y": 257.25,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        651,
+        257
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 195,
+      "visibility": "visible",
+      "x": 677.83,
+      "y": 234.03,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        677,
+        233
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 196,
+      "visibility": "visible",
+      "x": 702.58,
+      "y": 215.34,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        701,
+        215
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 197,
+      "visibility": "visible",
+      "x": 724.42,
+      "y": 200.21,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        724,
+        200
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 198,
+      "visibility": "visible",
+      "x": 746.08,
+      "y": 190.15,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        744,
+        189
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 199,
+      "visibility": "visible",
+      "x": 764.03,
+      "y": 180.26,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        764,
+        180
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 200,
+      "visibility": "visible",
+      "x": 782.4,
+      "y": 176.2,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        783,
+        177
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 201,
+      "visibility": "visible",
+      "x": 798.59,
+      "y": 173.78,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        800,
+        173
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 202,
+      "visibility": "visible",
+      "x": 815.42,
+      "y": 171.82,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        816,
+        172
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 203,
+      "visibility": "visible",
+      "x": 829.53,
+      "y": 173.32,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        832,
+        174
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 204,
+      "visibility": "visible",
+      "x": 843.52,
+      "y": 174.72,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        844,
+        177
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 205,
+      "visibility": "visible",
+      "x": 858.78,
+      "y": 179.48,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        858,
+        183
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 206,
+      "visibility": "visible",
+      "x": 869.77,
+      "y": 185.56,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        872,
+        190
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 207,
+      "visibility": "visible",
+      "x": 882.73,
+      "y": 191.63,
+      "uncertainty_px": 3,
+      "notes": "Manual visual center from raw-frame crop/ruler; no software marker shown.",
+      "manual_click": [
+        887,
+        197
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 208,
+      "visibility": "visible",
+      "x": 891.48,
+      "y": 199.52,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        892,
+        201
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 209,
+      "visibility": "visible",
+      "x": 903.72,
+      "y": 207.34,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        903,
+        209
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 210,
+      "visibility": "visible",
+      "x": 909.94,
+      "y": 221.84,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        913,
+        219
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 211,
+      "visibility": "visible",
+      "x": 921.16,
+      "y": 227.99,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        922,
+        230
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 212,
+      "visibility": "visible",
+      "x": 931.28,
+      "y": 239.65,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        930,
+        244
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 213,
+      "visibility": "partial",
+      "x": 939,
+      "y": 253,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        939,
+        253
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 214,
+      "visibility": "partial",
+      "x": 947,
+      "y": 264,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        947,
+        264
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 215,
+      "visibility": "partial",
+      "x": 955,
+      "y": 280,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        955,
+        280
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 216,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "reviewed": true
+    },
+    {
+      "frame": 217,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "reviewed": true
+    },
+    {
+      "frame": 218,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "reviewed": true
+    },
+    {
+      "frame": 219,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "reviewed": true
+    },
+    {
+      "frame": 220,
+      "visibility": "partial",
+      "x": 918,
+      "y": 246,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        918,
+        246
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 221,
+      "visibility": "visible",
+      "x": 905.81,
+      "y": 246.41,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        907,
+        246
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 222,
+      "visibility": "visible",
+      "x": 896.37,
+      "y": 244.58,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        897,
+        246
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 223,
+      "visibility": "visible",
+      "x": 885.88,
+      "y": 245.47,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        887,
+        246
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 224,
+      "visibility": "visible",
+      "x": 875.53,
+      "y": 248.47,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        875,
+        253
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 225,
+      "visibility": "visible",
+      "x": 864.06,
+      "y": 252.28,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        865,
+        258
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 226,
+      "visibility": "visible",
+      "x": 851.6,
+      "y": 261.13,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        852,
+        266
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 227,
+      "visibility": "visible",
+      "x": 839.68,
+      "y": 270.95,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        840,
+        276
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 228,
+      "visibility": "visible",
+      "x": 827.1,
+      "y": 283.82,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        827,
+        282
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 229,
+      "visibility": "visible",
+      "x": 813.54,
+      "y": 300.71,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        815,
+        307
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 230,
+      "visibility": "visible",
+      "x": 798.99,
+      "y": 318.79,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        799,
+        325
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 231,
+      "visibility": "visible",
+      "x": 782.6,
+      "y": 341.29,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        784,
+        349
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 232,
+      "visibility": "visible",
+      "x": 769.12,
+      "y": 366.78,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        769,
+        370
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 233,
+      "visibility": "visible",
+      "x": 753.02,
+      "y": 397.94,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        754,
+        398
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 234,
+      "visibility": "visible",
+      "x": 736.09,
+      "y": 434.53,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        736,
+        434
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 235,
+      "visibility": "visible",
+      "x": 719.04,
+      "y": 473.57,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        718,
+        474
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 236,
+      "visibility": "visible",
+      "x": 700.07,
+      "y": 519.82,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        700,
+        521
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 237,
+      "visibility": "visible",
+      "x": 680.04,
+      "y": 572.69,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        682,
+        573
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 238,
+      "visibility": "visible",
+      "x": 660.18,
+      "y": 630.9,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        661,
+        633
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 239,
+      "visibility": "visible",
+      "x": 638.96,
+      "y": 696.34,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        639,
+        698
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 240,
+      "visibility": "visible",
+      "x": 617.09,
+      "y": 769.46,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        617,
+        770
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 241,
+      "visibility": "visible",
+      "x": 593.69,
+      "y": 851.02,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        593,
+        849
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 242,
+      "visibility": "visible",
+      "x": 570.07,
+      "y": 934.06,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        571,
+        934
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 243,
+      "visibility": "visible",
+      "x": 546.85,
+      "y": 934.43,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        548,
+        934
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 244,
+      "visibility": "partial",
+      "x": 523,
+      "y": 936,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        523,
+        936
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 245,
+      "visibility": "visible",
+      "x": 550.9,
+      "y": 820.83,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        551,
+        821
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 246,
+      "visibility": "visible",
+      "x": 579.11,
+      "y": 715.56,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        578,
+        714
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 247,
+      "visibility": "visible",
+      "x": 604.11,
+      "y": 621.43,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        603,
+        620
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 248,
+      "visibility": "visible",
+      "x": 626.66,
+      "y": 537.86,
+      "uncertainty_px": 5,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        618,
+        541
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 249,
+      "visibility": "visible",
+      "x": 647.5,
+      "y": 464.1,
+      "uncertainty_px": 5,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        641,
+        469
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 250,
+      "visibility": "visible",
+      "x": 666.96,
+      "y": 399.53,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        663,
+        405
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 251,
+      "visibility": "visible",
+      "x": 684.79,
+      "y": 342.9,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        678,
+        349
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 252,
+      "visibility": "visible",
+      "x": 703.8,
+      "y": 292.17,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        694,
+        291
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 253,
+      "visibility": "visible",
+      "x": 717.71,
+      "y": 248.67,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        718,
+        247
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 254,
+      "visibility": "visible",
+      "x": 732.1,
+      "y": 210.24,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        729,
+        211
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 255,
+      "visibility": "visible",
+      "x": 746.14,
+      "y": 176.84,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        742,
+        179
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 256,
+      "visibility": "visible",
+      "x": 759.36,
+      "y": 148.07,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        751,
+        147
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 257,
+      "visibility": "visible",
+      "x": 771.03,
+      "y": 125.48,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        763,
+        124
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 258,
+      "visibility": "visible",
+      "x": 781.61,
+      "y": 105.56,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        775,
+        104
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 259,
+      "visibility": "visible",
+      "x": 791.73,
+      "y": 87.87,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        784,
+        88
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 260,
+      "visibility": "visible",
+      "x": 800.97,
+      "y": 74.91,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        802,
+        76
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 261,
+      "visibility": "visible",
+      "x": 811.02,
+      "y": 59.17,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        812,
+        65
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 262,
+      "visibility": "visible",
+      "x": 820.34,
+      "y": 54.54,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        819,
+        56
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 263,
+      "visibility": "visible",
+      "x": 827.88,
+      "y": 50.25,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        827,
+        51
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 264,
+      "visibility": "visible",
+      "x": 833.68,
+      "y": 48.64,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        835,
+        47
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 265,
+      "visibility": "visible",
+      "x": 841.69,
+      "y": 47.91,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        842,
+        46
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 266,
+      "visibility": "visible",
+      "x": 847.96,
+      "y": 48.11,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        849,
+        47
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 267,
+      "visibility": "visible",
+      "x": 854.77,
+      "y": 50.42,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        855,
+        50
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 268,
+      "visibility": "visible",
+      "x": 860.87,
+      "y": 53.82,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        861,
+        55
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 269,
+      "visibility": "visible",
+      "x": 866.77,
+      "y": 57.81,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        867,
+        60
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 270,
+      "visibility": "visible",
+      "x": 871.26,
+      "y": 66.9,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        872,
+        66
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 271,
+      "visibility": "visible",
+      "x": 877.58,
+      "y": 75.55,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        878,
+        75
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 272,
+      "visibility": "visible",
+      "x": 881.4,
+      "y": 83.67,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        885,
+        86
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 273,
+      "visibility": "visible",
+      "x": 884.04,
+      "y": 94.09,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        890,
+        97
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 274,
+      "visibility": "visible",
+      "x": 889.96,
+      "y": 105.73,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        894,
+        110
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 275,
+      "visibility": "visible",
+      "x": 893.58,
+      "y": 117.5,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        899,
+        124
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 276,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent crop review could not confidently separate ball from advertisement/sign background; excluded, no inferred center.",
+      "manual_click": [
+        902,
+        137
+      ],
+      "center_method": "manual_click_only",
+      "reviewed": true
+    },
+    {
+      "frame": 277,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent crop review could not confidently separate ball from advertisement/sign background; excluded, no inferred center.",
+      "manual_click": [
+        906,
+        151
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 278,
+      "visibility": "visible",
+      "x": 904.4,
+      "y": 155.58,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        910,
+        166
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 279,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent crop review could not confidently separate ball from advertisement/sign background; excluded, no inferred center.",
+      "manual_click": [
+        916,
+        183
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 280,
+      "visibility": "partial",
+      "x": 916,
+      "y": 183,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        916,
+        183
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 281,
+      "visibility": "partial",
+      "x": 930,
+      "y": 210,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        930,
+        210
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 282,
+      "visibility": "visible",
+      "x": 955.51,
+      "y": 243.33,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        954,
+        243
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 283,
+      "visibility": "partial",
+      "x": 991,
+      "y": 285,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        991,
+        285
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 284,
+      "visibility": "visible",
+      "x": 1025.25,
+      "y": 331.51,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1025,
+        332
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 285,
+      "visibility": "visible",
+      "x": 1064.09,
+      "y": 381.56,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1064,
+        382
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 286,
+      "visibility": "visible",
+      "x": 1105.92,
+      "y": 439.5,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1106,
+        440
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 287,
+      "visibility": "visible",
+      "x": 1151.41,
+      "y": 505.61,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1150,
+        502
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 288,
+      "visibility": "visible",
+      "x": 1195.12,
+      "y": 542.44,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1195,
+        542
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 289,
+      "visibility": "visible",
+      "x": 1237.02,
+      "y": 540.61,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1237,
+        541
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 290,
+      "visibility": "visible",
+      "x": 1283.35,
+      "y": 542.46,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1283,
+        542
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 291,
+      "visibility": "visible",
+      "x": 1334.68,
+      "y": 547.55,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1334,
+        548
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 292,
+      "visibility": "visible",
+      "x": 1391.34,
+      "y": 556.81,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1391,
+        557
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 293,
+      "visibility": "visible",
+      "x": 1455.0,
+      "y": 570.94,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1452,
+        574
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 294,
+      "visibility": "partial",
+      "x": 1524.93,
+      "y": 590.53,
+      "uncertainty_px": 8,
+      "notes": "Sphere partly merges with player edge; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        1520,
+        594
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 295,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "reviewed": true
+    },
+    {
+      "frame": 296,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "reviewed": true
+    },
+    {
+      "frame": 297,
+      "visibility": "visible",
+      "x": 1543.91,
+      "y": 518.15,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1549,
+        520
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 298,
+      "visibility": "visible",
+      "x": 1486.95,
+      "y": 456.79,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1487,
+        454
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 299,
+      "visibility": "visible",
+      "x": 1434.69,
+      "y": 402.9,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1435,
+        400
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 300,
+      "visibility": "visible",
+      "x": 1387.59,
+      "y": 356.18,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1387,
+        354
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 301,
+      "visibility": "visible",
+      "x": 1343.55,
+      "y": 315.29,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1344,
+        314
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 302,
+      "visibility": "visible",
+      "x": 1303.6,
+      "y": 281.18,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1304,
+        280
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 303,
+      "visibility": "visible",
+      "x": 1268.03,
+      "y": 251.61,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1269,
+        250
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 304,
+      "visibility": "visible",
+      "x": 1234.72,
+      "y": 226.06,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1236,
+        225
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 305,
+      "visibility": "visible",
+      "x": 1203.9,
+      "y": 205.27,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1205,
+        205
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 306,
+      "visibility": "visible",
+      "x": 1175.1,
+      "y": 187.68,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1175,
+        187
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 307,
+      "visibility": "visible",
+      "x": 1148.13,
+      "y": 174.69,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1149,
+        173
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 308,
+      "visibility": "visible",
+      "x": 1124.47,
+      "y": 163.01,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1125,
+        162
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 309,
+      "visibility": "visible",
+      "x": 1101.37,
+      "y": 153.61,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1102,
+        152
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 310,
+      "visibility": "visible",
+      "x": 1081.36,
+      "y": 146.73,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1081,
+        147
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 311,
+      "visibility": "visible",
+      "x": 1060.69,
+      "y": 141.99,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1061,
+        142
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 312,
+      "visibility": "visible",
+      "x": 1041.9,
+      "y": 138.51,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1042,
+        140
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 313,
+      "visibility": "visible",
+      "x": 1025.45,
+      "y": 138.68,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1024,
+        138
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 314,
+      "visibility": "visible",
+      "x": 1009.39,
+      "y": 140.13,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        1009,
+        140
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 315,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "reviewed": true
+    },
+    {
+      "frame": 316,
+      "visibility": "occluded_or_ambiguous",
+      "x": null,
+      "y": null,
+      "uncertainty_px": null,
+      "notes": "Independent crop review could not confidently separate ball from advertisement/sign background; excluded, no inferred center.",
+      "manual_click": [
+        980,
+        149
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 317,
+      "visibility": "visible",
+      "x": 966.52,
+      "y": 149.91,
+      "uncertainty_px": 5,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        966,
+        153
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 318,
+      "visibility": "visible",
+      "x": 954.07,
+      "y": 156.19,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        954,
+        157
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 319,
+      "visibility": "visible",
+      "x": 942.26,
+      "y": 163.25,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        942,
+        163
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 320,
+      "visibility": "visible",
+      "x": 931.56,
+      "y": 171.23,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        931,
+        170
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 321,
+      "visibility": "visible",
+      "x": 920.18,
+      "y": 179.56,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        921,
+        180
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 322,
+      "visibility": "partial",
+      "x": 912,
+      "y": 192,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        912,
+        192
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 323,
+      "visibility": "partial",
+      "x": 903,
+      "y": 204,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        903,
+        204
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 324,
+      "visibility": "partial",
+      "x": 893,
+      "y": 220,
+      "uncertainty_px": 8,
+      "notes": "Overlaps paddle/player; excluded from strict visible-frame scoring.",
+      "manual_click": [
+        893,
+        220
+      ],
+      "reviewed": true
+    },
+    {
+      "frame": 325,
+      "visibility": "visible",
+      "x": 895.54,
+      "y": 231.5,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        896,
+        235
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 326,
+      "visibility": "visible",
+      "x": 897.26,
+      "y": 257.96,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        899,
+        260
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 327,
+      "visibility": "visible",
+      "x": 899.91,
+      "y": 285.52,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        900,
+        289
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 328,
+      "visibility": "visible",
+      "x": 900.67,
+      "y": 316.48,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        903,
+        319
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    },
+    {
+      "frame": 329,
+      "visibility": "visible",
+      "x": 903.58,
+      "y": 355.03,
+      "uncertainty_px": 3,
+      "notes": "Independent visual reference click from the raw image; approximate center.",
+      "manual_click": [
+        904,
+        354
+      ],
+      "center_method": "manual_region_with_local_RGB_snap_visually_reviewed",
+      "reviewed": true
+    }
+  ]
+}

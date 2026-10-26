@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PickleTrack Live | Match Vision Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background-color: #0b0f17; color: #f0f6fc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .broadcast-card { background-color: #121824; border: 1px solid #1f293d; border-radius: 0.75rem; }
+    .glow-cyan { box-shadow: 0 0 20px rgba(0, 240, 255, 0.25); }
+    .pulse-live { animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Top Broadcast Bar -->
+  <header class="bg-[#121824] border-b border-[#1f293d] px-6 py-3.5 flex flex-wrap items-center justify-between gap-4 sticky top-0 z-50">
+    <div class="flex items-center gap-3">
+      <div class="bg-gradient-to-tr from-cyan-500 to-emerald-500 text-black p-2.5 rounded-lg font-black text-xl flex items-center justify-center">
+        <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <h1 class="text-lg font-black tracking-wider uppercase text-white">PickleTrack <span class="text-cyan-400">Live</span></h1>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 px-2 py-0.5 rounded font-mono font-bold uppercase tracking-wider">Zero Cloud / 100% Local</span>
+        </div>
+        <p class="text-xs text-gray-400">Real-Time Match Analysis & 2D Court Radar</p>
+      </div>
+    </div>
+
+    <!-- Match Selection & Quick Settings -->
+    <div class="flex flex-wrap items-center gap-3">
+      <a href="/ball-testing" class="bg-cyan-500/10 border border-cyan-500/40 text-cyan-300 px-3 py-2 rounded-lg text-sm font-semibold">Ball Tracking Test</a>
+      <div class="flex items-center gap-2 bg-[#0b0f17] border border-[#1f293d] rounded-lg px-3 py-1.5">
+        <label class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Match:</label>
+        <select id="videoSelect" class="bg-transparent text-sm text-gray-100 font-medium focus:outline-none">
+          <option value="">Loading videos...</option>
+        </select>
+        <button onclick="loadVideoList()" class="text-gray-400 hover:text-cyan-400" title="Refresh">
+          <i class="fa-solid fa-arrows-rotate text-xs"></i>
+        </button>
+      </div>
+
+      <!-- Ball Color Picker -->
+      <div class="flex items-center gap-2 bg-[#0b0f17] border border-[#1f293d] rounded-lg px-3 py-1.5">
+        <label class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Ball:</label>
+        <select id="ballColorSelect" class="bg-transparent text-xs text-gray-100 font-medium focus:outline-none">
+          <option value="optic_yellow">🟡 Optic Yellow (Standard)</option>
+          <option value="neon_green">🟢 Neon Lime</option>
+          <option value="orange">🟠 Bright Orange</option>
+          <option value="white">⚪ Indoor White</option>
+        </select>
+      </div>
+
+      <!-- Vision Engine -->
+      <div class="flex items-center gap-2 bg-[#0b0f17] border border-[#1f293d] rounded-lg px-3 py-1.5">
+        <label class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Engine:</label>
+        <select id="engineSelect" class="bg-transparent text-xs text-gray-100 font-medium focus:outline-none">
+          <option value="B">🧠 Smart Vision (YOLOv8 + AI)</option>
+          <option value="A">⚡ Fast Classical (Color+Motion)</option>
+        </select>
+      </div>
+
+      <!-- Ball Tracker AI -->
+      <div class="flex items-center gap-2 bg-[#0b0f17] border border-cyan-500/40 rounded-lg px-3 py-1.5">
+        <label class="text-xs font-semibold text-cyan-400 uppercase tracking-wide">Ball Tracker:</label>
+        <select id="ballTrackerSelect" class="bg-transparent text-xs text-cyan-200 font-medium focus:outline-none">
+          <option value="neural">✨ AI Neural (ball_v4)</option>
+          <option value="classical">⚡ Classical CV (Fast)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Broadcast Studio Layout -->
+  <main class="flex-1 p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-[1900px] w-full mx-auto">
+
+    <!-- Center Monitor: Video Feed + Live Overlay (8 cols) -->
+    <div class="lg:col-span-8 flex flex-col gap-4">
+      
+      <!-- Video Monitor Container -->
+      <div class="broadcast-card overflow-hidden flex flex-col">
+        
+        <!-- Monitor Header Pill -->
+        <div class="bg-[#182133] px-4 py-2.5 border-b border-[#1f293d] flex items-center justify-between text-xs">
+          <div class="flex items-center gap-2">
+            <span id="liveStatusBadge" class="flex items-center gap-1.5 bg-gray-800 text-gray-300 font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-gray-500"></span> Ready
+            </span>
+            <span id="clipInfo" class="text-gray-400 font-mono">--</span>
+          </div>
+
+          <!-- Court Alignment Controls -->
+          <div class="flex items-center gap-2">
+            <span id="courtStatusBadge" class="flex items-center gap-1.5 bg-amber-500/10 text-amber-300 border border-amber-500/30 font-semibold px-2.5 py-1 rounded text-xs" role="status" aria-live="polite">
+              <i class="fa-solid fa-vector-square"></i> <span id="courtStatusText">Court setup required</span>
+            </span>
+            <button onclick="triggerAutoDetectCourt()" title="Auto-detect court with Computer Vision (Zero manual clicks)" class="bg-[#0b0f17] hover:bg-[#1f293d] text-amber-400 hover:text-amber-300 border border-amber-500/40 px-2.5 py-1 rounded text-xs font-semibold transition flex items-center gap-1">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Auto-Detect</span>
+            </button>
+            <button id="toggleCalibBtn" onclick="toggleCalibrationMode()" title="Manually adjust corner positions" class="bg-[#0b0f17] hover:bg-[#1f293d] text-gray-400 hover:text-white border border-[#1f293d] px-2.5 py-1 rounded text-xs font-semibold transition flex items-center gap-1">
+              <i class="fa-solid fa-sliders"></i> <span id="calibBtnLabel">Fine-Tune</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Live Viewport / Canvas Container -->
+        <div id="monitorViewport" class="relative w-full aspect-video bg-black flex items-center justify-center overflow-hidden">
+          
+          <!-- Mode 1: Live MJPEG Video Stream (Plays in real time while rendering!) -->
+          <img id="liveFeedImg" src="" alt="Live Analysis Stream" class="w-full h-full object-contain hidden" />
+
+          <!-- Mode 2: Interactive Court Calibration Canvas -->
+          <canvas id="calibCanvas" class="block w-full h-full"></canvas>
+
+          <!-- Watermark / HUD Badge -->
+          <div id="liveWatermark" class="hidden absolute top-4 left-4 bg-black/80 backdrop-blur border border-red-500/40 text-red-400 px-3 py-1 rounded text-xs font-bold tracking-wider uppercase flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-red-500 pulse-live"></span> Live Analysis Rendering
+          </div>
+
+          <!-- Calibration Instruction Overlay -->
+          <div id="calibInstructions" class="absolute bottom-4 left-4 right-4 bg-black/90 backdrop-blur p-3 rounded-lg border border-cyan-500/40 flex items-center justify-between text-xs">
+            <div>
+              <span class="font-bold text-cyan-400">Court Setup (opening frame):</span> Click 4 corners: 
+              <span class="text-gray-300">1: Far-Left &rarr; 2: Far-Right &rarr; 3: Near-Right &rarr; 4: Near-Left</span>
+              (<span id="cornersCount" class="text-cyan-400 font-bold font-mono">0/4</span> placed)
+            </div>
+            <div class="flex gap-2">
+              <button onclick="resetCorners()" class="text-red-400 hover:text-red-300 px-2 py-1 rounded border border-red-900/40">Reset</button>
+              <button onclick="saveCorners()" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-3 py-1 rounded shadow">Save Court</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Court Visual Confirmation Bar -->
+        <div id="courtConfirmBar" class="bg-[#151c2b] px-4 py-2.5 border-t border-[#1f293d] flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div class="flex items-center gap-2.5">
+            <span id="confirmDot" class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+            <div>
+              <span id="confirmTitle" class="font-bold text-gray-200">Review court alignment:</span>
+              <span id="confirmHelp" class="text-gray-400 ml-1">Select a video to detect its court.</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="triggerAutoDetectCourt()" title="Re-run Computer Vision line detection" class="bg-[#0b0f17] hover:bg-[#1f293d] text-amber-400 hover:text-amber-300 border border-amber-500/40 px-3 py-1.5 rounded font-semibold flex items-center gap-1.5 transition">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Re-Detect
+            </button>
+            <button id="confirmCourtBtn" onclick="confirmAndLockCourt()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-1.5 rounded shadow flex items-center gap-1.5 transition">
+              <i class="fa-solid fa-check"></i> Looks Good - Confirm Court
+            </button>
+          </div>
+        </div>
+
+        <!-- Broadcast Playback & Range Controls Bar -->
+        <div class="bg-[#121824] p-4 border-t border-[#1f293d] flex flex-wrap items-center justify-between gap-4">
+          
+          <!-- Primary Action Buttons -->
+          <div class="flex items-center gap-3">
+            <button id="startLiveBtn" onclick="startLiveAnalysis()" disabled class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-2.5 rounded-lg shadow-lg flex items-center gap-2 text-sm transition disabled:opacity-40 disabled:cursor-not-allowed">
+              <i class="fa-solid fa-play"></i> Start Live Analysis
+            </button>
+            <button id="stopLiveBtn" onclick="stopLiveAnalysis()" class="bg-red-600/80 hover:bg-red-500 text-white font-bold px-4 py-2.5 rounded-lg hidden flex items-center gap-2 text-sm transition">
+              <i class="fa-solid fa-stop"></i> Stop
+            </button>
+          </div>
+
+          <!-- Simple Range Selectors -->
+          <div class="flex flex-wrap items-center gap-4 text-xs text-gray-300">
+            <div class="flex items-center gap-2">
+              <label class="text-gray-400">Start Frame:</label>
+              <input type="number" id="startFrame" value="0" min="0" class="w-16 bg-[#0b0f17] border border-[#1f293d] rounded p-1.5 text-center font-mono">
+            </div>
+            <div class="flex items-center gap-2">
+              <label class="text-gray-400">Duration:</label>
+              <select id="durationSelect" class="bg-[#0b0f17] border border-[#1f293d] rounded p-1.5 font-medium">
+                <option value="150">5 Seconds (150 frames)</option>
+                <option value="300" selected>10 Seconds (300 frames)</option>
+                <option value="600">20 Seconds (600 frames)</option>
+                <option value="999999">Full Video</option>
+              </select>
+            </div>
+            <div class="flex items-center gap-2">
+              <label class="text-gray-400">Speed:</label>
+              <select id="speedSelect" class="bg-[#0b0f17] border border-[#1f293d] rounded p-1.5 font-medium text-emerald-400">
+                <option value="1" selected>1x Normal (All Frames)</option>
+                <option value="2">2x Fast (Sample Every 2nd Frame)</option>
+                <option value="3">3x Turbo (Sample Every 3rd Frame)</option>
+              </select>
+            </div>
+            <span class="basis-full text-[11px] text-gray-500">Court setup uses the opening frame; analysis starts at the chosen frame.</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Finished Video & Flight Log (Collapsible when completed) -->
+      <div id="resultsCard" class="broadcast-card p-5 hidden flex flex-col gap-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-bold uppercase tracking-wider text-cyan-400 flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-emerald-400"></i> Analysis Complete & Recorded
+          </h2>
+          <div class="flex gap-2">
+            <a id="downloadVideoLink" href="#" download class="text-xs bg-[#1f293d] hover:bg-cyan-600 text-cyan-300 hover:text-white px-3 py-1.5 rounded transition flex items-center gap-1.5">
+              <i class="fa-solid fa-download"></i> Download Video
+            </a>
+            <a id="downloadCsvLink" href="#" download class="text-xs bg-[#1f293d] hover:bg-emerald-600 text-emerald-300 hover:text-white px-3 py-1.5 rounded transition flex items-center gap-1.5">
+              <i class="fa-solid fa-file-csv"></i> Download CSV Log
+            </a>
+          </div>
+        </div>
+
+        <!-- Shot Table -->
+        <div class="max-h-56 overflow-y-auto rounded-lg border border-[#1f293d]">
+          <table class="w-full text-xs text-left text-gray-300">
+            <thead class="bg-[#0b0f17] text-gray-400 uppercase font-mono sticky top-0 border-b border-[#1f293d]">
+              <tr>
+                <th class="p-2.5">Flight #</th>
+                <th class="p-2.5">Segment</th>
+                <th class="p-2.5">Est. Avg Flight Speed</th>
+                <th class="p-2.5">Hitter</th>
+                <th class="p-2.5">Start Zone</th>
+                <th class="p-2.5">End Zone</th>
+              </tr>
+            </thead>
+            <tbody id="shotTableBody" class="divide-y divide-[#1f293d]">
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Sidebar: Live Match Telemetry, Speedometer & Kitchen Stats (4 cols) -->
+    <div class="lg:col-span-4 flex flex-col gap-5">
+      
+      <!-- Big Digital Speedometer Card -->
+      <div class="broadcast-card p-5 flex flex-col gap-4 text-center">
+        <div class="text-xs font-bold uppercase tracking-wider text-gray-400 flex items-center justify-between">
+          <span><i class="fa-solid fa-gauge-high text-cyan-400"></i> Last Estimated 3D Flight</span>
+          <span id="currentShotBadge" class="bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 px-2 py-0.5 rounded text-[11px] font-bold">RALLY</span>
+        </div>
+
+        <div class="py-4 flex flex-col items-center justify-center">
+          <div class="text-6xl font-black font-mono tracking-tight text-white flex items-baseline gap-1">
+            <span id="liveSpeedReadout">--</span>
+            <span class="text-xl text-cyan-400 font-bold">MPH</span>
+          </div>
+          <div class="text-xs text-gray-400 mt-2 flex items-center gap-3">
+            <span>Peak estimate: <b id="livePeakReadout" class="text-emerald-400 font-mono">--</b></span>
+            <span>•</span>
+            <span>Flights: <b id="liveShotsCount" class="text-amber-400 font-mono">0</b></span>
+          </div>
+        </div>
+      </div>
+
+      <p id="speedStatus" class="text-xs text-gray-400 px-2">Qualified 3D flight averages appear during analysis. Uncertain speeds stay unavailable.</p>
+      <!-- Player Kitchen (NVZ) Occupancy Monitor -->
+      <div class="broadcast-card p-5 flex flex-col gap-4">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-gray-400 flex items-center justify-between">
+          <span><i class="fa-solid fa-person-running text-amber-400"></i> Player Court Zones</span>
+          <span class="text-[10px] text-gray-500">Live Tracking</span>
+        </h2>
+
+        <div id="playerList" class="flex flex-col gap-2.5 text-xs">
+          <div class="p-4 text-center text-gray-500 italic bg-[#0b0f17] rounded-lg border border-[#1f293d]">
+            Click "Start Live Analysis" to monitor players in real time
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Guidance & Legend -->
+      <div class="broadcast-card p-5 flex flex-col gap-3 text-xs text-gray-400">
+        <h3 class="font-bold text-gray-300 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-info text-cyan-400"></i> Reading Flight Speeds
+        </h3>
+        <ul class="flex flex-col gap-1.5">
+          <li><b class="text-cyan-400">Average:</b> Estimated speed across the observed flight, including vertical travel.</li>
+          <li><b class="text-emerald-400">Peak:</b> The highest modeled speed within that segment.</li>
+          <li><b class="text-amber-400">Unavailable:</b> Tracking or geometry did not support a useful estimate.</li>
+          <li>Segments may be partial flights. Paddle contacts, bounces and hitters are not yet verified.</li>
+          <li>Hover over a flight row for its fit quality and status.</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    let currentVideo = "";
+    let isCalibrationMode = false;
+    let clickedCorners = [];
+    let statsInterval = null;
+    let courtConfirmed = false;
+    let courtDirty = false;
+    let calibrationBusy = false;
+    let calibrationRequestId = 0;
+    let frameRequestId = 0;
+    let cornerRevision = 0;
+    let imageReady = false;
+
+    const canvas = document.getElementById("calibCanvas");
+    const ctx = canvas.getContext("2d");
+    let baseImg = new Image();
+
+    async function readApiResponse(response) {
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(typeof data.detail === "string" ? data.detail : `Request failed (${response.status})`);
+      }
+      return data;
+    }
+
+    function updateCourtControls() {
+      const start = document.getElementById("startLiveBtn");
+      start.disabled = isAnalyzing || calibrationBusy || !courtConfirmed || courtDirty || !imageReady || clickedCorners.length !== 4;
+      start.title = start.disabled ? "Review the court outline, then confirm and save it before analysis." : "Analyze this video using the confirmed court.";
+      const confirm = document.getElementById("confirmCourtBtn");
+      confirm.disabled = calibrationBusy || !imageReady || clickedCorners.length !== 4 || isAnalyzing;
+      confirm.classList.toggle("opacity-40", confirm.disabled);
+      confirm.classList.toggle("cursor-not-allowed", confirm.disabled);
+      document.getElementById("videoSelect").disabled = isAnalyzing;
+    }
+
+    function showCourtState(status, title, help, tone = "review") {
+      const color = tone === "confirmed" ? "emerald" : tone === "error" ? "red" : "amber";
+      document.getElementById("courtStatusText").textContent = status;
+      document.getElementById("courtStatusBadge").className = `flex items-center gap-1.5 font-semibold px-2.5 py-1 rounded text-xs border ${color === "emerald" ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/30" : color === "red" ? "bg-red-500/10 text-red-300 border-red-500/30" : "bg-amber-500/10 text-amber-300 border-amber-500/30"}`;
+      document.getElementById("confirmDot").className = `w-2.5 h-2.5 rounded-full ${color === "emerald" ? "bg-emerald-400" : color === "red" ? "bg-red-400" : "bg-amber-400"}`;
+      document.getElementById("confirmTitle").textContent = title;
+      document.getElementById("confirmHelp").textContent = help;
+      const button = document.getElementById("confirmCourtBtn");
+      button.innerHTML = courtConfirmed && !courtDirty
+        ? `<i class="fa-solid fa-circle-check"></i> Confirmed`
+        : `<i class="fa-solid fa-check"></i> ${courtDirty ? "Save & Lock Court" : "Looks Good - Confirm Court"}`;
+      button.className = "bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-1.5 rounded shadow flex items-center gap-1.5 transition";
+      updateCourtControls();
+    }
+
+    function applyCalibration(data) {
+      if (typeof data.confirmed !== "boolean") {
+        throw new Error("The server is running an older version. Restart the app with python app.py, refresh this page, then confirm the court.");
+      }
+      if (!Array.isArray(data.corners) || data.corners.length !== 4 ||
+          !data.corners.every(p => Array.isArray(p) && p.length === 2 && p.every(Number.isFinite))) {
+        throw new Error("Court detection returned invalid corners. Place the four corners manually.");
+      }
+      clickedCorners = data.corners.map(p => ({ x: p[0], y: p[1] }));
+      cornerRevision++;
+      courtConfirmed = data.confirmed === true;
+      courtDirty = false;
+      const matchScore = Number.isFinite(data.confidence)
+        ? ` - line match ${Math.round(Math.max(0, Math.min(1, data.confidence)) * 100)}%` : "";
+      if (courtConfirmed) {
+        showCourtState("Court confirmed", "Court confirmed & saved:", "Ready to start live analysis.", "confirmed");
+      } else if (data.calibrated && data.source !== "needs_review") {
+        showCourtState(`Court detected${matchScore}`, "Review detected lines:", "Check both baselines and kitchen lines. Adjust corners if needed, then confirm.");
+      } else {
+        showCourtState(`Court needs adjustment${matchScore}`, "Automatic alignment needs review:", "The outline is a starting point. Align the four corners and kitchen lines, then save.");
+      }
+      drawCalibrationCanvas();
+    }
+
+    function markCourtDirty() {
+      courtConfirmed = false;
+      courtDirty = true;
+      cornerRevision++;
+      showCourtState("Court changes not saved", "Review adjusted lines:", "Align the corners and kitchen lines, then Save & Lock Court before analysis.");
+    }
+
+    // 1. Load match clips
+    async function loadVideoList() {
+      if (isAnalyzing) return;
+      try {
+        const data = await readApiResponse(await fetch("/api/videos"));
+        const sel = document.getElementById("videoSelect");
+        sel.innerHTML = "";
+        data.videos.forEach(v => {
+          const opt = document.createElement("option");
+          opt.value = v.name;
+          opt.textContent = `${v.name} (${v.width}x${v.height})`;
+          sel.appendChild(opt);
+        });
+        const selected = data.videos.some(v => v.name === currentVideo) ? currentVideo : (data.videos[0]?.name || "");
+        sel.value = selected;
+        await onVideoChange(selected);
+      } catch (e) {
+        showCourtState("Could not load videos", "Video selection unavailable:", e.message, "error");
+      }
+    }
+
+    document.getElementById("videoSelect").addEventListener("change", (e) => {
+      onVideoChange(e.target.value);
+    });
+
+    async function onVideoChange(vidName) {
+      if (isAnalyzing) return;
+      const requestId = ++calibrationRequestId;
+      currentVideo = vidName;
+      clickedCorners = [];
+      draggedCornerIdx = null;
+      cornerRevision++;
+      courtConfirmed = false;
+      courtDirty = false;
+      calibrationBusy = Boolean(vidName);
+      imageReady = false;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      document.getElementById("clipInfo").textContent = vidName;
+      document.getElementById("liveFeedImg").classList.add("hidden");
+      canvas.classList.remove("hidden");
+      showCourtState(vidName ? "Detecting court..." : "Select a video", "Court setup:", "Automatic alignment will appear here for review.");
+      loadInitialFrame();
+      if (!vidName) return;
+      try {
+        const data = await readApiResponse(await fetch(`/api/calibration?video_name=${encodeURIComponent(vidName)}`));
+        if (requestId !== calibrationRequestId || currentVideo !== vidName) return;
+        applyCalibration(data);
+      } catch (e) {
+        if (requestId === calibrationRequestId) {
+          showCourtState("Court detection unavailable", "Place the court corners:", e.message, "error");
+        }
+      } finally {
+        if (requestId === calibrationRequestId) {
+          calibrationBusy = false;
+          updateCourtControls();
+        }
+      }
+    }
+
+    async function triggerAutoDetectCourt() {
+      if (!currentVideo || isAnalyzing || calibrationBusy) return;
+      const videoName = currentVideo;
+      const requestId = ++calibrationRequestId;
+      calibrationBusy = true;
+      courtConfirmed = false;
+      showCourtState("Detecting court...", "Finding court lines:", "The new outline will need your confirmation.");
+      try {
+        const data = await readApiResponse(await fetch(`/api/auto_detect_court?video_name=${encodeURIComponent(videoName)}`, { method: "POST" }));
+        if (requestId !== calibrationRequestId || videoName !== currentVideo) return;
+        applyCalibration(data);
+      } catch (e) {
+        if (requestId === calibrationRequestId) {
+          courtDirty = clickedCorners.length > 0;
+          showCourtState("Court detection failed", "Review court alignment:", `${e.message} Review and save the outline before analysis.`, "error");
+        }
+      } finally {
+        if (requestId === calibrationRequestId) {
+          calibrationBusy = false;
+          updateCourtControls();
+        }
+      }
+    }
+
+    function loadInitialFrame() {
+      const requestId = ++frameRequestId;
+      const videoName = currentVideo;
+      imageReady = false;
+      updateCourtControls();
+      if (!videoName) return;
+      const frameImg = new Image();
+      frameImg.onload = () => {
+        if (requestId !== frameRequestId || videoName !== currentVideo) return;
+        baseImg = frameImg;
+        imageReady = true;
+        canvas.width = frameImg.naturalWidth;
+        canvas.height = frameImg.naturalHeight;
+        // Keep the element and bitmap at the same aspect ratio so clicks map to pixels.
+        document.getElementById("monitorViewport").style.aspectRatio = `${canvas.width} / ${canvas.height}`;
+        drawCalibrationCanvas();
+        updateCourtControls();
+      };
+      frameImg.onerror = () => {
+        if (requestId === frameRequestId && videoName === currentVideo) {
+          showCourtState("Could not load video frame", "Court preview unavailable:", "Select the video again or check that the recording can be decoded.", "error");
+        }
+      };
+      frameImg.src = `/api/frame?video_name=${encodeURIComponent(videoName)}&frame_idx=0`;
+    }
+
+    let draggedCornerIdx = null;
+
+    function projectCourtPoint(corners, u, v, courtW = 20.0, courtH = 44.0) {
+      // corners: [P1(far-left), P2(far-right), P3(near-right), P4(near-left)]
+      // (0, 0) is P4 (near-left) -> s=0, t=0
+      // (20, 0) is P3 (near-right) -> s=1, t=0
+      // (20, 44) is P2 (far-right) -> s=1, t=1
+      // (0, 44) is P1 (far-left) -> s=0, t=1
+      const x0 = corners[3].x, y0 = corners[3].y;
+      const x1 = corners[2].x, y1 = corners[2].y;
+      const x2 = corners[1].x, y2 = corners[1].y;
+      const x3 = corners[0].x, y3 = corners[0].y;
+
+      const dx1 = x1 - x2, dy1 = y1 - y2;
+      const dx2 = x3 - x2, dy2 = y3 - y2;
+      const dx3 = x0 - x1 + x2 - x3, dy3 = y0 - y1 + y2 - y3;
+
+      const det = dx1 * dy2 - dx2 * dy1;
+      if (Math.abs(det) < 1e-5) {
+        const s = u / courtW, t = v / courtH;
+        const topX = x3 + (x2 - x3) * s, topY = y3 + (y2 - y3) * s;
+        const botX = x0 + (x1 - x0) * s, botY = y0 + (y1 - y0) * s;
+        return { x: botX + (topX - botX) * t, y: botY + (topY - botY) * t };
+      }
+
+      const g = (dx3 * dy2 - dx2 * dy3) / det;
+      const h = (dx1 * dy3 - dx3 * dy1) / det;
+      const a = x1 - x0 + g * x1;
+      const b = x3 - x0 + h * x3;
+      const c = x0;
+      const d = y1 - y0 + g * y1;
+      const e = y3 - y0 + h * y3;
+      const f = y0;
+
+      const s = u / courtW;
+      const t = v / courtH;
+      const denom = g * s + h * t + 1.0;
+      return {
+        x: (a * s + b * t + c) / denom,
+        y: (d * s + e * t + f) / denom
+      };
+    }
+
+    function drawCalibrationCanvas() {
+      if (imageReady) ctx.drawImage(baseImg, 0, 0, canvas.width, canvas.height);
+      else ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      if (clickedCorners.length === 4) {
+        // 1. Shaded Kitchen (Non-Volley Zone: 15 ft to 29 ft)
+        const k0 = projectCourtPoint(clickedCorners, 0, 15);
+        const k1 = projectCourtPoint(clickedCorners, 20, 15);
+        const k2 = projectCourtPoint(clickedCorners, 20, 29);
+        const k3 = projectCourtPoint(clickedCorners, 0, 29);
+
+        ctx.fillStyle = "rgba(255, 180, 0, 0.14)";
+        ctx.beginPath();
+        ctx.moveTo(k0.x, k0.y);
+        ctx.lineTo(k1.x, k1.y);
+        ctx.lineTo(k2.x, k2.y);
+        ctx.lineTo(k3.x, k3.y);
+        ctx.closePath();
+        ctx.fill();
+
+        // 2. Court Surface Shading (Overall Court)
+        ctx.fillStyle = "rgba(0, 255, 136, 0.06)";
+        ctx.beginPath();
+        ctx.moveTo(clickedCorners[0].x, clickedCorners[0].y);
+        for (let i = 1; i < 4; i++) {
+          ctx.lineTo(clickedCorners[i].x, clickedCorners[i].y);
+        }
+        ctx.closePath();
+        ctx.fill();
+
+        // 3. Draw Broadcast Court Perimeter
+        ctx.strokeStyle = "rgba(0, 255, 136, 0.95)";
+        ctx.lineWidth = 3.5;
+        ctx.beginPath();
+        ctx.moveTo(clickedCorners[0].x, clickedCorners[0].y);
+        for (let i = 1; i < 4; i++) {
+          ctx.lineTo(clickedCorners[i].x, clickedCorners[i].y);
+        }
+        ctx.closePath();
+        ctx.stroke();
+
+        // Helper to draw projected lines
+        function drawCourtLine(u1, v1, u2, v2, strokeStyle, lineWidth, dashed = false) {
+          const pA = projectCourtPoint(clickedCorners, u1, v1);
+          const pB = projectCourtPoint(clickedCorners, u2, v2);
+          ctx.save();
+          ctx.strokeStyle = strokeStyle;
+          ctx.lineWidth = lineWidth;
+          if (dashed) ctx.setLineDash([8, 6]);
+          ctx.beginPath();
+          ctx.moveTo(pA.x, pA.y);
+          ctx.lineTo(pB.x, pB.y);
+          ctx.stroke();
+          ctx.restore();
+        }
+
+        // 4. Inner Court Lines
+        // Near Kitchen Line (15 ft)
+        drawCourtLine(0, 15, 20, 15, "rgba(255, 215, 0, 0.90)", 2.5);
+        // Far Kitchen Line (29 ft)
+        drawCourtLine(0, 29, 20, 29, "rgba(255, 215, 0, 0.90)", 2.5);
+        // Ground projection of the net, which is below the raised net tape in the image.
+        drawCourtLine(0, 22, 20, 22, "rgba(0, 220, 255, 0.95)", 2.0, true);
+        // Near Centerline (0 to 15 ft)
+        drawCourtLine(10, 0, 10, 15, "rgba(255, 255, 255, 0.90)", 2.5);
+        // Far Centerline (29 to 44 ft)
+        drawCourtLine(10, 29, 10, 44, "rgba(255, 255, 255, 0.90)", 2.5);
+
+        // Kitchen badge label
+        const netCenter = projectCourtPoint(clickedCorners, 10, 22);
+        ctx.font = "bold 13px sans-serif";
+        ctx.fillStyle = "rgba(0, 220, 255, 0.95)";
+        ctx.fillText("NET AT GROUND", netCenter.x + 12, netCenter.y + 4);
+
+        // 5. Corner Pins with Interactive Grab Rings
+        const labels = ["Far-Left (P1)", "Far-Right (P2)", "Near-Right (P3)", "Near-Left (P4)"];
+        clickedCorners.forEach((p, i) => {
+          // Large Grab Aura Glow
+          ctx.fillStyle = "rgba(0, 255, 136, 0.28)";
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 18, 0, Math.PI * 2);
+          ctx.fill();
+
+          // Outer Ring
+          ctx.strokeStyle = "#ffffff";
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 9, 0, Math.PI * 2);
+          ctx.stroke();
+
+          // Solid Emerald Core
+          ctx.fillStyle = "#00ff88";
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
+          ctx.fill();
+
+          // Pill Badge with Shadow
+          ctx.font = "bold 13px sans-serif";
+          const txt = labels[i];
+          const textMetrics = ctx.measureText(txt);
+          const badgeW = textMetrics.width + 12;
+          const badgeX = p.x + 16;
+          const badgeY = p.y - 18;
+
+          ctx.fillStyle = "rgba(10, 15, 25, 0.85)";
+          ctx.fillRect(badgeX, badgeY, badgeW, 22);
+          ctx.strokeStyle = "rgba(0, 255, 136, 0.5)";
+          ctx.lineWidth = 1;
+          ctx.strokeRect(badgeX, badgeY, badgeW, 22);
+
+          ctx.fillStyle = "#00ff88";
+          ctx.fillText(txt, badgeX + 6, badgeY + 15);
+        });
+      } else if (clickedCorners.length > 0 && isCalibrationMode) {
+        clickedCorners.forEach((p, i) => {
+          ctx.fillStyle = "#00f0ff";
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
+          ctx.fill();
+        });
+      }
+
+      document.getElementById("cornersCount").textContent = `${clickedCorners.length}/4`;
+    }
+
+    // Interactive Drag-and-Nudge Handlers
+    function canvasPoint(event) {
+      const rect = canvas.getBoundingClientRect();
+      return {
+        x: Math.max(0, Math.min(canvas.width - 1, (event.clientX - rect.left) * canvas.width / rect.width)),
+        y: Math.max(0, Math.min(canvas.height - 1, (event.clientY - rect.top) * canvas.height / rect.height))
+      };
+    }
+
+    canvas.addEventListener("mousedown", (e) => {
+      if (clickedCorners.length < 4 || calibrationBusy || isAnalyzing || !imageReady) return;
+      const { x, y } = canvasPoint(e);
+
+      for (let i = 0; i < 4; i++) {
+        if (Math.hypot(clickedCorners[i].x - x, clickedCorners[i].y - y) < 45) {
+          draggedCornerIdx = i;
+          canvas.style.cursor = "grabbing";
+          break;
+        }
+      }
+    });
+
+    canvas.addEventListener("mousemove", (e) => {
+      if (calibrationBusy || isAnalyzing || !imageReady) return;
+      const { x, y } = canvasPoint(e);
+
+      if (draggedCornerIdx !== null) {
+        clickedCorners[draggedCornerIdx] = { x, y };
+        markCourtDirty();
+        drawCalibrationCanvas();
+      } else if (clickedCorners.length === 4) {
+        let hovering = false;
+        for (let i = 0; i < 4; i++) {
+          if (Math.hypot(clickedCorners[i].x - x, clickedCorners[i].y - y) < 45) {
+            hovering = true;
+            break;
+          }
+        }
+        canvas.style.cursor = hovering ? "grab" : "default";
+      }
+    });
+
+    window.addEventListener("mouseup", () => {
+      if (draggedCornerIdx !== null) {
+        draggedCornerIdx = null;
+        canvas.style.cursor = "default";
+      }
+    });
+
+    canvas.addEventListener("click", (e) => {
+      if (!isCalibrationMode || clickedCorners.length >= 4 || calibrationBusy || isAnalyzing || !imageReady) return;
+      const { x, y } = canvasPoint(e);
+      clickedCorners.push({ x, y });
+      markCourtDirty();
+      drawCalibrationCanvas();
+    });
+
+    function toggleCalibrationMode() {
+      if (isAnalyzing || calibrationBusy) return;
+      isCalibrationMode = !isCalibrationMode;
+      const liveFeed = document.getElementById("liveFeedImg");
+      liveFeed.classList.add("hidden");
+      canvas.classList.remove("hidden");
+      document.getElementById("calibInstructions").style.display = isCalibrationMode ? "flex" : "none";
+      document.getElementById("calibBtnLabel").textContent = isCalibrationMode ? "Done" : "Fine-Tune";
+      drawCalibrationCanvas();
+    }
+
+    function resetCorners() {
+      if (isAnalyzing || calibrationBusy) return;
+      clickedCorners = [];
+      draggedCornerIdx = null;
+      isCalibrationMode = true;
+      document.getElementById("calibInstructions").style.display = "flex";
+      document.getElementById("calibBtnLabel").textContent = "Done";
+      markCourtDirty();
+      drawCalibrationCanvas();
+    }
+
+    async function confirmAndLockCourt() {
+      if (!currentVideo || clickedCorners.length !== 4 || calibrationBusy || isAnalyzing || !imageReady) return false;
+      const videoName = currentVideo;
+      const revision = cornerRevision;
+      const requestId = calibrationRequestId;
+      calibrationBusy = true;
+      showCourtState("Saving court...", "Saving reviewed alignment:", "Please wait for the court to be confirmed.");
+      try {
+        const data = await readApiResponse(await fetch("/api/calibration", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            video_name: videoName,
+            corners: clickedCorners.map(p => [p.x, p.y])
+          })
+        }));
+        if (videoName !== currentVideo || revision !== cornerRevision || requestId !== calibrationRequestId) return false;
+        if (typeof data.confirmed !== "boolean") {
+          throw new Error("The server is running an older version. Restart the app with python app.py, refresh this page, then confirm the court.");
+        }
+        if (data.confirmed !== true) throw new Error("The court was not confirmed. Review the outline and try saving again.");
+        applyCalibration(data);
+        return true;
+      } catch (e) {
+        if (videoName === currentVideo && requestId === calibrationRequestId) {
+          courtConfirmed = false;
+          showCourtState("Court was not saved", "Save failed:", e.message, "error");
+        }
+        return false;
+      } finally {
+        if (requestId === calibrationRequestId) {
+          calibrationBusy = false;
+          updateCourtControls();
+        }
+      }
+    }
+
+    async function saveCorners() {
+      if (await confirmAndLockCourt()) {
+        isCalibrationMode = false;
+        document.getElementById("calibInstructions").style.display = "none";
+        document.getElementById("calibBtnLabel").textContent = "Fine-Tune";
+      }
+    }
+
+    // 2. Start Live Video Stream & Real-Time Telemetry
+    let isAnalyzing = false;
+    let analysisRequestId = 0;
+    let analysisStartTime = 0;
+    let liveFrameCount = 0;
+    let courtMotionWarning = false;
+
+    function startLiveAnalysis() {
+      if (isAnalyzing) return;
+      if (!currentVideo || !courtConfirmed || courtDirty || calibrationBusy || !imageReady || clickedCorners.length !== 4) {
+        showCourtState("Confirm court before analysis", "Review court alignment:", "Save & Lock Court so analysis uses the outline shown here.");
+        return;
+      }
+      const mode = document.getElementById("engineSelect").value;
+      const ballTracker = document.getElementById("ballTrackerSelect") ? document.getElementById("ballTrackerSelect").value : "neural";
+      const ballColor = document.getElementById("ballColorSelect").value;
+      const startF = document.getElementById("startFrame").value || 0;
+      const maxF = document.getElementById("durationSelect").value;
+      const speed = document.getElementById("speedSelect").value || 1;
+
+      isAnalyzing = true;
+      courtMotionWarning = false;
+      const requestId = ++analysisRequestId;
+      updateCourtControls();
+      liveFrameCount = 0;
+      analysisStartTime = Date.now();
+      document.getElementById("liveSpeedReadout").textContent = "--";
+      document.getElementById("livePeakReadout").textContent = "--";
+      document.getElementById("speedStatus").textContent = "Collecting actual ball observations for a 3D speed estimate.";
+
+      const streamUrl = `/api/stream?video_name=${encodeURIComponent(currentVideo)}&mode=${mode}&start_frame=${startF}&max_frames=${maxF}&ball_color=${ballColor}&speed=${speed}&ball_tracker=${ballTracker}`;
+
+      // Switch smoothly to live MJPEG stream
+      const liveFeed = document.getElementById("liveFeedImg");
+      liveFeed.onerror = async () => {
+        if (!isAnalyzing || requestId !== analysisRequestId) return;
+        try {
+          const stats = await readApiResponse(await fetch("/api/live_stats"));
+          if (!isAnalyzing || requestId !== analysisRequestId) return;
+          if (!stats.error && !stats.is_running && stats.current_frame > 0) {
+            await stopLiveAnalysis();
+            return;
+          }
+          showAnalysisError(stats.error || "The video stream could not start. Review the court confirmation and try again.");
+        } catch (e) {
+          if (isAnalyzing && requestId === analysisRequestId) showAnalysisError("The analysis connection was interrupted. Try starting again.");
+        }
+      };
+      liveFeed.classList.remove("hidden");
+      canvas.classList.add("hidden");
+      liveFeed.src = streamUrl;
+
+      document.getElementById("calibInstructions").style.display = "none";
+      isCalibrationMode = false;
+      document.getElementById("calibBtnLabel").textContent = "Fine-Tune";
+
+      // UI state
+      document.getElementById("liveWatermark").classList.remove("hidden");
+      document.getElementById("liveWatermark").innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-red-500 pulse-live"></span> <span id="watermarkText">ANALYZING MATCH (FRAME 0)</span>`;
+      document.getElementById("startLiveBtn").classList.add("hidden");
+      document.getElementById("stopLiveBtn").classList.remove("hidden");
+      document.getElementById("resultsCard").classList.add("hidden");
+      document.getElementById("liveStatusBadge").innerHTML = `<span class="w-2 h-2 rounded-full bg-red-500 pulse-live"></span> ANALYZING MATCH`;
+      document.getElementById("liveStatusBadge").className = "flex items-center gap-1.5 bg-red-500/20 text-red-400 border border-red-500/40 font-bold px-2 py-0.5 rounded uppercase tracking-wider";
+
+      // Start polling live telemetry
+      statsInterval = setInterval(updateLiveStats, 300);
+    }
+
+    function showAnalysisError(message) {
+      isAnalyzing = false;
+      analysisRequestId++;
+      clearInterval(statsInterval);
+      const liveFeed = document.getElementById("liveFeedImg");
+      liveFeed.onerror = null;
+      liveFeed.src = "";
+      liveFeed.classList.add("hidden");
+      canvas.classList.remove("hidden");
+      drawCalibrationCanvas();
+      document.getElementById("startLiveBtn").classList.remove("hidden");
+      document.getElementById("stopLiveBtn").classList.add("hidden");
+      document.getElementById("liveWatermark").classList.add("hidden");
+      document.getElementById("liveStatusBadge").textContent = "ANALYSIS FAILED";
+      document.getElementById("liveStatusBadge").className = "bg-red-500/20 text-red-300 border border-red-500/40 font-bold px-2 py-0.5 rounded";
+      document.getElementById("confirmHelp").textContent = message;
+      updateCourtControls();
+      fetch("/api/stop", { method: "POST" }).catch(() => {});
+    }
+
+    async function stopLiveAnalysis() {
+      const videoName = currentVideo;
+      const calibrationId = calibrationRequestId;
+      analysisRequestId++;
+      clearInterval(statsInterval);
+      document.getElementById("liveFeedImg").onerror = null;
+      document.getElementById("liveStatusBadge").textContent = "FINISHING 3D ANALYSIS";
+      document.getElementById("stopLiveBtn").disabled = true;
+      try {
+        await readApiResponse(await fetch("/api/stop", { method: "POST" }));
+        // Keep the stream connected until the server has flushed the video and
+        // reconstructed flights. Otherwise results may still belong to an older run.
+        const deadline = Date.now() + 60000;
+        while (true) {
+          const state = await readApiResponse(await fetch("/api/live_stats"));
+          if (state.error) throw new Error(state.error);
+          if (!state.is_running) break;
+          if (Date.now() >= deadline) throw new Error("Analysis is still finishing. Wait for the server before starting another run.");
+          await new Promise(resolve => setTimeout(resolve, 200));
+        }
+      } catch (e) {
+        showAnalysisError(e.message || "The analysis connection was interrupted.");
+        document.getElementById("stopLiveBtn").disabled = false;
+        return;
+      }
+      document.getElementById("stopLiveBtn").disabled = false;
+      if (videoName !== currentVideo || calibrationId !== calibrationRequestId) return;
+      isAnalyzing = false;
+      updateCourtControls();
+
+      const liveFeed = document.getElementById("liveFeedImg");
+
+      // Draw final annotated frame onto canvas to freeze view without black screen
+      try {
+        const lastFrameImg = new Image();
+        lastFrameImg.onload = () => {
+          if (videoName !== currentVideo || calibrationId !== calibrationRequestId || isAnalyzing) return;
+          ctx.drawImage(lastFrameImg, 0, 0, canvas.width, canvas.height);
+          liveFeed.classList.add("hidden");
+          canvas.classList.remove("hidden");
+          liveFeed.src = "";
+        };
+        lastFrameImg.onerror = () => {
+          if (videoName !== currentVideo || calibrationId !== calibrationRequestId || isAnalyzing) return;
+          liveFeed.classList.add("hidden");
+          canvas.classList.remove("hidden");
+          liveFeed.src = "";
+        };
+        lastFrameImg.src = `/api/live_frame?t=${Date.now()}`;
+      } catch (e) {
+        liveFeed.classList.add("hidden");
+        canvas.classList.remove("hidden");
+        liveFeed.src = "";
+      }
+
+      document.getElementById("startLiveBtn").classList.remove("hidden");
+      document.getElementById("stopLiveBtn").classList.add("hidden");
+      document.getElementById("liveWatermark").classList.add("hidden");
+      document.getElementById("liveStatusBadge").innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-500"></span> COMPLETED`;
+      document.getElementById("liveStatusBadge").className = "flex items-center gap-1.5 bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-bold px-2 py-0.5 rounded uppercase tracking-wider";
+
+      await loadFinalResults();
+    }
+
+    async function updateLiveStats() {
+      if (!isAnalyzing) return;
+      const requestId = analysisRequestId;
+      try {
+        const stats = await readApiResponse(await fetch("/api/live_stats"));
+        if (!isAnalyzing || requestId !== analysisRequestId || stats.video_name !== currentVideo) return;
+        if (stats.error) {
+          showAnalysisError(stats.error);
+          return;
+        }
+        if (stats.court_tracking_ok === false) {
+          courtMotionWarning = true;
+          showCourtState("Court tracking uncertain", "Camera movement could not be matched:", stats.court_tracking_error || "Court overlay and measurements are unavailable until camera tracking recovers.", "error");
+        } else if (stats.court_tracking_ok === true && courtMotionWarning) {
+          courtMotionWarning = false;
+          showCourtState("Court tracking restored", "Court tracking restored:", "Camera alignment is following the confirmed opening-frame court.", "confirmed");
+        }
+
+        // Unknown speed is not zero MPH. Never display ground-plane estimates.
+        const hasSpeed = stats.speed_status === "estimated" && Number.isFinite(stats.current_speed_mph);
+        document.getElementById("liveSpeedReadout").textContent = hasSpeed ? stats.current_speed_mph.toFixed(1) : "--";
+        document.getElementById("livePeakReadout").textContent = Number.isFinite(stats.peak_speed_mph) ? `${stats.peak_speed_mph.toFixed(1)} MPH` : "--";
+        document.getElementById("speedStatus").textContent = stats.speed_reason || "3D speed unavailable";
+        document.getElementById("currentShotBadge").textContent = hasSpeed ? "3D ESTIMATE" : stats.speed_status === "pending" ? "COLLECTING" : "UNAVAILABLE";
+        document.getElementById("liveShotsCount").textContent = stats.total_flight_segments || 0;
+
+        // Watermark progress
+        if (stats.current_frame > 0) {
+          document.getElementById("watermarkText").textContent = `ANALYZING MATCH (FRAME ${stats.current_frame} / ${stats.total_frames})`;
+        }
+
+        // Player Court Zones
+        if (stats.players && Object.keys(stats.players).length > 0) {
+          const pList = document.getElementById("playerList");
+          pList.innerHTML = "";
+          Object.keys(stats.players).forEach(pid => {
+            const p = stats.players[pid];
+            const div = document.createElement("div");
+            div.className = "flex items-center justify-between p-2.5 bg-[#0b0f17] rounded-lg border border-[#1f293d]";
+            const inKitch = p.in_kitchen;
+            const zoneColor = inKitch ? "bg-red-500/20 text-red-400 border-red-500/40" : "bg-cyan-500/20 text-cyan-400 border-cyan-500/40";
+            const zoneText = inKitch ? "AT KITCHEN LINE (NVZ)" : (p.zone || "Court").toUpperCase();
+
+            div.innerHTML = `
+              <div class="flex items-center gap-2 font-bold text-gray-200">
+                <span class="w-6 h-6 rounded-full bg-[#182133] border border-[#1f293d] flex items-center justify-center text-cyan-400 text-xs">P${p.id}</span>
+                <span>Player #${p.id}</span>
+              </div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded border ${zoneColor} font-bold">${zoneText}</span>
+            `;
+            pList.appendChild(div);
+          });
+        }
+
+        // Only complete when analysis actually started and has finished on server
+        const elapsedSec = (Date.now() - analysisStartTime) / 1000.0;
+        if (elapsedSec > 2.0 && stats.current_frame > 0 && !stats.is_running) {
+          stopLiveAnalysis();
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+    }
+
+    async function loadFinalResults() {
+      const videoName = currentVideo;
+      const calibrationId = calibrationRequestId;
+      const res = await fetch(`/api/results?video_name=${encodeURIComponent(videoName)}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      if (videoName !== currentVideo || calibrationId !== calibrationRequestId || isAnalyzing) return;
+
+      document.getElementById("resultsCard").classList.remove("hidden");
+      document.getElementById("downloadVideoLink").href = data.video_url;
+      document.getElementById("downloadCsvLink").href = data.csv_url;
+
+      const summary = data.summary || {};
+      const accepted = (data.shots || []).filter(s => s.speed_status === "estimated" && Number.isFinite(s.avg_mph));
+      document.getElementById("liveSpeedReadout").textContent = accepted.length ? accepted.at(-1).avg_mph.toFixed(1) : "--";
+      document.getElementById("currentShotBadge").textContent = accepted.length ? "3D ESTIMATE" : "UNAVAILABLE";
+      document.getElementById("livePeakReadout").textContent = summary.speed_method === "monocular_3d_flight_v1" && Number.isFinite(summary.max_rally_speed_mph) ? `${summary.max_rally_speed_mph.toFixed(1)} MPH` : "--";
+      const unavailableReason = (data.shots || []).length
+        ? `MPH unavailable: none of ${(data.shots || []).length} flight fragments passed the checks. Rejection reasons appear in the table below.`
+        : "MPH unavailable: no continuous measured flight segments with usable camera geometry.";
+      document.getElementById("speedStatus").textContent = summary.speed_display_reason ||
+        (accepted.length ? (summary.speed_note || "Last qualified observed flight average") : unavailableReason);
+      document.getElementById("liveShotsCount").textContent = summary.total_flight_segments || 0;
+      // Populate flight segment table
+      const tbody = document.getElementById("shotTableBody");
+      tbody.innerHTML = "";
+      (data.shots || []).forEach(s => {
+        const tr = document.createElement("tr");
+        tr.title = `${s.speed_reason || ""} | Fit quality: ${Math.round((s.speed_confidence || 0)*100)}%`;
+        tr.className = "hover:bg-[#182133]";
+        const color = s.shot_type === "Dink" ? "text-cyan-400" : s.shot_type === "Drive" ? "text-red-400 font-bold" : "text-amber-400";
+        tr.innerHTML = `
+          <td class="p-2.5 font-mono text-gray-400">#${s.shot_id}</td>
+          <td class="p-2.5 ${color}">${s.shot_type}</td>
+          <td class="p-2.5 font-mono font-bold text-emerald-400">${s.speed_status === "estimated" && Number.isFinite(s.avg_mph) ? s.avg_mph.toFixed(1) + " MPH (est.)" : "Unavailable"}<div class="mt-1 text-[10px] font-normal text-gray-400">${escapeHtml(s.speed_reason || "")}</div></td>
+          <td class="p-2.5 text-gray-300 font-semibold">${s.hitter_player_id ? 'Player ' + s.hitter_player_id : '--'}</td>
+          <td class="p-2.5 text-gray-400">${s.start_zone}</td>
+          <td class="p-2.5 text-gray-400">${s.landing_zone}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Initialize on page load
+    document.getElementById("calibInstructions").style.display = "none";
+    loadVideoList();
+  </script>
+</body>
+</html>

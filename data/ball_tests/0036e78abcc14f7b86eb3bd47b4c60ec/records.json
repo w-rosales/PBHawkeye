@@ -1,0 +1,2756 @@
+[
+  {
+    "frame": 1798,
+    "timestamp_s": 29.996633333333335,
+    "nominal_timestamp_s": 29.996633333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      655.0,
+      487.59090909090907
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 26.936399983242154,
+    "neural_ms": 69.64859995059669
+  },
+  {
+    "frame": 1799,
+    "timestamp_s": 30.013316666666668,
+    "nominal_timestamp_s": 30.013316666666668,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      660.2190476190475,
+      491.5619047619047
+    ],
+    "classical_score": 0.8553462100926086,
+    "neural": [
+      658.8910273564262,
+      491.87189076305776
+    ],
+    "neural_score": 0.5865107774734497,
+    "classical_ms": 55.295499972999096,
+    "neural_ms": 63.40489990543574
+  },
+  {
+    "frame": 1800,
+    "timestamp_s": 30.03,
+    "nominal_timestamp_s": 30.03,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      665.375,
+      495.0
+    ],
+    "classical_score": 0.9858054603098394,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.68129997886717,
+    "neural_ms": 69.85589989926666
+  },
+  {
+    "frame": 1801,
+    "timestamp_s": 30.046683333333334,
+    "nominal_timestamp_s": 30.046683333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      669.5,
+      499.0
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.45779995433986,
+    "neural_ms": 60.7947000535205
+  },
+  {
+    "frame": 1802,
+    "timestamp_s": 30.063366666666667,
+    "nominal_timestamp_s": 30.063366666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      673.8390804597701,
+      502.4367816091954
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 99.07739993650466,
+    "neural_ms": 68.91570007428527
+  },
+  {
+    "frame": 1803,
+    "timestamp_s": 30.08005,
+    "nominal_timestamp_s": 30.08005,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      677.7777777777777,
+      505.9365079365079
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 41.39779997058213,
+    "neural_ms": 62.49770009890199
+  },
+  {
+    "frame": 1804,
+    "timestamp_s": 30.096733333333336,
+    "nominal_timestamp_s": 30.096733333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      682.1466666666665,
+      509.8533333333333
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.16490005236119,
+    "neural_ms": 61.054800054989755
+  },
+  {
+    "frame": 1805,
+    "timestamp_s": 30.11341666666667,
+    "nominal_timestamp_s": 30.113416666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      686.0987654320987,
+      513.8888888888889
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 48.70970000047237,
+    "neural_ms": 62.2391999932006
+  },
+  {
+    "frame": 1806,
+    "timestamp_s": 30.130100000000002,
+    "nominal_timestamp_s": 30.1301,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      690.1944444444443,
+      517.5416666666666
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.54549989756197,
+    "neural_ms": 59.11290005315095
+  },
+  {
+    "frame": 1807,
+    "timestamp_s": 30.146783333333335,
+    "nominal_timestamp_s": 30.146783333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      693.5964912280701,
+      521.561403508772
+    ],
+    "classical_score": 0.9634421171786478,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.78189992997795,
+    "neural_ms": 75.48630004748702
+  },
+  {
+    "frame": 1808,
+    "timestamp_s": 30.163466666666668,
+    "nominal_timestamp_s": 30.163466666666668,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 100.17300001345575,
+    "neural_ms": 79.1054000146687
+  },
+  {
+    "frame": 1809,
+    "timestamp_s": 30.18015,
+    "nominal_timestamp_s": 30.18015,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      701.5,
+      529.5
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.437900009565055,
+    "neural_ms": 56.05959997046739
+  },
+  {
+    "frame": 1810,
+    "timestamp_s": 30.196833333333334,
+    "nominal_timestamp_s": 30.196833333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      705.9393939393939,
+      533.6060606060605
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 35.16740002669394,
+    "neural_ms": 69.17649996466935
+  },
+  {
+    "frame": 1811,
+    "timestamp_s": 30.213516666666667,
+    "nominal_timestamp_s": 30.213516666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.714599904604256,
+    "neural_ms": 61.230799998156726
+  },
+  {
+    "frame": 1812,
+    "timestamp_s": 30.2302,
+    "nominal_timestamp_s": 30.2302,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.209699927829206,
+    "neural_ms": 73.45559995155782
+  },
+  {
+    "frame": 1813,
+    "timestamp_s": 30.246883333333336,
+    "nominal_timestamp_s": 30.246883333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.52740001864731,
+    "neural_ms": 71.26090000383556
+  },
+  {
+    "frame": 1814,
+    "timestamp_s": 30.26356666666667,
+    "nominal_timestamp_s": 30.263566666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 68.68359993677586,
+    "neural_ms": 60.8258000575006
+  },
+  {
+    "frame": 1815,
+    "timestamp_s": 30.280250000000002,
+    "nominal_timestamp_s": 30.28025,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      874.1428571428571,
+      589.7142857142857
+    ],
+    "classical_score": 0.5643215126608121,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 53.5589000210166,
+    "neural_ms": 63.315399922430515
+  },
+  {
+    "frame": 1816,
+    "timestamp_s": 30.296933333333335,
+    "nominal_timestamp_s": 30.296933333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      872.7023809523808,
+      590.8571428571429
+    ],
+    "classical_score": 0.5643215102181134,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.99539999477565,
+    "neural_ms": 60.44420006219298
+  },
+  {
+    "frame": 1817,
+    "timestamp_s": 30.313616666666668,
+    "nominal_timestamp_s": 30.313616666666668,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.403599912300706,
+    "neural_ms": 64.85529989004135
+  },
+  {
+    "frame": 1818,
+    "timestamp_s": 30.3303,
+    "nominal_timestamp_s": 30.3303,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.97520000487566,
+    "neural_ms": 59.97679999563843
+  },
+  {
+    "frame": 1819,
+    "timestamp_s": 30.346983333333334,
+    "nominal_timestamp_s": 30.346983333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      870.5,
+      588.5
+    ],
+    "classical_score": 0.521867059733059,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.81679991539568,
+    "neural_ms": 59.54589997418225
+  },
+  {
+    "frame": 1820,
+    "timestamp_s": 30.363666666666667,
+    "nominal_timestamp_s": 30.363666666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 95.30219994485378,
+    "neural_ms": 90.5415000161156
+  },
+  {
+    "frame": 1821,
+    "timestamp_s": 30.38035,
+    "nominal_timestamp_s": 30.38035,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 51.19450006168336,
+    "neural_ms": 80.202899989672
+  },
+  {
+    "frame": 1822,
+    "timestamp_s": 30.397033333333336,
+    "nominal_timestamp_s": 30.397033333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 46.06810002587736,
+    "neural_ms": 68.59469995833933
+  },
+  {
+    "frame": 1823,
+    "timestamp_s": 30.41371666666667,
+    "nominal_timestamp_s": 30.413716666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 42.193899978883564,
+    "neural_ms": 58.470799936912954
+  },
+  {
+    "frame": 1824,
+    "timestamp_s": 30.430400000000002,
+    "nominal_timestamp_s": 30.4304,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.24880001414567,
+    "neural_ms": 72.70089990925044
+  },
+  {
+    "frame": 1825,
+    "timestamp_s": 30.447083333333335,
+    "nominal_timestamp_s": 30.447083333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.64000003505498,
+    "neural_ms": 66.83190003968775
+  },
+  {
+    "frame": 1826,
+    "timestamp_s": 30.463766666666665,
+    "nominal_timestamp_s": 30.463766666666668,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 98.72300003189594,
+    "neural_ms": 74.97389998752624
+  },
+  {
+    "frame": 1827,
+    "timestamp_s": 30.48045,
+    "nominal_timestamp_s": 30.48045,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.04650010354817,
+    "neural_ms": 61.74439995083958
+  },
+  {
+    "frame": 1828,
+    "timestamp_s": 30.497133333333334,
+    "nominal_timestamp_s": 30.497133333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.32080002781004,
+    "neural_ms": 70.68819995038211
+  },
+  {
+    "frame": 1829,
+    "timestamp_s": 30.513816666666667,
+    "nominal_timestamp_s": 30.513816666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 41.986199910752475,
+    "neural_ms": 73.69310001377016
+  },
+  {
+    "frame": 1830,
+    "timestamp_s": 30.5305,
+    "nominal_timestamp_s": 30.5305,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.50259996764362,
+    "neural_ms": 74.57900000736117
+  },
+  {
+    "frame": 1831,
+    "timestamp_s": 30.547183333333336,
+    "nominal_timestamp_s": 30.547183333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.0698999799788,
+    "neural_ms": 100.18419998232275
+  },
+  {
+    "frame": 1832,
+    "timestamp_s": 30.56386666666667,
+    "nominal_timestamp_s": 30.563866666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 98.28030003700405,
+    "neural_ms": 70.80580003093928
+  },
+  {
+    "frame": 1833,
+    "timestamp_s": 30.580550000000002,
+    "nominal_timestamp_s": 30.58055,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 45.75900000054389,
+    "neural_ms": 57.48859990853816
+  },
+  {
+    "frame": 1834,
+    "timestamp_s": 30.597233333333335,
+    "nominal_timestamp_s": 30.597233333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1443.9285714285713,
+      540.4285714285714
+    ],
+    "classical_score": 0.7962606371633774,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 34.94110004976392,
+    "neural_ms": 70.85810007993132
+  },
+  {
+    "frame": 1835,
+    "timestamp_s": 30.613916666666668,
+    "nominal_timestamp_s": 30.613916666666668,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 29.9341999925673,
+    "neural_ms": 75.36269992124289
+  },
+  {
+    "frame": 1836,
+    "timestamp_s": 30.6306,
+    "nominal_timestamp_s": 30.6306,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      756.890243902439,
+      499.6341463414634
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 32.612400013022125,
+    "neural_ms": 67.9414999904111
+  },
+  {
+    "frame": 1837,
+    "timestamp_s": 30.647283333333334,
+    "nominal_timestamp_s": 30.647283333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      754.4829931972789,
+      494.4268707482993
+    ],
+    "classical_score": 0.7713877959598714,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 34.99219997320324,
+    "neural_ms": 78.53990001603961
+  },
+  {
+    "frame": 1838,
+    "timestamp_s": 30.663966666666667,
+    "nominal_timestamp_s": 30.663966666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      751.1494252873563,
+      487.1896551724138
+    ],
+    "classical_score": 0.7545842188123428,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 98.27660000883043,
+    "neural_ms": 65.68380002863705
+  },
+  {
+    "frame": 1839,
+    "timestamp_s": 30.68065,
+    "nominal_timestamp_s": 30.68065,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      739.4796747967479,
+      482.52845528455276
+    ],
+    "classical_score": 0.9505484175370558,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 53.92679991200566,
+    "neural_ms": 61.5185999777168
+  },
+  {
+    "frame": 1840,
+    "timestamp_s": 30.697333333333336,
+    "nominal_timestamp_s": 30.697333333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      734.3055555555555,
+      475.125
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 35.6133000459522,
+    "neural_ms": 66.76290009636432
+  },
+  {
+    "frame": 1841,
+    "timestamp_s": 30.71401666666667,
+    "nominal_timestamp_s": 30.714016666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      728.8510638297872,
+      467.8368794326241
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 52.45870002545416,
+    "neural_ms": 61.9472999824211
+  },
+  {
+    "frame": 1842,
+    "timestamp_s": 30.730700000000002,
+    "nominal_timestamp_s": 30.7307,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      724.7428571428571,
+      461.2095238095238
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 34.40609993413091,
+    "neural_ms": 73.70880001690239
+  },
+  {
+    "frame": 1843,
+    "timestamp_s": 30.747383333333335,
+    "nominal_timestamp_s": 30.747383333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      765.1844863731656,
+      454.1698113207547
+    ],
+    "classical_score": 0.9230938941240372,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.636300006881356,
+    "neural_ms": 65.59900008141994
+  },
+  {
+    "frame": 1844,
+    "timestamp_s": 30.76406666666667,
+    "nominal_timestamp_s": 30.76406666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      714.0,
+      448.0
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 99.45550002157688,
+    "neural_ms": 71.71839999500662
+  },
+  {
+    "frame": 1845,
+    "timestamp_s": 30.78075,
+    "nominal_timestamp_s": 30.78075,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      709.15,
+      441.45
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.629099930636585,
+    "neural_ms": 59.073799988254905
+  },
+  {
+    "frame": 1846,
+    "timestamp_s": 30.797433333333334,
+    "nominal_timestamp_s": 30.797433333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      704.2222222222222,
+      435.07936507936506
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.30399996880442,
+    "neural_ms": 69.89549996796995
+  },
+  {
+    "frame": 1847,
+    "timestamp_s": 30.814116666666667,
+    "nominal_timestamp_s": 30.814116666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      699.5686274509803,
+      428.96078431372547
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 51.3867000117898,
+    "neural_ms": 80.31970006413758
+  },
+  {
+    "frame": 1848,
+    "timestamp_s": 30.8308,
+    "nominal_timestamp_s": 30.8308,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      694.2051282051282,
+      422.34615384615387
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.173200068064034,
+    "neural_ms": 60.85660005919635
+  },
+  {
+    "frame": 1849,
+    "timestamp_s": 30.847483333333336,
+    "nominal_timestamp_s": 30.847483333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      689.6060606060605,
+      416.93939393939394
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 54.737100028432906,
+    "neural_ms": 76.52380003128201
+  },
+  {
+    "frame": 1850,
+    "timestamp_s": 30.86416666666667,
+    "nominal_timestamp_s": 30.864166666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      684.0,
+      410.0
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 98.292600014247,
+    "neural_ms": 59.2923000222072
+  },
+  {
+    "frame": 1851,
+    "timestamp_s": 30.880850000000002,
+    "nominal_timestamp_s": 30.88085,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      678.8,
+      404.0333333333333
+    ],
+    "classical_score": 0.973765115118401,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.270799996331334,
+    "neural_ms": 63.95640003029257
+  },
+  {
+    "frame": 1852,
+    "timestamp_s": 30.897533333333335,
+    "nominal_timestamp_s": 30.897533333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      674.0,
+      398.0
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.996599934995174,
+    "neural_ms": 58.58729989267886
+  },
+  {
+    "frame": 1853,
+    "timestamp_s": 30.91421666666667,
+    "nominal_timestamp_s": 30.91421666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      668.6781609195401,
+      391.7126436781609
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 32.82780002336949,
+    "neural_ms": 71.39950001146644
+  },
+  {
+    "frame": 1854,
+    "timestamp_s": 30.9309,
+    "nominal_timestamp_s": 30.9309,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      664.0459770114942,
+      386.2183908045977
+    ],
+    "classical_score": 0.9906604636818894,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 49.70740003045648,
+    "neural_ms": 63.56369995046407
+  },
+  {
+    "frame": 1855,
+    "timestamp_s": 30.947583333333334,
+    "nominal_timestamp_s": 30.947583333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      658.2839506172838,
+      380.91358024691357
+    ],
+    "classical_score": 0.9430287075658972,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 54.77489996701479,
+    "neural_ms": 62.618999974802136
+  },
+  {
+    "frame": 1856,
+    "timestamp_s": 30.964266666666667,
+    "nominal_timestamp_s": 30.964266666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      653.3484848484849,
+      375.3181818181818
+    ],
+    "classical_score": 0.9286550052840195,
+    "neural": [
+      1578.7520249077402,
+      500.0038398384188
+    ],
+    "neural_score": 0.6740022897720337,
+    "classical_ms": 102.62110002804548,
+    "neural_ms": 68.43250000383705
+  },
+  {
+    "frame": 1857,
+    "timestamp_s": 30.98095,
+    "nominal_timestamp_s": 30.98095,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      647.5733333333333,
+      369.4133333333333
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1575.9510059851518,
+      502.87193275951614
+    ],
+    "neural_score": 0.6223458051681519,
+    "classical_ms": 57.0308999158442,
+    "neural_ms": 59.03030000627041
+  },
+  {
+    "frame": 1858,
+    "timestamp_s": 30.997633333333336,
+    "nominal_timestamp_s": 30.997633333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      641.6666666666666,
+      363.35
+    ],
+    "classical_score": 0.973765115118401,
+    "neural": [
+      1571.5191793398758,
+      506.56572244686896
+    ],
+    "neural_score": 0.6094739437103271,
+    "classical_ms": 37.24580002017319,
+    "neural_ms": 71.49760005995631
+  },
+  {
+    "frame": 1859,
+    "timestamp_s": 31.01431666666667,
+    "nominal_timestamp_s": 31.014316666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      636.7,
+      358.1333333333333
+    ],
+    "classical_score": 0.9935989106655485,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.39010002091527,
+    "neural_ms": 59.2534999595955
+  },
+  {
+    "frame": 1860,
+    "timestamp_s": 31.031000000000002,
+    "nominal_timestamp_s": 31.031,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      632.1515151515151,
+      353.8787878787879
+    ],
+    "classical_score": 0.7611289111317869,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 35.03100003581494,
+    "neural_ms": 82.70689996425062
+  },
+  {
+    "frame": 1861,
+    "timestamp_s": 31.047683333333335,
+    "nominal_timestamp_s": 31.047683333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      625.927536231884,
+      347.92753623188406
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 28.742199996486306,
+    "neural_ms": 60.43849990237504
+  },
+  {
+    "frame": 1862,
+    "timestamp_s": 31.06436666666667,
+    "nominal_timestamp_s": 31.06436666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      620.5416666666666,
+      342.875
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 96.72709996812046,
+    "neural_ms": 72.298499988392
+  },
+  {
+    "frame": 1863,
+    "timestamp_s": 31.08105,
+    "nominal_timestamp_s": 31.08105,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      614.8070175438596,
+      337.6140350877193
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 54.55979995895177,
+    "neural_ms": 79.94939992204309
+  },
+  {
+    "frame": 1864,
+    "timestamp_s": 31.097733333333334,
+    "nominal_timestamp_s": 31.097733333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      609.4313725490196,
+      332.9019607843137
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 54.34329994022846,
+    "neural_ms": 79.05279996339232
+  },
+  {
+    "frame": 1865,
+    "timestamp_s": 31.114416666666667,
+    "nominal_timestamp_s": 31.114416666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.83029999677092,
+    "neural_ms": 60.76520006172359
+  },
+  {
+    "frame": 1866,
+    "timestamp_s": 31.1311,
+    "nominal_timestamp_s": 31.1311,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.685800060629845,
+    "neural_ms": 75.61960001476109
+  },
+  {
+    "frame": 1867,
+    "timestamp_s": 31.147783333333336,
+    "nominal_timestamp_s": 31.147783333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 38.87910000048578,
+    "neural_ms": 63.60970006790012
+  },
+  {
+    "frame": 1868,
+    "timestamp_s": 31.16446666666667,
+    "nominal_timestamp_s": 31.164466666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 93.44279998913407,
+    "neural_ms": 70.15649997629225
+  },
+  {
+    "frame": 1869,
+    "timestamp_s": 31.181150000000002,
+    "nominal_timestamp_s": 31.18115,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      849.0,
+      613.5
+    ],
+    "classical_score": 0.7490822344723704,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 53.45160001888871,
+    "neural_ms": 63.50159994326532
+  },
+  {
+    "frame": 1870,
+    "timestamp_s": 31.197833333333335,
+    "nominal_timestamp_s": 31.197833333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.62569992616773,
+    "neural_ms": 67.77249998413026
+  },
+  {
+    "frame": 1871,
+    "timestamp_s": 31.214516666666672,
+    "nominal_timestamp_s": 31.21451666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1523.8130081300812,
+      558.30081300813
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 34.9713999312371,
+    "neural_ms": 61.31130002904683
+  },
+  {
+    "frame": 1872,
+    "timestamp_s": 31.2312,
+    "nominal_timestamp_s": 31.2312,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1520.595238095238,
+      563.3095238095239
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 52.30860004667193,
+    "neural_ms": 71.61599991377443
+  },
+  {
+    "frame": 1873,
+    "timestamp_s": 31.247883333333334,
+    "nominal_timestamp_s": 31.247883333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1517.2828282828282,
+      567.2121212121212
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.5855199098587036,
+    "classical_ms": 39.09370000474155,
+    "neural_ms": 62.752599944360554
+  },
+  {
+    "frame": 1874,
+    "timestamp_s": 31.264566666666667,
+    "nominal_timestamp_s": 31.264566666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1514.837837837838,
+      563.3423423423422
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 102.16940008103848,
+    "neural_ms": 68.99800000246614
+  },
+  {
+    "frame": 1875,
+    "timestamp_s": 31.28125,
+    "nominal_timestamp_s": 31.28125,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1513.6666666666665,
+      559.0
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.58539994712919,
+    "neural_ms": 62.6004000660032
+  },
+  {
+    "frame": 1876,
+    "timestamp_s": 31.297933333333336,
+    "nominal_timestamp_s": 31.297933333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1511.4957264957263,
+      556.3162393162393
+    ],
+    "classical_score": 0.9188143483889066,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 35.795100033283234,
+    "neural_ms": 70.95399999525398
+  },
+  {
+    "frame": 1877,
+    "timestamp_s": 31.31461666666667,
+    "nominal_timestamp_s": 31.314616666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1509.7555555555555,
+      553.2222222222222
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.11529990751296,
+    "neural_ms": 63.33250005263835
+  },
+  {
+    "frame": 1878,
+    "timestamp_s": 31.331300000000002,
+    "nominal_timestamp_s": 31.3313,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1507.5238095238094,
+      549.5833333333333
+    ],
+    "classical_score": 0.8643015462265515,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 53.56750008650124,
+    "neural_ms": 73.43940006103367
+  },
+  {
+    "frame": 1879,
+    "timestamp_s": 31.347983333333335,
+    "nominal_timestamp_s": 31.347983333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1505.2592592592591,
+      546.2222222222222
+    ],
+    "classical_score": 0.9063886036065609,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 59.20929997228086,
+    "neural_ms": 64.25029993988574
+  },
+  {
+    "frame": 1880,
+    "timestamp_s": 31.36466666666667,
+    "nominal_timestamp_s": 31.36466666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 73.27410008292645,
+    "neural_ms": 62.36670003272593
+  },
+  {
+    "frame": 1881,
+    "timestamp_s": 31.38135,
+    "nominal_timestamp_s": 31.38135,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 59.10710000898689,
+    "neural_ms": 62.27500003296882
+  },
+  {
+    "frame": 1882,
+    "timestamp_s": 31.398033333333334,
+    "nominal_timestamp_s": 31.398033333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 36.07199992984533,
+    "neural_ms": 63.939400017261505
+  },
+  {
+    "frame": 1883,
+    "timestamp_s": 31.414716666666667,
+    "nominal_timestamp_s": 31.414716666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.59420006163418,
+    "neural_ms": 63.074200064875185
+  },
+  {
+    "frame": 1884,
+    "timestamp_s": 31.4314,
+    "nominal_timestamp_s": 31.4314,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.85329989157617,
+    "neural_ms": 69.06340003479272
+  },
+  {
+    "frame": 1885,
+    "timestamp_s": 31.448083333333336,
+    "nominal_timestamp_s": 31.448083333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1164.079365079365,
+      590.5873015873016
+    ],
+    "classical_score": 0.7715363546171592,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 35.20329995080829,
+    "neural_ms": 71.08599995262921
+  },
+  {
+    "frame": 1886,
+    "timestamp_s": 31.46476666666667,
+    "nominal_timestamp_s": 31.464766666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 94.92509998381138,
+    "neural_ms": 66.91669998690486
+  },
+  {
+    "frame": 1887,
+    "timestamp_s": 31.481450000000002,
+    "nominal_timestamp_s": 31.48145,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 39.25809997599572,
+    "neural_ms": 66.6699999710545
+  },
+  {
+    "frame": 1888,
+    "timestamp_s": 31.498133333333335,
+    "nominal_timestamp_s": 31.498133333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.27850007638335,
+    "neural_ms": 73.11639992985874
+  },
+  {
+    "frame": 1889,
+    "timestamp_s": 31.51481666666667,
+    "nominal_timestamp_s": 31.51481666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.60279996320605,
+    "neural_ms": 59.74709999281913
+  },
+  {
+    "frame": 1890,
+    "timestamp_s": 31.5315,
+    "nominal_timestamp_s": 31.5315,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.02420002873987,
+    "neural_ms": 75.8714999537915
+  },
+  {
+    "frame": 1891,
+    "timestamp_s": 31.548183333333334,
+    "nominal_timestamp_s": 31.548183333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 60.06089993752539,
+    "neural_ms": 61.69270002283156
+  },
+  {
+    "frame": 1892,
+    "timestamp_s": 31.564866666666667,
+    "nominal_timestamp_s": 31.564866666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1525.25,
+      503.5
+    ],
+    "classical_score": 0.9449160607605229,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 108.78919996321201,
+    "neural_ms": 89.26860010251403
+  },
+  {
+    "frame": 1893,
+    "timestamp_s": 31.58155,
+    "nominal_timestamp_s": 31.58155,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1548.7280701754385,
+      559.1666666666666
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1061.5845407270385,
+      507.16791869303444
+    ],
+    "neural_score": 0.6865071654319763,
+    "classical_ms": 60.198299936018884,
+    "neural_ms": 72.17080006375909
+  },
+  {
+    "frame": 1894,
+    "timestamp_s": 31.598233333333337,
+    "nominal_timestamp_s": 31.598233333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1545.7849462365589,
+      564.3010752688172
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 49.850800074636936,
+    "neural_ms": 63.527500024065375
+  },
+  {
+    "frame": 1895,
+    "timestamp_s": 31.61491666666667,
+    "nominal_timestamp_s": 31.614916666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1542.7708333333333,
+      567.40625
+    ],
+    "classical_score": 0.8884068531993126,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 53.136799950152636,
+    "neural_ms": 75.6499000126496
+  },
+  {
+    "frame": 1896,
+    "timestamp_s": 31.631600000000002,
+    "nominal_timestamp_s": 31.6316,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1541.6666666666667,
+      563.7083333333334
+    ],
+    "classical_score": 0.9151515150938156,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 50.84219994023442,
+    "neural_ms": 62.49240005854517
+  },
+  {
+    "frame": 1897,
+    "timestamp_s": 31.648283333333335,
+    "nominal_timestamp_s": 31.648283333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1541.968253968254,
+      559.6984126984127
+    ],
+    "classical_score": 0.9504563104738692,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 38.614600081928074,
+    "neural_ms": 69.94109996594489
+  },
+  {
+    "frame": 1898,
+    "timestamp_s": 31.66496666666667,
+    "nominal_timestamp_s": 31.66496666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1540.9275362318838,
+      557.5217391304348
+    ],
+    "classical_score": 0.9362380867588684,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 92.54840004723519,
+    "neural_ms": 60.056300018914044
+  },
+  {
+    "frame": 1899,
+    "timestamp_s": 31.68165,
+    "nominal_timestamp_s": 31.68165,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1541.0537634408602,
+      553.9462365591397
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.31840003095567,
+    "neural_ms": 77.99360004719347
+  },
+  {
+    "frame": 1900,
+    "timestamp_s": 31.698333333333334,
+    "nominal_timestamp_s": 31.698333333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1540.782051282051,
+      550.9743589743589
+    ],
+    "classical_score": 0.9664141413516338,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.83450000267476,
+    "neural_ms": 67.33180000446737
+  },
+  {
+    "frame": 1901,
+    "timestamp_s": 31.715016666666667,
+    "nominal_timestamp_s": 31.715016666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1540.7843137254902,
+      552.6274509803922
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      545.4439483937106,
+      455.9908113516523
+    ],
+    "neural_score": 0.5071957111358643,
+    "classical_ms": 54.554799920879304,
+    "neural_ms": 73.7684000050649
+  },
+  {
+    "frame": 1902,
+    "timestamp_s": 31.7317,
+    "nominal_timestamp_s": 31.7317,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 37.10499999579042,
+    "neural_ms": 66.00280001293868
+  },
+  {
+    "frame": 1903,
+    "timestamp_s": 31.748383333333337,
+    "nominal_timestamp_s": 31.748383333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": [
+      540.8308476739774,
+      445.16435435639573
+    ],
+    "neural_score": 0.8778917789459229,
+    "classical_ms": 36.48999996948987,
+    "neural_ms": 61.44759990274906
+  },
+  {
+    "frame": 1904,
+    "timestamp_s": 31.76506666666667,
+    "nominal_timestamp_s": 31.765066666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": [
+      538.8133809623147,
+      440.54690421051674
+    ],
+    "neural_score": 0.7854565382003784,
+    "classical_ms": 97.17359999194741,
+    "neural_ms": 62.127399956807494
+  },
+  {
+    "frame": 1905,
+    "timestamp_s": 31.781750000000002,
+    "nominal_timestamp_s": 31.78175,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1538.0,
+      538.5
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 39.86770007759333,
+    "neural_ms": 72.00109993573278
+  },
+  {
+    "frame": 1906,
+    "timestamp_s": 31.798433333333335,
+    "nominal_timestamp_s": 31.798433333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1537.5,
+      539.5
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 54.17190003208816,
+    "neural_ms": 59.99919993337244
+  },
+  {
+    "frame": 1907,
+    "timestamp_s": 31.81511666666667,
+    "nominal_timestamp_s": 31.81511666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": [
+      1154.553585959267,
+      512.0544515996357
+    ],
+    "neural_score": 0.5948577523231506,
+    "classical_ms": 58.18359996192157,
+    "neural_ms": 66.3413000293076
+  },
+  {
+    "frame": 1908,
+    "timestamp_s": 31.8318,
+    "nominal_timestamp_s": 31.8318,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1536.705426356589,
+      532.953488372093
+    ],
+    "classical_score": 0.9085205363535656,
+    "neural": [
+      1154.5670635046686,
+      512.039426456306
+    ],
+    "neural_score": 0.6312242746353149,
+    "classical_ms": 37.90499991737306,
+    "neural_ms": 61.49059999734163
+  },
+  {
+    "frame": 1909,
+    "timestamp_s": 31.848483333333334,
+    "nominal_timestamp_s": 31.848483333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1534.8,
+      531.6
+    ],
+    "classical_score": 0.9737651190752143,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.915199966169894,
+    "neural_ms": 75.36930008791387
+  },
+  {
+    "frame": 1910,
+    "timestamp_s": 31.865166666666667,
+    "nominal_timestamp_s": 31.865166666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1532.6969696969695,
+      530.6969696969696
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 95.53160006180406,
+    "neural_ms": 75.13050001580268
+  },
+  {
+    "frame": 1911,
+    "timestamp_s": 31.88185,
+    "nominal_timestamp_s": 31.88185,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1533.0408163265306,
+      527.5850340136054
+    ],
+    "classical_score": 0.7422513114885673,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.43910004477948,
+    "neural_ms": 68.08719993568957
+  },
+  {
+    "frame": 1912,
+    "timestamp_s": 31.898533333333337,
+    "nominal_timestamp_s": 31.898533333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1535.2307692307693,
+      525.8974358974358
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.17060004826635,
+    "neural_ms": 83.0450999783352
+  },
+  {
+    "frame": 1913,
+    "timestamp_s": 31.91521666666667,
+    "nominal_timestamp_s": 31.915216666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1535.8095238095236,
+      527.0
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.316500063985586,
+    "neural_ms": 80.31250000931323
+  },
+  {
+    "frame": 1914,
+    "timestamp_s": 31.931900000000002,
+    "nominal_timestamp_s": 31.9319,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1539.2156862745096,
+      525.6274509803922
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 59.036900056526065,
+    "neural_ms": 67.12139991577715
+  },
+  {
+    "frame": 1915,
+    "timestamp_s": 31.948583333333335,
+    "nominal_timestamp_s": 31.948583333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1533.88,
+      527.6666666666666
+    ],
+    "classical_score": 0.7720027099039459,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.4746999880299,
+    "neural_ms": 70.20560000091791
+  },
+  {
+    "frame": 1916,
+    "timestamp_s": 31.965266666666672,
+    "nominal_timestamp_s": 31.96526666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1529.3541666666665,
+      509.5
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 100.04589997697622,
+    "neural_ms": 68.29279998783022
+  },
+  {
+    "frame": 1917,
+    "timestamp_s": 31.98195,
+    "nominal_timestamp_s": 31.98195,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1539.3636363636363,
+      521.8484848484849
+    ],
+    "classical_score": 0.774330643828951,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.76010006573051,
+    "neural_ms": 64.34620008803904
+  },
+  {
+    "frame": 1918,
+    "timestamp_s": 31.998633333333334,
+    "nominal_timestamp_s": 31.998633333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1541.8095238095236,
+      519.0
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.383299969136715,
+    "neural_ms": 65.9250000026077
+  },
+  {
+    "frame": 1919,
+    "timestamp_s": 32.01531666666667,
+    "nominal_timestamp_s": 32.01531666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1552.333333333333,
+      517.2666666666667
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 55.22540002129972,
+    "neural_ms": 59.92790008895099
+  },
+  {
+    "frame": 1920,
+    "timestamp_s": 32.032000000000004,
+    "nominal_timestamp_s": 32.032000000000004,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1562.0,
+      509.0
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 39.595299982465804,
+    "neural_ms": 81.67830004822463
+  },
+  {
+    "frame": 1921,
+    "timestamp_s": 32.04868333333334,
+    "nominal_timestamp_s": 32.04868333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1567.2785388127854,
+      507.7077625570776
+    ],
+    "classical_score": 0.8374578081750372,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.47200006246567,
+    "neural_ms": 61.84899993240833
+  },
+  {
+    "frame": 1922,
+    "timestamp_s": 32.06536666666667,
+    "nominal_timestamp_s": 32.06536666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1573.9607843137255,
+      506.032679738562
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1152.3478183981517,
+      514.3018187768133
+    ],
+    "neural_score": 0.6216667294502258,
+    "classical_ms": 100.62549996655434,
+    "neural_ms": 68.13610007520765
+  },
+  {
+    "frame": 1923,
+    "timestamp_s": 32.08205,
+    "nominal_timestamp_s": 32.08205,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1581.6923076923076,
+      501.89230769230767
+    ],
+    "classical_score": 0.9679100685621516,
+    "neural": [
+      1152.3926009870395,
+      514.0441872644959
+    ],
+    "neural_score": 0.7285823822021484,
+    "classical_ms": 53.65360004361719,
+    "neural_ms": 75.01170004252344
+  },
+  {
+    "frame": 1924,
+    "timestamp_s": 32.098733333333335,
+    "nominal_timestamp_s": 32.098733333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1589.0208333333333,
+      498.7395833333333
+    ],
+    "classical_score": 0.9899354819330197,
+    "neural": [
+      1151.887520172463,
+      512.7118570354384
+    ],
+    "neural_score": 0.67149817943573,
+    "classical_ms": 50.98609998822212,
+    "neural_ms": 62.21830006688833
+  },
+  {
+    "frame": 1925,
+    "timestamp_s": 32.11541666666667,
+    "nominal_timestamp_s": 32.11541666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1597.18018018018,
+      495.3063063063063
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.7706721425056458,
+    "classical_ms": 53.53819997981191,
+    "neural_ms": 63.73850000090897
+  },
+  {
+    "frame": 1926,
+    "timestamp_s": 32.1321,
+    "nominal_timestamp_s": 32.1321,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.7391968965530396,
+    "classical_ms": 52.62640002183616,
+    "neural_ms": 60.890600085258484
+  },
+  {
+    "frame": 1927,
+    "timestamp_s": 32.148783333333334,
+    "nominal_timestamp_s": 32.148783333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.8658036589622498,
+    "classical_ms": 52.04009998124093,
+    "neural_ms": 66.8645000550896
+  },
+  {
+    "frame": 1928,
+    "timestamp_s": 32.16546666666667,
+    "nominal_timestamp_s": 32.16546666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.834956705570221,
+    "classical_ms": 97.19090000726283,
+    "neural_ms": 62.00040003750473
+  },
+  {
+    "frame": 1929,
+    "timestamp_s": 32.18215,
+    "nominal_timestamp_s": 32.18215,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.6880425810813904,
+    "classical_ms": 56.29490001592785,
+    "neural_ms": 69.89609997253865
+  },
+  {
+    "frame": 1930,
+    "timestamp_s": 32.19883333333333,
+    "nominal_timestamp_s": 32.19883333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1147.7272727272727,
+      505.6818181818182
+    ],
+    "classical_score": 0.5908906910799132,
+    "neural": null,
+    "neural_score": 0.9061086773872375,
+    "classical_ms": 35.80940002575517,
+    "neural_ms": 67.01540003996342
+  },
+  {
+    "frame": 1931,
+    "timestamp_s": 32.215516666666666,
+    "nominal_timestamp_s": 32.215516666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1146.2333333333333,
+      505.85555555555555
+    ],
+    "classical_score": 0.872696219420553,
+    "neural": [
+      1147.930570465445,
+      506.66876131606955
+    ],
+    "neural_score": 0.8779436945915222,
+    "classical_ms": 34.97659997083247,
+    "neural_ms": 63.14330000896007
+  },
+  {
+    "frame": 1932,
+    "timestamp_s": 32.2322,
+    "nominal_timestamp_s": 32.2322,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1143.4234234234234,
+      506.28828828828824
+    ],
+    "classical_score": 0.5885430711166828,
+    "neural": [
+      1145.9695111263436,
+      506.65853458476886
+    ],
+    "neural_score": 0.9114512205123901,
+    "classical_ms": 40.88820004835725,
+    "neural_ms": 66.70139997731894
+  },
+  {
+    "frame": 1933,
+    "timestamp_s": 32.24888333333333,
+    "nominal_timestamp_s": 32.24888333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.9139455556869507,
+    "classical_ms": 33.89940003398806,
+    "neural_ms": 57.85069998819381
+  },
+  {
+    "frame": 1934,
+    "timestamp_s": 32.265566666666665,
+    "nominal_timestamp_s": 32.265566666666665,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.898818850517273,
+    "classical_ms": 95.90950002893806,
+    "neural_ms": 92.59110002312809
+  },
+  {
+    "frame": 1935,
+    "timestamp_s": 32.282250000000005,
+    "nominal_timestamp_s": 32.28225,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.947308361530304,
+    "classical_ms": 55.37209997419268,
+    "neural_ms": 71.99520000722259
+  },
+  {
+    "frame": 1936,
+    "timestamp_s": 32.29893333333334,
+    "nominal_timestamp_s": 32.29893333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.9434565305709839,
+    "classical_ms": 61.887199990451336,
+    "neural_ms": 62.306800042279065
+  },
+  {
+    "frame": 1937,
+    "timestamp_s": 32.31561666666667,
+    "nominal_timestamp_s": 32.31561666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1143.2820512820513,
+      507.3589743589743
+    ],
+    "classical_score": 0.8768543553059536,
+    "neural": null,
+    "neural_score": 0.9444433450698853,
+    "classical_ms": 45.081399963237345,
+    "neural_ms": 73.40479991398752
+  },
+  {
+    "frame": 1938,
+    "timestamp_s": 32.332300000000004,
+    "nominal_timestamp_s": 32.332300000000004,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.8990514874458313,
+    "classical_ms": 57.26860009599477,
+    "neural_ms": 60.55779999587685
+  },
+  {
+    "frame": 1939,
+    "timestamp_s": 32.34898333333334,
+    "nominal_timestamp_s": 32.34898333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.8729073405265808,
+    "classical_ms": 57.03160003758967,
+    "neural_ms": 74.10579989664257
+  },
+  {
+    "frame": 1940,
+    "timestamp_s": 32.36566666666667,
+    "nominal_timestamp_s": 32.36566666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1141.0,
+      508.6666666666667
+    ],
+    "classical_score": 0.9858054748288856,
+    "neural": null,
+    "neural_score": 0.8953026533126831,
+    "classical_ms": 93.6028000432998,
+    "neural_ms": 63.72830003965646
+  },
+  {
+    "frame": 1941,
+    "timestamp_s": 32.38235,
+    "nominal_timestamp_s": 32.38235,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1141.438095238095,
+      509.30476190476185
+    ],
+    "classical_score": 0.9046414240632183,
+    "neural": null,
+    "neural_score": 0.9099331498146057,
+    "classical_ms": 56.83750007301569,
+    "neural_ms": 74.12509992718697
+  },
+  {
+    "frame": 1942,
+    "timestamp_s": 32.399033333333335,
+    "nominal_timestamp_s": 32.399033333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1140.2564102564102,
+      509.51282051282044
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.7877359390258789,
+    "classical_ms": 55.61159993521869,
+    "neural_ms": 62.9163000266999
+  },
+  {
+    "frame": 1943,
+    "timestamp_s": 32.41571666666667,
+    "nominal_timestamp_s": 32.41571666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.703879177570343,
+    "classical_ms": 37.81509993132204,
+    "neural_ms": 73.62130004912615
+  },
+  {
+    "frame": 1944,
+    "timestamp_s": 32.4324,
+    "nominal_timestamp_s": 32.4324,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.810448169708252,
+    "classical_ms": 48.55479998514056,
+    "neural_ms": 60.87350007146597
+  },
+  {
+    "frame": 1945,
+    "timestamp_s": 32.449083333333334,
+    "nominal_timestamp_s": 32.449083333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 57.70429992116988,
+    "neural_ms": 66.30250008311123
+  },
+  {
+    "frame": 1946,
+    "timestamp_s": 32.46576666666667,
+    "nominal_timestamp_s": 32.46576666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 101.45770001690835,
+    "neural_ms": 68.92579991836101
+  },
+  {
+    "frame": 1947,
+    "timestamp_s": 32.48245,
+    "nominal_timestamp_s": 32.48245,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 56.94420007057488,
+    "neural_ms": 74.25679999869317
+  },
+  {
+    "frame": 1948,
+    "timestamp_s": 32.49913333333333,
+    "nominal_timestamp_s": 32.49913333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 52.006299956701696,
+    "neural_ms": 59.826400014571846
+  },
+  {
+    "frame": 1949,
+    "timestamp_s": 32.515816666666666,
+    "nominal_timestamp_s": 32.515816666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 36.963799968361855,
+    "neural_ms": 83.79299996886402
+  },
+  {
+    "frame": 1950,
+    "timestamp_s": 32.5325,
+    "nominal_timestamp_s": 32.5325,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 29.857799992896616,
+    "neural_ms": 64.33399999514222
+  },
+  {
+    "frame": 1951,
+    "timestamp_s": 32.54918333333333,
+    "nominal_timestamp_s": 32.54918333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1586.6491228070174,
+      508.1754385964912
+    ],
+    "classical_score": 0.7266281303679059,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 29.514299938455224,
+    "neural_ms": 74.72760009113699
+  },
+  {
+    "frame": 1952,
+    "timestamp_s": 32.565866666666665,
+    "nominal_timestamp_s": 32.565866666666665,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 97.79759997036308,
+    "neural_ms": 61.895899940282106
+  },
+  {
+    "frame": 1953,
+    "timestamp_s": 32.582550000000005,
+    "nominal_timestamp_s": 32.58255,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1139.4717948717948,
+      508.025641025641
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.6075776219367981,
+    "classical_ms": 49.970599939115345,
+    "neural_ms": 69.26859996747226
+  },
+  {
+    "frame": 1954,
+    "timestamp_s": 32.59923333333334,
+    "nominal_timestamp_s": 32.59923333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1139.95,
+      504.1166666666666
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 34.775500069372356,
+    "neural_ms": 61.733399983495474
+  },
+  {
+    "frame": 1955,
+    "timestamp_s": 32.61591666666667,
+    "nominal_timestamp_s": 32.61591666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.5475295186042786,
+    "classical_ms": 40.20189994480461,
+    "neural_ms": 72.97109998762608
+  },
+  {
+    "frame": 1956,
+    "timestamp_s": 32.632600000000004,
+    "nominal_timestamp_s": 32.632600000000004,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 40.69079994224012,
+    "neural_ms": 68.46389989368618
+  },
+  {
+    "frame": 1957,
+    "timestamp_s": 32.64928333333334,
+    "nominal_timestamp_s": 32.64928333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 50.933799939230084,
+    "neural_ms": 71.57430006191134
+  },
+  {
+    "frame": 1958,
+    "timestamp_s": 32.66596666666667,
+    "nominal_timestamp_s": 32.66596666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1151.764705882353,
+      475.29411764705884
+    ],
+    "classical_score": 0.9251822832777501,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 64.67510003130883,
+    "neural_ms": 63.78780002705753
+  },
+  {
+    "frame": 1959,
+    "timestamp_s": 32.68265,
+    "nominal_timestamp_s": 32.68265,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 43.662199983373284,
+    "neural_ms": 72.37099995836616
+  },
+  {
+    "frame": 1960,
+    "timestamp_s": 32.699333333333335,
+    "nominal_timestamp_s": 32.699333333333335,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 37.76340000331402,
+    "neural_ms": 62.73249990772456
+  },
+  {
+    "frame": 1961,
+    "timestamp_s": 32.71601666666667,
+    "nominal_timestamp_s": 32.71601666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 46.79169994778931,
+    "neural_ms": 70.76320005580783
+  },
+  {
+    "frame": 1962,
+    "timestamp_s": 32.7327,
+    "nominal_timestamp_s": 32.7327,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 51.168099977076054,
+    "neural_ms": 60.81229995470494
+  },
+  {
+    "frame": 1963,
+    "timestamp_s": 32.749383333333334,
+    "nominal_timestamp_s": 32.749383333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      609.8888888888888,
+      531.5555555555555
+    ],
+    "classical_score": 0.9430287075658972,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 58.25260002166033,
+    "neural_ms": 71.37250003870577
+  },
+  {
+    "frame": 1964,
+    "timestamp_s": 32.76606666666667,
+    "nominal_timestamp_s": 32.76606666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": null,
+    "classical_score": 0.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 97.22860006149858,
+    "neural_ms": 61.61079998128116
+  },
+  {
+    "frame": 1965,
+    "timestamp_s": 32.78275,
+    "nominal_timestamp_s": 32.78275,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1102.5873015873015,
+      480.3333333333333
+    ],
+    "classical_score": 1.0,
+    "neural": null,
+    "neural_score": 0.0,
+    "classical_ms": 53.2863000407815,
+    "neural_ms": 68.67740000598133
+  },
+  {
+    "frame": 1966,
+    "timestamp_s": 32.79943333333333,
+    "nominal_timestamp_s": 32.79943333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1099.8962962962962,
+      478.29629629629625
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1099.1735299073612,
+      479.2587600531938
+    ],
+    "neural_score": 0.6728114485740662,
+    "classical_ms": 46.89989995677024,
+    "neural_ms": 67.38279992714524
+  },
+  {
+    "frame": 1967,
+    "timestamp_s": 32.816116666666666,
+    "nominal_timestamp_s": 32.816116666666666,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1097.4166666666665,
+      476.5
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1097.6316676897227,
+      477.7212149705314
+    ],
+    "neural_score": 0.713350236415863,
+    "classical_ms": 52.25499998778105,
+    "neural_ms": 66.50240009184927
+  },
+  {
+    "frame": 1968,
+    "timestamp_s": 32.8328,
+    "nominal_timestamp_s": 32.8328,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1093.517006802721,
+      475.1360544217687
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1094.1794472588638,
+      476.47535209037113
+    ],
+    "neural_score": 0.8638147711753845,
+    "classical_ms": 56.759299943223596,
+    "neural_ms": 71.39830000232905
+  },
+  {
+    "frame": 1969,
+    "timestamp_s": 32.84948333333333,
+    "nominal_timestamp_s": 32.84948333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1090.5,
+      474.21969696969694
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1090.5565732502382,
+      474.84857274113995
+    ],
+    "neural_score": 0.904985785484314,
+    "classical_ms": 57.054399978369474,
+    "neural_ms": 71.92910008598119
+  },
+  {
+    "frame": 1970,
+    "timestamp_s": 32.866166666666665,
+    "nominal_timestamp_s": 32.866166666666665,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1086.8062015503876,
+      472.7286821705426
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1087.42107240132,
+      473.548793273011
+    ],
+    "neural_score": 0.8494142889976501,
+    "classical_ms": 99.71670003142208,
+    "neural_ms": 59.928599977865815
+  },
+  {
+    "frame": 1971,
+    "timestamp_s": 32.882850000000005,
+    "nominal_timestamp_s": 32.88285,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1083.2287581699345,
+      471.5424836601307
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1083.5554707658225,
+      472.32302042758494
+    ],
+    "neural_score": 0.9025754928588867,
+    "classical_ms": 55.67549995612353,
+    "neural_ms": 76.3376000104472
+  },
+  {
+    "frame": 1972,
+    "timestamp_s": 32.89953333333334,
+    "nominal_timestamp_s": 32.89953333333333,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1079.724358974359,
+      470.6602564102564
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1080.198458109632,
+      471.2403329393916
+    ],
+    "neural_score": 0.9243049621582031,
+    "classical_ms": 48.33720007445663,
+    "neural_ms": 61.32670002989471
+  },
+  {
+    "frame": 1973,
+    "timestamp_s": 32.91621666666667,
+    "nominal_timestamp_s": 32.91621666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1076.0,
+      470.5
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1076.61428376409,
+      471.07851580089067
+    ],
+    "neural_score": 0.9447380900382996,
+    "classical_ms": 57.88469989784062,
+    "neural_ms": 74.27240000106394
+  },
+  {
+    "frame": 1974,
+    "timestamp_s": 32.932900000000004,
+    "nominal_timestamp_s": 32.932900000000004,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1072.0,
+      470.5
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1072.9291112652218,
+      471.14534538015045
+    ],
+    "neural_score": 0.9523579478263855,
+    "classical_ms": 57.65380000229925,
+    "neural_ms": 60.740599990822375
+  },
+  {
+    "frame": 1975,
+    "timestamp_s": 32.94958333333334,
+    "nominal_timestamp_s": 32.94958333333334,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1068.1666666666665,
+      470.73214285714283
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1069.0473053432233,
+      471.406892815534
+    ],
+    "neural_score": 0.9355224370956421,
+    "classical_ms": 59.09340002108365,
+    "neural_ms": 78.87989992741495
+  },
+  {
+    "frame": 1976,
+    "timestamp_s": 32.96626666666667,
+    "nominal_timestamp_s": 32.96626666666667,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1064.0,
+      471.5
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1064.7235467220792,
+      472.12824083834886
+    ],
+    "neural_score": 0.9456899166107178,
+    "classical_ms": 98.59469998627901,
+    "neural_ms": 62.76640004944056
+  },
+  {
+    "frame": 1977,
+    "timestamp_s": 32.98295,
+    "nominal_timestamp_s": 32.98295,
+    "court_ok": true,
+    "court_status": "tracking",
+    "classical": [
+      1059.4251207729467,
+      472.16908212560384
+    ],
+    "classical_score": 1.0,
+    "neural": [
+      1059.7978151791572,
+      473.16308722387635
+    ],
+    "neural_score": 0.9217304587364197,
+    "classical_ms": 35.0915000308305,
+    "neural_ms": 75.55050007067621
+  }
+]

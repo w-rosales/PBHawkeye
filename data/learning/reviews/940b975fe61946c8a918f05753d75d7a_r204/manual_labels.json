@@ -1,0 +1,5729 @@
+{
+  "method": "Human corrections on unmarked source frames",
+  "revision": 204,
+  "metadata": {
+    "id": "940b975fe61946c8a918f05753d75d7a",
+    "created_at": "2026-10-25T20:55:45.976433+00:00",
+    "status": "queued",
+    "error": null,
+    "video": "C:\\Users\\willi\\Documents\\PBHawkeye\\data\\raw_videos\\Gold_Medal_Match_Punta_Gorda.mp4",
+    "video_name": "Gold_Medal_Match_Punta_Gorda.mp4",
+    "video_signature": {
+      "name": "Gold_Medal_Match_Punta_Gorda.mp4",
+      "size_bytes": 2991284663,
+      "mtime_ns": 1792874599056087300
+    },
+    "fps": 29.97,
+    "width": 1920,
+    "height": 1080,
+    "frame_start": 1798,
+    "frame_end_inclusive": 1977,
+    "split": "train",
+    "ball_color": "optic_yellow",
+    "model_version": "ball_v1",
+    "model_sha256": "14630b7c682d6caf4762e6c560bdf241ddfd88d53a643cdfeb5065ada559b1a8",
+    "calibration_sha256": "8c7f9df6502dc2c614ab5f2b62e529469189234f8f8c5f30ed07ee15e9e1f3e0",
+    "processed": 0,
+    "total": 180,
+    "reviewed": 0,
+    "classical_warmup_frames": 62,
+    "source_sha256": {
+      "src/detector.py": "3748dac986115992818330a2c2895db1d78f10fa32d0f353b2ef4995011bf7e0",
+      "src/ball_model.py": "c052e5ac243eca0476966a66b1cb4dbfe87b6bd91824204eb89b8ccd728109b6",
+      "src/court_motion.py": "d5754949542be8de0368ac9eacb2c4e5566a8ec3a213a7d49ed2e4fe5a8eafd2",
+      "src/web/ball_testing.py": "706cfacfee5efd3b28735de2d1971df0091d94875cecc0011f87d533b2ca66ec"
+    }
+  },
+  "labels": [
+    {
+      "frame": 1798,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:21.144441+00:00",
+      "revision": 1,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1799,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:24.327500+00:00",
+      "revision": 2,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1800,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:25.131968+00:00",
+      "revision": 3,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1801,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:37.212107+00:00",
+      "revision": 191,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1802,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:27.361286+00:00",
+      "revision": 4,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1803,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:28.703026+00:00",
+      "revision": 5,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1804,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:29.677647+00:00",
+      "revision": 6,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1805,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:42.607128+00:00",
+      "revision": 198,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1806,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:44.227908+00:00",
+      "revision": 199,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1807,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:44.655272+00:00",
+      "revision": 200,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1808,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:45.076204+00:00",
+      "revision": 201,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1809,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:45.489727+00:00",
+      "revision": 202,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1810,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:45.919198+00:00",
+      "revision": 203,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1811,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:59.723426+00:00",
+      "revision": 204,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1812,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:37.099596+00:00",
+      "revision": 13,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1813,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:37.663131+00:00",
+      "revision": 14,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1814,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:38.195665+00:00",
+      "revision": 15,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1815,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:38.726165+00:00",
+      "revision": 16,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1816,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:39.201602+00:00",
+      "revision": 17,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1817,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:39.609068+00:00",
+      "revision": 18,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1818,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:40.027595+00:00",
+      "revision": 19,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1819,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:40.485390+00:00",
+      "revision": 20,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1820,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:40.941805+00:00",
+      "revision": 21,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1821,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:41.458910+00:00",
+      "revision": 22,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1822,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:41.974720+00:00",
+      "revision": 23,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1823,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:42.447266+00:00",
+      "revision": 24,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1824,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:42.967895+00:00",
+      "revision": 25,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1825,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:43.415089+00:00",
+      "revision": 26,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1826,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:43.906887+00:00",
+      "revision": 27,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1827,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:44.313388+00:00",
+      "revision": 28,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1828,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:44.788756+00:00",
+      "revision": 29,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1829,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:45.252310+00:00",
+      "revision": 30,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1830,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:45.722294+00:00",
+      "revision": 31,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1831,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:46.143729+00:00",
+      "revision": 32,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1832,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:46.641660+00:00",
+      "revision": 33,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1833,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:47.102704+00:00",
+      "revision": 34,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1834,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:47.546443+00:00",
+      "revision": 35,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1835,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:47.913952+00:00",
+      "revision": 36,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1836,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:48.218078+00:00",
+      "revision": 37,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1837,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:52.983141+00:00",
+      "revision": 39,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1838,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:54.434093+00:00",
+      "revision": 40,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1839,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:54.757625+00:00",
+      "revision": 41,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1840,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:55.085775+00:00",
+      "revision": 42,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1841,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:55.423947+00:00",
+      "revision": 43,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1842,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:55.810202+00:00",
+      "revision": 44,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1843,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:56.168042+00:00",
+      "revision": 45,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1844,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:56.534400+00:00",
+      "revision": 46,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1845,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:56.859080+00:00",
+      "revision": 47,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1846,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:57.211467+00:00",
+      "revision": 48,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1847,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:57.607301+00:00",
+      "revision": 49,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1848,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:57.946829+00:00",
+      "revision": 50,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1849,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:57:59.133258+00:00",
+      "revision": 51,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1850,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:00.095178+00:00",
+      "revision": 52,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1851,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:00.438136+00:00",
+      "revision": 53,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1852,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:00.730758+00:00",
+      "revision": 54,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1853,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:01.095366+00:00",
+      "revision": 55,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1854,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:01.451661+00:00",
+      "revision": 56,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1855,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:01.794506+00:00",
+      "revision": 57,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1856,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:02.129392+00:00",
+      "revision": 58,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1857,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:02.469410+00:00",
+      "revision": 59,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1858,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:02.797473+00:00",
+      "revision": 60,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1859,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:03.193206+00:00",
+      "revision": 61,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1860,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:03.497667+00:00",
+      "revision": 62,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1861,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:03.863626+00:00",
+      "revision": 63,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1862,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:04.212530+00:00",
+      "revision": 64,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1863,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:04.562602+00:00",
+      "revision": 65,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1864,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:04.904000+00:00",
+      "revision": 66,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1865,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:05.283916+00:00",
+      "revision": 67,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1866,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:05.583700+00:00",
+      "revision": 68,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1867,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:05.893227+00:00",
+      "revision": 69,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1868,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:06.225938+00:00",
+      "revision": 70,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1869,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:06.529852+00:00",
+      "revision": 71,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1870,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:06.885847+00:00",
+      "revision": 72,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1871,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:07.210800+00:00",
+      "revision": 73,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1872,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:07.585798+00:00",
+      "revision": 74,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1873,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:07.952338+00:00",
+      "revision": 75,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1874,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:08.271014+00:00",
+      "revision": 76,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1875,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:08.618167+00:00",
+      "revision": 77,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1876,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:08.918456+00:00",
+      "revision": 78,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1877,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T20:58:09.216183+00:00",
+      "revision": 79,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1878,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:50.269199+00:00",
+      "revision": 89,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1879,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:54.229774+00:00",
+      "revision": 90,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1880,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:56.119842+00:00",
+      "revision": 91,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1881,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:56.759242+00:00",
+      "revision": 92,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1882,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:57.238921+00:00",
+      "revision": 93,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1883,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:57.728272+00:00",
+      "revision": 94,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1884,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:58.310360+00:00",
+      "revision": 95,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1885,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:58.776089+00:00",
+      "revision": 96,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1886,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:59.231617+00:00",
+      "revision": 97,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1887,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:00:59.678629+00:00",
+      "revision": 98,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1888,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:00.089888+00:00",
+      "revision": 99,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1889,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:00.475631+00:00",
+      "revision": 100,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1890,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:00.829043+00:00",
+      "revision": 101,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1891,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:01.154162+00:00",
+      "revision": 102,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1892,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:01.454338+00:00",
+      "revision": 103,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1893,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:01.766845+00:00",
+      "revision": 104,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1894,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:02.049983+00:00",
+      "revision": 105,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1895,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:02.335059+00:00",
+      "revision": 106,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1896,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:02.599574+00:00",
+      "revision": 107,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1897,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:02.927439+00:00",
+      "revision": 108,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1898,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:03.220146+00:00",
+      "revision": 109,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1899,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:03.516730+00:00",
+      "revision": 110,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1900,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:03.814736+00:00",
+      "revision": 111,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1901,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:04.097102+00:00",
+      "revision": 112,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1902,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:04.361570+00:00",
+      "revision": 113,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1903,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:04.626953+00:00",
+      "revision": 114,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1904,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:04.955976+00:00",
+      "revision": 115,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1905,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:05.238238+00:00",
+      "revision": 116,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1906,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:05.518016+00:00",
+      "revision": 117,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1907,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:05.819311+00:00",
+      "revision": 118,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1908,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:06.105431+00:00",
+      "revision": 119,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1909,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:06.370250+00:00",
+      "revision": 120,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1910,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:06.638707+00:00",
+      "revision": 121,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1911,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:06.920439+00:00",
+      "revision": 122,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1912,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:07.164921+00:00",
+      "revision": 123,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1913,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:07.423375+00:00",
+      "revision": 124,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1914,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:07.699701+00:00",
+      "revision": 125,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1915,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:07.986022+00:00",
+      "revision": 126,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1916,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:10.623322+00:00",
+      "revision": 127,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1917,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:11.076186+00:00",
+      "revision": 128,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1918,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:11.412028+00:00",
+      "revision": 129,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1919,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:11.687677+00:00",
+      "revision": 130,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1920,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:11.980327+00:00",
+      "revision": 131,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1921,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:12.301894+00:00",
+      "revision": 132,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1922,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:12.608747+00:00",
+      "revision": 133,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1923,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:12.870049+00:00",
+      "revision": 134,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1924,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:13.125673+00:00",
+      "revision": 135,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1925,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:13.412724+00:00",
+      "revision": 136,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1926,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:13.745890+00:00",
+      "revision": 137,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1927,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:14.052719+00:00",
+      "revision": 138,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1928,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:14.369276+00:00",
+      "revision": 139,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1929,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:14.656522+00:00",
+      "revision": 140,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1930,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:14.904626+00:00",
+      "revision": 141,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1931,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:15.205276+00:00",
+      "revision": 142,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1932,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:15.522016+00:00",
+      "revision": 143,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1933,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:15.824191+00:00",
+      "revision": 144,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1934,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:16.037461+00:00",
+      "revision": 145,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1935,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:16.389116+00:00",
+      "revision": 146,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1936,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:16.643813+00:00",
+      "revision": 147,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1937,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:16.908280+00:00",
+      "revision": 148,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1938,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:17.173895+00:00",
+      "revision": 149,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1939,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:17.477076+00:00",
+      "revision": 150,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1940,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:17.774200+00:00",
+      "revision": 151,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1941,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:18.055348+00:00",
+      "revision": 152,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1942,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:18.356130+00:00",
+      "revision": 153,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1943,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:18.652909+00:00",
+      "revision": 154,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1944,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:18.915288+00:00",
+      "revision": 155,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1945,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:19.208733+00:00",
+      "revision": 156,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1946,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:19.542794+00:00",
+      "revision": 157,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1947,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:19.832961+00:00",
+      "revision": 158,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1948,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:20.152518+00:00",
+      "revision": 159,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1949,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:20.451671+00:00",
+      "revision": 160,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1950,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:20.724091+00:00",
+      "revision": 161,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1951,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:21.042407+00:00",
+      "revision": 162,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1952,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:21.373843+00:00",
+      "revision": 163,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1953,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:21.667787+00:00",
+      "revision": 164,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1954,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:21.944830+00:00",
+      "revision": 165,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1955,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:22.270046+00:00",
+      "revision": 166,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1956,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:22.546453+00:00",
+      "revision": 167,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1957,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:22.849097+00:00",
+      "revision": 168,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1958,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:23.115063+00:00",
+      "revision": 169,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1959,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:23.404490+00:00",
+      "revision": 170,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1960,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:23.736896+00:00",
+      "revision": 171,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1961,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:24.036704+00:00",
+      "revision": 172,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1962,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:24.319755+00:00",
+      "revision": 173,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1963,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:24.600319+00:00",
+      "revision": 174,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1964,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:24.890981+00:00",
+      "revision": 175,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1965,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:25.437190+00:00",
+      "revision": 176,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1966,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:25.755375+00:00",
+      "revision": 177,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1967,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:26.090673+00:00",
+      "revision": 178,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1968,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:26.789002+00:00",
+      "revision": 179,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1969,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:27.127122+00:00",
+      "revision": 180,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1970,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:27.455355+00:00",
+      "revision": 181,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1971,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:27.828164+00:00",
+      "revision": 182,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1972,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:28.172221+00:00",
+      "revision": 183,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1973,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:28.526468+00:00",
+      "revision": 184,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1974,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:28.886527+00:00",
+      "revision": 185,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1975,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:29.280321+00:00",
+      "revision": 186,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1976,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:29.651466+00:00",
+      "revision": 187,
+      "uncertainty_px": null
+    },
+    {
+      "frame": 1977,
+      "visibility": "absent",
+      "x": null,
+      "y": null,
+      "notes": "",
+      "split": "train",
+      "reviewed": true,
+      "updated_at": "2026-10-25T21:01:30.850934+00:00",
+      "revision": 190,
+      "uncertainty_px": null
+    }
+  ],
+  "history": [
+    {
+      "revision": 1,
+      "previous": null,
+      "saved": {
+        "frame": 1798,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:21.144441+00:00",
+        "revision": 1,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 2,
+      "previous": null,
+      "saved": {
+        "frame": 1799,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:24.327500+00:00",
+        "revision": 2,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 3,
+      "previous": null,
+      "saved": {
+        "frame": 1800,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:25.131968+00:00",
+        "revision": 3,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 4,
+      "previous": null,
+      "saved": {
+        "frame": 1802,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:27.361286+00:00",
+        "revision": 4,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 5,
+      "previous": null,
+      "saved": {
+        "frame": 1803,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:28.703026+00:00",
+        "revision": 5,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 6,
+      "previous": null,
+      "saved": {
+        "frame": 1804,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:29.677647+00:00",
+        "revision": 6,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 7,
+      "previous": null,
+      "saved": {
+        "frame": 1806,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:31.277286+00:00",
+        "revision": 7,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 8,
+      "previous": null,
+      "saved": {
+        "frame": 1807,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:34.300525+00:00",
+        "revision": 8,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 9,
+      "previous": null,
+      "saved": {
+        "frame": 1808,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:35.057334+00:00",
+        "revision": 9,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 10,
+      "previous": null,
+      "saved": {
+        "frame": 1809,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:35.585318+00:00",
+        "revision": 10,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 11,
+      "previous": null,
+      "saved": {
+        "frame": 1810,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:36.097229+00:00",
+        "revision": 11,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 12,
+      "previous": null,
+      "saved": {
+        "frame": 1811,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:36.569563+00:00",
+        "revision": 12,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 13,
+      "previous": null,
+      "saved": {
+        "frame": 1812,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:37.099596+00:00",
+        "revision": 13,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 14,
+      "previous": null,
+      "saved": {
+        "frame": 1813,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:37.663131+00:00",
+        "revision": 14,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 15,
+      "previous": null,
+      "saved": {
+        "frame": 1814,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:38.195665+00:00",
+        "revision": 15,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 16,
+      "previous": null,
+      "saved": {
+        "frame": 1815,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:38.726165+00:00",
+        "revision": 16,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 17,
+      "previous": null,
+      "saved": {
+        "frame": 1816,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:39.201602+00:00",
+        "revision": 17,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 18,
+      "previous": null,
+      "saved": {
+        "frame": 1817,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:39.609068+00:00",
+        "revision": 18,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 19,
+      "previous": null,
+      "saved": {
+        "frame": 1818,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:40.027595+00:00",
+        "revision": 19,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 20,
+      "previous": null,
+      "saved": {
+        "frame": 1819,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:40.485390+00:00",
+        "revision": 20,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 21,
+      "previous": null,
+      "saved": {
+        "frame": 1820,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:40.941805+00:00",
+        "revision": 21,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 22,
+      "previous": null,
+      "saved": {
+        "frame": 1821,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:41.458910+00:00",
+        "revision": 22,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 23,
+      "previous": null,
+      "saved": {
+        "frame": 1822,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:41.974720+00:00",
+        "revision": 23,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 24,
+      "previous": null,
+      "saved": {
+        "frame": 1823,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:42.447266+00:00",
+        "revision": 24,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 25,
+      "previous": null,
+      "saved": {
+        "frame": 1824,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:42.967895+00:00",
+        "revision": 25,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 26,
+      "previous": null,
+      "saved": {
+        "frame": 1825,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:43.415089+00:00",
+        "revision": 26,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 27,
+      "previous": null,
+      "saved": {
+        "frame": 1826,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:43.906887+00:00",
+        "revision": 27,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 28,
+      "previous": null,
+      "saved": {
+        "frame": 1827,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:44.313388+00:00",
+        "revision": 28,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 29,
+      "previous": null,
+      "saved": {
+        "frame": 1828,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:44.788756+00:00",
+        "revision": 29,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 30,
+      "previous": null,
+      "saved": {
+        "frame": 1829,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:45.252310+00:00",
+        "revision": 30,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 31,
+      "previous": null,
+      "saved": {
+        "frame": 1830,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:45.722294+00:00",
+        "revision": 31,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 32,
+      "previous": null,
+      "saved": {
+        "frame": 1831,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:46.143729+00:00",
+        "revision": 32,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 33,
+      "previous": null,
+      "saved": {
+        "frame": 1832,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:46.641660+00:00",
+        "revision": 33,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 34,
+      "previous": null,
+      "saved": {
+        "frame": 1833,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:47.102704+00:00",
+        "revision": 34,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 35,
+      "previous": null,
+      "saved": {
+        "frame": 1834,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:47.546443+00:00",
+        "revision": 35,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 36,
+      "previous": null,
+      "saved": {
+        "frame": 1835,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:47.913952+00:00",
+        "revision": 36,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 37,
+      "previous": null,
+      "saved": {
+        "frame": 1836,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:48.218078+00:00",
+        "revision": 37,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 38,
+      "previous": null,
+      "saved": {
+        "frame": 1837,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:48.608370+00:00",
+        "revision": 38,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 39,
+      "previous": {
+        "frame": 1837,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:48.608370+00:00",
+        "revision": 38,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1837,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:52.983141+00:00",
+        "revision": 39,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 40,
+      "previous": null,
+      "saved": {
+        "frame": 1838,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:54.434093+00:00",
+        "revision": 40,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 41,
+      "previous": null,
+      "saved": {
+        "frame": 1839,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:54.757625+00:00",
+        "revision": 41,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 42,
+      "previous": null,
+      "saved": {
+        "frame": 1840,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:55.085775+00:00",
+        "revision": 42,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 43,
+      "previous": null,
+      "saved": {
+        "frame": 1841,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:55.423947+00:00",
+        "revision": 43,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 44,
+      "previous": null,
+      "saved": {
+        "frame": 1842,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:55.810202+00:00",
+        "revision": 44,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 45,
+      "previous": null,
+      "saved": {
+        "frame": 1843,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:56.168042+00:00",
+        "revision": 45,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 46,
+      "previous": null,
+      "saved": {
+        "frame": 1844,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:56.534400+00:00",
+        "revision": 46,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 47,
+      "previous": null,
+      "saved": {
+        "frame": 1845,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:56.859080+00:00",
+        "revision": 47,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 48,
+      "previous": null,
+      "saved": {
+        "frame": 1846,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:57.211467+00:00",
+        "revision": 48,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 49,
+      "previous": null,
+      "saved": {
+        "frame": 1847,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:57.607301+00:00",
+        "revision": 49,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 50,
+      "previous": null,
+      "saved": {
+        "frame": 1848,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:57.946829+00:00",
+        "revision": 50,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 51,
+      "previous": null,
+      "saved": {
+        "frame": 1849,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:59.133258+00:00",
+        "revision": 51,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 52,
+      "previous": null,
+      "saved": {
+        "frame": 1850,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:00.095178+00:00",
+        "revision": 52,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 53,
+      "previous": null,
+      "saved": {
+        "frame": 1851,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:00.438136+00:00",
+        "revision": 53,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 54,
+      "previous": null,
+      "saved": {
+        "frame": 1852,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:00.730758+00:00",
+        "revision": 54,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 55,
+      "previous": null,
+      "saved": {
+        "frame": 1853,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:01.095366+00:00",
+        "revision": 55,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 56,
+      "previous": null,
+      "saved": {
+        "frame": 1854,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:01.451661+00:00",
+        "revision": 56,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 57,
+      "previous": null,
+      "saved": {
+        "frame": 1855,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:01.794506+00:00",
+        "revision": 57,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 58,
+      "previous": null,
+      "saved": {
+        "frame": 1856,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:02.129392+00:00",
+        "revision": 58,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 59,
+      "previous": null,
+      "saved": {
+        "frame": 1857,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:02.469410+00:00",
+        "revision": 59,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 60,
+      "previous": null,
+      "saved": {
+        "frame": 1858,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:02.797473+00:00",
+        "revision": 60,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 61,
+      "previous": null,
+      "saved": {
+        "frame": 1859,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:03.193206+00:00",
+        "revision": 61,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 62,
+      "previous": null,
+      "saved": {
+        "frame": 1860,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:03.497667+00:00",
+        "revision": 62,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 63,
+      "previous": null,
+      "saved": {
+        "frame": 1861,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:03.863626+00:00",
+        "revision": 63,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 64,
+      "previous": null,
+      "saved": {
+        "frame": 1862,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:04.212530+00:00",
+        "revision": 64,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 65,
+      "previous": null,
+      "saved": {
+        "frame": 1863,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:04.562602+00:00",
+        "revision": 65,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 66,
+      "previous": null,
+      "saved": {
+        "frame": 1864,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:04.904000+00:00",
+        "revision": 66,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 67,
+      "previous": null,
+      "saved": {
+        "frame": 1865,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:05.283916+00:00",
+        "revision": 67,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 68,
+      "previous": null,
+      "saved": {
+        "frame": 1866,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:05.583700+00:00",
+        "revision": 68,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 69,
+      "previous": null,
+      "saved": {
+        "frame": 1867,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:05.893227+00:00",
+        "revision": 69,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 70,
+      "previous": null,
+      "saved": {
+        "frame": 1868,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:06.225938+00:00",
+        "revision": 70,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 71,
+      "previous": null,
+      "saved": {
+        "frame": 1869,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:06.529852+00:00",
+        "revision": 71,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 72,
+      "previous": null,
+      "saved": {
+        "frame": 1870,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:06.885847+00:00",
+        "revision": 72,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 73,
+      "previous": null,
+      "saved": {
+        "frame": 1871,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:07.210800+00:00",
+        "revision": 73,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 74,
+      "previous": null,
+      "saved": {
+        "frame": 1872,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:07.585798+00:00",
+        "revision": 74,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 75,
+      "previous": null,
+      "saved": {
+        "frame": 1873,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:07.952338+00:00",
+        "revision": 75,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 76,
+      "previous": null,
+      "saved": {
+        "frame": 1874,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:08.271014+00:00",
+        "revision": 76,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 77,
+      "previous": null,
+      "saved": {
+        "frame": 1875,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:08.618167+00:00",
+        "revision": 77,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 78,
+      "previous": null,
+      "saved": {
+        "frame": 1876,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:08.918456+00:00",
+        "revision": 78,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 79,
+      "previous": null,
+      "saved": {
+        "frame": 1877,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:09.216183+00:00",
+        "revision": 79,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 80,
+      "previous": null,
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:09.487773+00:00",
+        "revision": 80,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 81,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:58:09.487773+00:00",
+        "revision": 80,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:46.841323+00:00",
+        "revision": 81,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 82,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:46.841323+00:00",
+        "revision": 81,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:47.890890+00:00",
+        "revision": 82,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 83,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:47.890890+00:00",
+        "revision": 82,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:48.345263+00:00",
+        "revision": 83,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 84,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:48.345263+00:00",
+        "revision": 83,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:48.664810+00:00",
+        "revision": 84,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 85,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:48.664810+00:00",
+        "revision": 84,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:48.991759+00:00",
+        "revision": 85,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 86,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:48.991759+00:00",
+        "revision": 85,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:49.318393+00:00",
+        "revision": 86,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 87,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:49.318393+00:00",
+        "revision": 86,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:49.634163+00:00",
+        "revision": 87,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 88,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:49.634163+00:00",
+        "revision": 87,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:49.940584+00:00",
+        "revision": 88,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 89,
+      "previous": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:49.940584+00:00",
+        "revision": 88,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1878,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:50.269199+00:00",
+        "revision": 89,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 90,
+      "previous": null,
+      "saved": {
+        "frame": 1879,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:54.229774+00:00",
+        "revision": 90,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 91,
+      "previous": null,
+      "saved": {
+        "frame": 1880,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:56.119842+00:00",
+        "revision": 91,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 92,
+      "previous": null,
+      "saved": {
+        "frame": 1881,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:56.759242+00:00",
+        "revision": 92,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 93,
+      "previous": null,
+      "saved": {
+        "frame": 1882,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:57.238921+00:00",
+        "revision": 93,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 94,
+      "previous": null,
+      "saved": {
+        "frame": 1883,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:57.728272+00:00",
+        "revision": 94,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 95,
+      "previous": null,
+      "saved": {
+        "frame": 1884,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:58.310360+00:00",
+        "revision": 95,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 96,
+      "previous": null,
+      "saved": {
+        "frame": 1885,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:58.776089+00:00",
+        "revision": 96,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 97,
+      "previous": null,
+      "saved": {
+        "frame": 1886,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:59.231617+00:00",
+        "revision": 97,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 98,
+      "previous": null,
+      "saved": {
+        "frame": 1887,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:00:59.678629+00:00",
+        "revision": 98,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 99,
+      "previous": null,
+      "saved": {
+        "frame": 1888,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:00.089888+00:00",
+        "revision": 99,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 100,
+      "previous": null,
+      "saved": {
+        "frame": 1889,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:00.475631+00:00",
+        "revision": 100,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 101,
+      "previous": null,
+      "saved": {
+        "frame": 1890,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:00.829043+00:00",
+        "revision": 101,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 102,
+      "previous": null,
+      "saved": {
+        "frame": 1891,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:01.154162+00:00",
+        "revision": 102,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 103,
+      "previous": null,
+      "saved": {
+        "frame": 1892,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:01.454338+00:00",
+        "revision": 103,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 104,
+      "previous": null,
+      "saved": {
+        "frame": 1893,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:01.766845+00:00",
+        "revision": 104,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 105,
+      "previous": null,
+      "saved": {
+        "frame": 1894,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:02.049983+00:00",
+        "revision": 105,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 106,
+      "previous": null,
+      "saved": {
+        "frame": 1895,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:02.335059+00:00",
+        "revision": 106,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 107,
+      "previous": null,
+      "saved": {
+        "frame": 1896,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:02.599574+00:00",
+        "revision": 107,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 108,
+      "previous": null,
+      "saved": {
+        "frame": 1897,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:02.927439+00:00",
+        "revision": 108,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 109,
+      "previous": null,
+      "saved": {
+        "frame": 1898,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:03.220146+00:00",
+        "revision": 109,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 110,
+      "previous": null,
+      "saved": {
+        "frame": 1899,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:03.516730+00:00",
+        "revision": 110,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 111,
+      "previous": null,
+      "saved": {
+        "frame": 1900,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:03.814736+00:00",
+        "revision": 111,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 112,
+      "previous": null,
+      "saved": {
+        "frame": 1901,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:04.097102+00:00",
+        "revision": 112,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 113,
+      "previous": null,
+      "saved": {
+        "frame": 1902,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:04.361570+00:00",
+        "revision": 113,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 114,
+      "previous": null,
+      "saved": {
+        "frame": 1903,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:04.626953+00:00",
+        "revision": 114,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 115,
+      "previous": null,
+      "saved": {
+        "frame": 1904,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:04.955976+00:00",
+        "revision": 115,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 116,
+      "previous": null,
+      "saved": {
+        "frame": 1905,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:05.238238+00:00",
+        "revision": 116,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 117,
+      "previous": null,
+      "saved": {
+        "frame": 1906,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:05.518016+00:00",
+        "revision": 117,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 118,
+      "previous": null,
+      "saved": {
+        "frame": 1907,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:05.819311+00:00",
+        "revision": 118,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 119,
+      "previous": null,
+      "saved": {
+        "frame": 1908,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:06.105431+00:00",
+        "revision": 119,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 120,
+      "previous": null,
+      "saved": {
+        "frame": 1909,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:06.370250+00:00",
+        "revision": 120,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 121,
+      "previous": null,
+      "saved": {
+        "frame": 1910,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:06.638707+00:00",
+        "revision": 121,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 122,
+      "previous": null,
+      "saved": {
+        "frame": 1911,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:06.920439+00:00",
+        "revision": 122,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 123,
+      "previous": null,
+      "saved": {
+        "frame": 1912,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:07.164921+00:00",
+        "revision": 123,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 124,
+      "previous": null,
+      "saved": {
+        "frame": 1913,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:07.423375+00:00",
+        "revision": 124,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 125,
+      "previous": null,
+      "saved": {
+        "frame": 1914,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:07.699701+00:00",
+        "revision": 125,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 126,
+      "previous": null,
+      "saved": {
+        "frame": 1915,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:07.986022+00:00",
+        "revision": 126,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 127,
+      "previous": null,
+      "saved": {
+        "frame": 1916,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:10.623322+00:00",
+        "revision": 127,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 128,
+      "previous": null,
+      "saved": {
+        "frame": 1917,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:11.076186+00:00",
+        "revision": 128,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 129,
+      "previous": null,
+      "saved": {
+        "frame": 1918,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:11.412028+00:00",
+        "revision": 129,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 130,
+      "previous": null,
+      "saved": {
+        "frame": 1919,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:11.687677+00:00",
+        "revision": 130,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 131,
+      "previous": null,
+      "saved": {
+        "frame": 1920,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:11.980327+00:00",
+        "revision": 131,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 132,
+      "previous": null,
+      "saved": {
+        "frame": 1921,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:12.301894+00:00",
+        "revision": 132,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 133,
+      "previous": null,
+      "saved": {
+        "frame": 1922,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:12.608747+00:00",
+        "revision": 133,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 134,
+      "previous": null,
+      "saved": {
+        "frame": 1923,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:12.870049+00:00",
+        "revision": 134,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 135,
+      "previous": null,
+      "saved": {
+        "frame": 1924,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:13.125673+00:00",
+        "revision": 135,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 136,
+      "previous": null,
+      "saved": {
+        "frame": 1925,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:13.412724+00:00",
+        "revision": 136,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 137,
+      "previous": null,
+      "saved": {
+        "frame": 1926,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:13.745890+00:00",
+        "revision": 137,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 138,
+      "previous": null,
+      "saved": {
+        "frame": 1927,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:14.052719+00:00",
+        "revision": 138,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 139,
+      "previous": null,
+      "saved": {
+        "frame": 1928,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:14.369276+00:00",
+        "revision": 139,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 140,
+      "previous": null,
+      "saved": {
+        "frame": 1929,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:14.656522+00:00",
+        "revision": 140,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 141,
+      "previous": null,
+      "saved": {
+        "frame": 1930,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:14.904626+00:00",
+        "revision": 141,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 142,
+      "previous": null,
+      "saved": {
+        "frame": 1931,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:15.205276+00:00",
+        "revision": 142,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 143,
+      "previous": null,
+      "saved": {
+        "frame": 1932,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:15.522016+00:00",
+        "revision": 143,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 144,
+      "previous": null,
+      "saved": {
+        "frame": 1933,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:15.824191+00:00",
+        "revision": 144,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 145,
+      "previous": null,
+      "saved": {
+        "frame": 1934,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:16.037461+00:00",
+        "revision": 145,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 146,
+      "previous": null,
+      "saved": {
+        "frame": 1935,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:16.389116+00:00",
+        "revision": 146,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 147,
+      "previous": null,
+      "saved": {
+        "frame": 1936,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:16.643813+00:00",
+        "revision": 147,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 148,
+      "previous": null,
+      "saved": {
+        "frame": 1937,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:16.908280+00:00",
+        "revision": 148,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 149,
+      "previous": null,
+      "saved": {
+        "frame": 1938,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:17.173895+00:00",
+        "revision": 149,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 150,
+      "previous": null,
+      "saved": {
+        "frame": 1939,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:17.477076+00:00",
+        "revision": 150,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 151,
+      "previous": null,
+      "saved": {
+        "frame": 1940,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:17.774200+00:00",
+        "revision": 151,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 152,
+      "previous": null,
+      "saved": {
+        "frame": 1941,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:18.055348+00:00",
+        "revision": 152,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 153,
+      "previous": null,
+      "saved": {
+        "frame": 1942,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:18.356130+00:00",
+        "revision": 153,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 154,
+      "previous": null,
+      "saved": {
+        "frame": 1943,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:18.652909+00:00",
+        "revision": 154,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 155,
+      "previous": null,
+      "saved": {
+        "frame": 1944,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:18.915288+00:00",
+        "revision": 155,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 156,
+      "previous": null,
+      "saved": {
+        "frame": 1945,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:19.208733+00:00",
+        "revision": 156,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 157,
+      "previous": null,
+      "saved": {
+        "frame": 1946,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:19.542794+00:00",
+        "revision": 157,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 158,
+      "previous": null,
+      "saved": {
+        "frame": 1947,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:19.832961+00:00",
+        "revision": 158,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 159,
+      "previous": null,
+      "saved": {
+        "frame": 1948,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:20.152518+00:00",
+        "revision": 159,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 160,
+      "previous": null,
+      "saved": {
+        "frame": 1949,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:20.451671+00:00",
+        "revision": 160,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 161,
+      "previous": null,
+      "saved": {
+        "frame": 1950,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:20.724091+00:00",
+        "revision": 161,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 162,
+      "previous": null,
+      "saved": {
+        "frame": 1951,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:21.042407+00:00",
+        "revision": 162,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 163,
+      "previous": null,
+      "saved": {
+        "frame": 1952,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:21.373843+00:00",
+        "revision": 163,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 164,
+      "previous": null,
+      "saved": {
+        "frame": 1953,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:21.667787+00:00",
+        "revision": 164,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 165,
+      "previous": null,
+      "saved": {
+        "frame": 1954,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:21.944830+00:00",
+        "revision": 165,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 166,
+      "previous": null,
+      "saved": {
+        "frame": 1955,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:22.270046+00:00",
+        "revision": 166,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 167,
+      "previous": null,
+      "saved": {
+        "frame": 1956,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:22.546453+00:00",
+        "revision": 167,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 168,
+      "previous": null,
+      "saved": {
+        "frame": 1957,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:22.849097+00:00",
+        "revision": 168,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 169,
+      "previous": null,
+      "saved": {
+        "frame": 1958,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:23.115063+00:00",
+        "revision": 169,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 170,
+      "previous": null,
+      "saved": {
+        "frame": 1959,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:23.404490+00:00",
+        "revision": 170,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 171,
+      "previous": null,
+      "saved": {
+        "frame": 1960,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:23.736896+00:00",
+        "revision": 171,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 172,
+      "previous": null,
+      "saved": {
+        "frame": 1961,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:24.036704+00:00",
+        "revision": 172,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 173,
+      "previous": null,
+      "saved": {
+        "frame": 1962,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:24.319755+00:00",
+        "revision": 173,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 174,
+      "previous": null,
+      "saved": {
+        "frame": 1963,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:24.600319+00:00",
+        "revision": 174,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 175,
+      "previous": null,
+      "saved": {
+        "frame": 1964,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:24.890981+00:00",
+        "revision": 175,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 176,
+      "previous": null,
+      "saved": {
+        "frame": 1965,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:25.437190+00:00",
+        "revision": 176,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 177,
+      "previous": null,
+      "saved": {
+        "frame": 1966,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:25.755375+00:00",
+        "revision": 177,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 178,
+      "previous": null,
+      "saved": {
+        "frame": 1967,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:26.090673+00:00",
+        "revision": 178,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 179,
+      "previous": null,
+      "saved": {
+        "frame": 1968,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:26.789002+00:00",
+        "revision": 179,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 180,
+      "previous": null,
+      "saved": {
+        "frame": 1969,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:27.127122+00:00",
+        "revision": 180,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 181,
+      "previous": null,
+      "saved": {
+        "frame": 1970,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:27.455355+00:00",
+        "revision": 181,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 182,
+      "previous": null,
+      "saved": {
+        "frame": 1971,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:27.828164+00:00",
+        "revision": 182,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 183,
+      "previous": null,
+      "saved": {
+        "frame": 1972,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:28.172221+00:00",
+        "revision": 183,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 184,
+      "previous": null,
+      "saved": {
+        "frame": 1973,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:28.526468+00:00",
+        "revision": 184,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 185,
+      "previous": null,
+      "saved": {
+        "frame": 1974,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:28.886527+00:00",
+        "revision": 185,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 186,
+      "previous": null,
+      "saved": {
+        "frame": 1975,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:29.280321+00:00",
+        "revision": 186,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 187,
+      "previous": null,
+      "saved": {
+        "frame": 1976,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:29.651466+00:00",
+        "revision": 187,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 188,
+      "previous": null,
+      "saved": {
+        "frame": 1977,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:29.986210+00:00",
+        "revision": 188,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 189,
+      "previous": {
+        "frame": 1977,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:29.986210+00:00",
+        "revision": 188,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1977,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:30.388726+00:00",
+        "revision": 189,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 190,
+      "previous": {
+        "frame": 1977,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:30.388726+00:00",
+        "revision": 189,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1977,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:30.850934+00:00",
+        "revision": 190,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 191,
+      "previous": null,
+      "saved": {
+        "frame": 1801,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:37.212107+00:00",
+        "revision": 191,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 192,
+      "previous": null,
+      "saved": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:39.083604+00:00",
+        "revision": 192,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 193,
+      "previous": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:39.083604+00:00",
+        "revision": 192,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:39.599718+00:00",
+        "revision": 193,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 194,
+      "previous": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:39.599718+00:00",
+        "revision": 193,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:39.998031+00:00",
+        "revision": 194,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 195,
+      "previous": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:39.998031+00:00",
+        "revision": 194,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:40.464139+00:00",
+        "revision": 195,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 196,
+      "previous": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:40.464139+00:00",
+        "revision": 195,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:40.902551+00:00",
+        "revision": 196,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 197,
+      "previous": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:40.902551+00:00",
+        "revision": 196,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:41.420956+00:00",
+        "revision": 197,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 198,
+      "previous": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:41.420956+00:00",
+        "revision": 197,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1805,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:42.607128+00:00",
+        "revision": 198,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 199,
+      "previous": {
+        "frame": 1806,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:31.277286+00:00",
+        "revision": 7,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1806,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:44.227908+00:00",
+        "revision": 199,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 200,
+      "previous": {
+        "frame": 1807,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:34.300525+00:00",
+        "revision": 8,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1807,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:44.655272+00:00",
+        "revision": 200,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 201,
+      "previous": {
+        "frame": 1808,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:35.057334+00:00",
+        "revision": 9,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1808,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:45.076204+00:00",
+        "revision": 201,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 202,
+      "previous": {
+        "frame": 1809,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:35.585318+00:00",
+        "revision": 10,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1809,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:45.489727+00:00",
+        "revision": 202,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 203,
+      "previous": {
+        "frame": 1810,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:36.097229+00:00",
+        "revision": 11,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1810,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:45.919198+00:00",
+        "revision": 203,
+        "uncertainty_px": null
+      }
+    },
+    {
+      "revision": 204,
+      "previous": {
+        "frame": 1811,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T20:57:36.569563+00:00",
+        "revision": 12,
+        "uncertainty_px": null
+      },
+      "saved": {
+        "frame": 1811,
+        "visibility": "absent",
+        "x": null,
+        "y": null,
+        "notes": "",
+        "split": "train",
+        "reviewed": true,
+        "updated_at": "2026-10-25T21:01:59.723426+00:00",
+        "revision": 204,
+        "uncertainty_px": null
+      }
+    }
+  ]
+}

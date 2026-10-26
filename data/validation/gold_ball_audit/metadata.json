@@ -1,0 +1,11 @@
+{
+  "video": "data\\raw_videos\\Gold_Medal_Match_Punta_Gorda.mp4",
+  "source_size": 2991284663,
+  "source_mtime_ns": 1792874599056087300,
+  "fps": 29.97,
+  "width": 1920,
+  "height": 1080,
+  "frame_start": 150,
+  "frame_end_inclusive": 329,
+  "label_policy": "Manual visual inspection of raw frames; no detector coordinates used as reference labels. Unclear or hidden ball positions must not be invented."
+}
